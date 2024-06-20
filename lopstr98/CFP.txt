@@ -1,0 +1,105 @@
+
+			     CALL FOR PAPERS
+
+
+				LOPSTR'98
+
+		      8th International Workshop on
+	     Logic-based Program Synthesis and Transformation
+
+
+	      Manchester, United Kingdom, 15 - 19 June 1998
+
+	 Sponsored by the Association for Logic Programming (ALP)
+and by the ESPRIT Network of Excellence in Computational Logic (Compulog Net)
+
+LOPSTR'98  is  the  eighth  in  a  series  of  international  workshops  on
+logic-based  program  synthesis  and  transformation.  It will  be  held in
+parallel  to the Joint  International  Conference  and  Symposium  on Logic
+Programming (JICSLP'98).
+
+
+New Objectives
+
+As a workshop,  LOPSTR'98 will continue the tradition of being a lively and
+friendly  forum for  presenting  recent  and  current  research  as well as
+discussing future trends in the synthesis and  transformation  of programs.
+Compared to previous editions, however, the scope and mode of operation are
+somewhat modified.
+
+The  _scope_  now  encompasses  any  computational-logic-based  techniques,
+languages, and tools for the  interactive or automated  development  of any
+kinds  of  programs.  Also,  papers   discussing   programming-in-the-large
+issues, or presenting practical  applications, or convincingly  arguing for
+the  practical   applicability  of  given   theoretical   results  are  now
+encouraged.
+
+The  _mode_of_operation_  now is as follows.  Based upon submitted extended
+abstracts,  the programme  committee  will invite  authors to present their
+research  at the  workshop.  Pre-proceedings  with  the  accepted  extended
+abstracts will be available at the workshop as a technical report.  Shortly
+after the workshop, the programme  committee will invite the authors of the
+most promising  abstracts and  presentations  to submit full papers.  After
+another round of  refereeing,  the best full papers will be included in the
+post-workshop  proceedings,  which are to be  published  within the Lecture
+Notes in Computer Science series of Springer-Verlag.
+
+At this point, extended abstracts of at most eight pages are thus solicited
+about, but not limited to, the following topics:
+
+	specification		analysis
+	synthesis		verification
+	composition		reuse
+	transformation		schemas
+	specialization		industrial applications
+
+Every  submission must clearly exhibit the  relationship to the (new) scope
+of the workshop, and must really be an extended  abstract.  It must thus be
+a  miniature  research  paper  with the key  motivations  and  ideas,  with
+outlines  of  the  proofs  of  the  key  theorems,  with  references  and a
+(favorable)  comparison to related work, but without full details of proofs
+or implemented  systems,  without the  description  of future work, without
+ramifications  that  are  irrelevant  to the  key  ideas.  A good  extended
+abstract  convinces  a  specialist  referee  of  the  significance  of  the
+described research in about one hour.  Submissions that fail to comply with
+these content and size requirements may be rejected  (without  refereeing),
+no matter how high the scientific merit of the discussed work.
+
+
+Programme Committee
+
+    Pierre Flener       Bilkent University, Turkey   (programme chair)
+ Nicoletta Cocco        University of Venice, Italy
+   Andreas Hamfelt      Uppsala University, Sweden
+  Kung-Kiu Lau          University of Manchester, UK  (workshop chair)
+  Baudouin Le Charlier  University of Namur, Belgium
+   Michael Leuschel     Catholic University of Leuven, Belgium
+   Michael Lowry        NASA Ames, USA
+       Ali Mili         Institute for Software Research, USA
+       Lee Naish        Melbourne University, Australia
+     Mario Ornaghi      University of Milan, Italy
+   Alberto Pettorossi   University of Rome II, Italy
+      Dave Robertson    University of Edinburgh, UK
+   Richard Waldinger    SRI International, USA
+
+
+Important Dates
+
+  Submission of extended abstracts   27 March 1998
+  Notification to authors             1 May 1998
+  Submission of full papers          25 September 1998
+  Notification to authors            30 October 1998
+
+
+Submissions
+
+Electronic  submissions are strongly encouraged.  See the workshop homepage
+for  full  instructions  regarding  the  formatting  requirements  and  the
+electronic   submission   procedure.  Address  all  correspondence   (email
+preferred) to:
+
+  Pierre Flener (LOPSTR'98) Phone: +90 312 266 4000 ext.1450
+  Dept of Computer Science    Fax: +90 312 266 4126
+  Bilkent University        Email: {lopstr98,pf}@cs.bilkent.edu.tr
+  06533 Ankara                Web: http://www.cs.bilkent.edu.tr/~lopstr98
+  Turkey                   Mirror: http://www.cs.man.ac.uk/~kung-kiu/lopstr98

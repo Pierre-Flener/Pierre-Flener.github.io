@@ -1,0 +1,36 @@
+_______________________________________________________________________
+
+              LOPSTR'98 -- Financial Aid Application Form
+
+ (Please send to lopstr98@cs.bilkent.edu.tr by 11 May 1998 noon GMT+3)
+_______________________________________________________________________
+
+         Name: 
+      Surname: 
+      Student: yes/no
+  Institution: 
+      Country: 
+  Paper Title: 
+
+When using the most economical way of travelling, my travel expenses
+to Manchester will amount to ... English pounds.
+(Explanations: ...).
+
+When using the most economical accommodation and restaurants, my room
+and board expenses will amount to ... English pounds (for ... days).
+(Explanations: ...)
+
+Registration in my case costs ... English pounds.
+(Explanations: ...)
+
+Other sources (at my institution, in my country, personal, etc) will
+contribute ... English pounds to my expenses.
+(Explanations: ...)
+
+I do not receive any further support and I hereby declare that the
+information above is correct and to the best of my knowledge.
+
+(...put your electronic address here...)
+_______________________________________________________________________
+
+PS. There is a currency converter at http://www.oanda.com/cgi-bin/ncc .

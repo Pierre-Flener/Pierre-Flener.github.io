@@ -1,0 +1,119 @@
+Kung-Kiu Lau (Manchester, UK) and Mario Ornaghi (Milan, I)
+OOD Frameworks in Component-based Software Development
+   in Computational Logic
+specification, reuse, composition
+
+David A. Rosenblueth (UNAM, Mexico)
+An Exhaustive-Search Method using Layered Streams Obtained through a
+   Meta-Interpreter for Chain Programs
+transformation, specialisation
+
+Michael Leuschel (KU Leuven, B)
+A Formal Comparison of Well-Quasi and Well-Founded Orders
+   for Online Termination
+specialisation, analysis, transformation
+
+Andreas Hamfelt (Uppsala, S) and Jorgen Fischer Nilsson (DTU, DK)
+Inductive Synthesis of Logic Programs by Composition of
+   Combinatory Program Schemes
+composition, schemas, synthesis
+
+Patrick Bellot (Ecole Nationale Superieure des Telecommunications, F)
+Synthesizing Imperative Object-Oriented Programs Using a Logic of Actions
+synthesis, specification, verification
+
+Annalisa Bossi and Nicoletta Cocco (Venice, I)
+Successes in Logic Programs
+analysis, verification, transformation
+
+Dave Robertson (Edinburgh, UK) and Jaume Agusti (IIIA, E)
+Pragmatics in the Synthesis of Logic Programs
+synthesis, specification, industrial applications
+
+Rahma Ben Ayed (Tunis II, Tunisia), Jules Desharnais (Laval, CDN),
+   Marc Frappier (Sherbrooke, CDN), and Ali Mili (ISR, USA)
+A Calculus of Program Transformations and Its Applications
+transformation, specification, verification, synthesis
+
+Sebastien Hoarau and Fred Mesnard (Reunion, F)
+Inferring and Compiling Termination for Constraint Logic Programs
+analysis, transformation
+
+Tihomir Gabric and Harald Sondergaard (Melbourne, AUS)
+Strictness Analysis as Finite-Domain Constraint Solving
+analysis, synthesis, transformation
+
+Agnes Tellez-Arenas (Orleans, F)
+Set Constraints for Program Validation
+specification, synthesis, transformation
+
+Robert Gluck (Copenhagen, DK), John Hatcliff (Oklahoma SU, USA),
+   and Jesper Jorgensen (KVL, DK)
+Generalization in Hierarchies of Online Program Specialization Systems
+specialisation, transformation
+
+Jan-Georg Smaus (Kent, UK), Pat Hill (Leeds, UK), and Andy King (Kent, UK)
+Preventing Instantiation Errors and Loops for Logic Programs
+   with Several Modes Using Block Declarations
+verification, transformation, synthesis
+
+Wim Vanhoof, Danny De Schreye, and Bern Martens (KU Leuven, B)
+Bottom Up Specialisation: Towards General Foundations
+specialisation, transformation
+
+Jamie Stark and Andrew Ireland (Heriot-Watt University, UK)
+Invariant Discovery via Failed Proof Attempts
+verification, synthesis
+
+Hamza Zidoum, Pierre Flener, and Brahim Hnich (Bilkent University, Turkey)
+Schema-Guided Synthesis of Constraint Logic Programs
+schemas, synthesis, specification
+
+Alessandro Avellone, Mauro Ferrari, and Pierangelo Miglioli (Milan, I)
+Synthesis of Programs in Abstract Data Types
+synthesis
+
+Marco Cadoli, Andrea Schaerf (Rome, I), Luigi Palopoli, and
+   Domenico Vasile (Calabria, I)
+NP-SPEC: An Executable Specification Language for Solving all Problems in NP
+specification, synthesis
+
+Jianguo Lu, Liren Chen, Katia Sycara (CMU, USA), and Jian Lu (Nanjing, China)
+Recursive Query Rewriting by Transforming Logic Programs
+industrial applications, transformation
+
+Julian Richardson (Edinburgh, UK)
+Proof Planning with Schema Frameworks
+schemas
+
+Pedro Merino and Jose Maria Troya (Malaga, E)
+Verifying Protocols with Executable Linear Logic
+specification, verification, analysis
+
+Dante Baldan, Baudouin Le Charlier, Christophe Leclere, and
+   Isabelle Pollet (Namur, B)
+A Step Towards a Methodology for Mercury Program Construction:
+   A Declarative Semantics for Mercury
+specification, verification, synthesis
+
+Jeffrey Van Baalen and Steven Roach (NASA Ames, USA)
+Using Decision Procedures to Build Domain-Specific Deductive
+   Synthesis Systems
+synthesis, specialisation, composition
+
+Sarah Mallet and Mireille Ducasse (IRISA/INSA, F)
+A Set-Oriented Meta-Interpreter Driven by a "Relational" Trace
+   for Deductive Databases Debugging
+analysis, industrial applications
+
+Norbert E. Fuchs, Uta Schwertel, and Rolf Schwitter (Zurich, CH)
+Attempto Controlled English: Not Just Another Logic Specification Language
+specification, verification, synthesis
+
+Antonio Brogi, Simone Contiero, and Franco Turini (Pisa, I)
+The Use of Renaming in Composing General Programs
+composition, reuse, transformation
+
+Annalisa Bossi (Venice, I) and Sabina Rossi (Padova, I)
+Specialising Logic Programs wrt Pre and Post Specifications
+specialisation, specification, verification, transformation

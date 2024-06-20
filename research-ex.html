@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Pierre Flener's Research</title>
+<style type="text/css" media="screen">
+@import url(uu_css/maincss.css);
+</style>
+<link rel="stylesheet" type="text/css" media="print" href="uu_css/print.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" content="Pierre Flener's Research" />
+<meta name="Keywords" content="Pierre Flener" />
+</head>
+<body class="red">
+<!-- Start header -->
+<div id="leftcolumn">
+<p>
+<a href="https://www.uu.se/en">Uppsala University</a><br /><br />
+<a href="https://www.uu.se/en/department/information-technology">Department of Information Technology</a><br /><br />
+<a href=".">Pierre Flener</a>
+</p>  
+<hr noshade style="width: 80%; border: solid lightgrey 0.5px;" />
+<p>
+<a href=".">Home</a><br />
+<a href="profact.html">Activities</a><br />
+<a href="https://optimisation.research.it.uu.se">Research (current)</a><br />
+<a href="research-ex.html">Research (former)</a><br />
+<a href="publications.html">Publications</a><br />
+<a href="courses">Teaching</a><br />
+<a href="travel">Travel Blogs</a><br />
+<a href="persinfo.html">Personal &amp; Bio</a><br />
+<a href="contact.html">Contact</a>
+</p>
+</div>
+<!-- End header, start main content -->
+<div id="maincontent">
+<center><h1>Pierre Flener's Former Research</h1></center>
+
+<hr />
+
+<p><a href="https://optimisation.research.it.uu.se">For my current
+research interests, publications, partners, and technology transfer,
+please consult the web pages of the Optimisation Group, of which I am
+the founder.</a></p>
+
+<p>In a former life, my interest in high-level abstractions for
+programming addressed something else than constraint problems.  Here
+follows a reading guide to those early <a
+href="publications.html">publications</a>.</p>
+
+<hr />
+
+<h2>Connecting Theory with Practice</h2>
+
+I have some strong opinions on the research areas where I am active,
+arguing why certain research avenues should not be explored, listing
+directions for future research, debunking existing prejudice of
+detractors, etc, all this with the purpose of achieving a stronger
+connection between theory and practice:
+<ul>
+<li>With <a href="https://scholar.google.com/citations?user=4HOzwp0AAAAJ">Baudouin Le Charlier</a> (Université Catholique de Louvain, Belgium), I explored
+the role of the so-called Formal Methods in Computer Science.  In a
+first paper [LCF98], we exposed the nonsense behind the concept of
+"formal specification".</li>
+<li>We applied these insights in order to argue for the desirable link
+between theory and practice in the field of abstract interpretation
+[LCF97].</li>
+<li>With <a href="http://emps.exeter.ac.uk/computer-science/staff/dpartrid">Derek Partridge</a> (University of Exeter, UK), I argued for the necessity
+of an <em>inductive programming</em> approach in suitable software
+engineering projects [FP01].</li>
+<li>With <font color="#0000FF">Lubos Popelinsky</font>, I addressed
+some prejudice regarding the inductive synthesis of (recursive)
+programs (see below) [FP94].</li>
+<li>With <font color="#0000FF">Serap Yilmaz</font>, I discussed
+current research results and trends in that area [FY99].</li>
+</ul>
+
+<hr />
+
+<h2>Schema-guided Deductive Synthesis of Programs</h2>
+
+<p>With <a href="http://www.cs.man.ac.uk/~kung-kiu/">Kung-Kiu Lau</a>
+(University of Manchester, UK),
+<font color="#0000FF">Mario Ornaghi</font>
+(University of Milan, Italy), and
+<a href="https://www.linkedin.com/in/julianrichardson">Julian Richardson</a>
+(then at Heriot-Watt University, UK),
+I investigated the definition, representation, semantics, and applications
+of <em>program schemas</em>, and their usage in effectively guiding the
+deductive synthesis of (logic) programs, such that they are correct and a
+priori correctly reusable [FLO97, FLO98, FLOR99, FLOR00].
+Specifications, programs, and schemas are expressed in the first-order
+language of a domain theory, which is called a <em>specification
+framework</em>.  Significant leverage over traditional synthesis approaches
+is achieved by this combination of frameworks and schemas.</p>
+
+<p>With <a href="https://www.linkedin.com/in/julianrichardson">Julian
+Richardson</a>, I proposed a unified view of program schemas and proof
+planning methods, so as to encode the former as the latter.  This
+allows the reuse of any proof planner, such as Clam, as an
+implementation platform for designing an (automated) schema-guided
+program synthesis system [FR99].</p>
+
+<hr />
+
+<h2>Schema-guided Transformation of Programs</h2>
+
+<p>With <a href="http://www.info.ucl.ac.be/~yde">Yves Deville</a>
+(Université catholique de Louvain, Belgium), I pursued research on the
+use of program schemas [FLO98] in automating (logic) program
+transformation [FD96].  The idea was to pre-compile
+transformation/optimisation/generalisation techniques at the
+schema-level (i.e., transformation technique T transforms schema S1
+into equivalent schema S2, if the applicability conditions C on the
+place-holders of S1 hold), so that transformation at the program-level
+reduces to the application of a substitution (i.e., if program P1 is
+known to be an instance of S1 under substitution s, and if s(C) is
+valid, then the transformed program P2 according to T is s(S2), and P2
+is guaranteed to be equivalent to P1).  Triple &lt;S1,S2,C> is then
+called a <em>transformation schema</em> implementing T.</p>
+
+<p>With <font color="#0000FF">Halime Büyükyildiz</font>, I extended
+these ideas [BF97, BF98], and she implemented a prototype system,
+called <a href="pub/transys.tar.gz">TranSys</a>, for her MSc thesis
+[Büy97].</p>
+
+<hr />
+
+<h2>Schema-guided Inductive / Abductive Synthesis of Recursive Programs</h2>
+
+<p>This research area is nowadays known as
+<a href="http://www.inductive-programming.org">inductive programming</a>.</p>
+
+<p>Continuing my early research [Fle95a, FD93ab, Fle93, FD92], I
+investigated the synthesis of (logic) programs from potentially
+incomplete specification information (such as examples, properties,
+integrity constraints, etc).  This obviously necessitates
+not-guaranteed-sound reasoning (such as induction or abduction), and I
+thus pursued a cross-fertilisation between (Deductive) Logic
+Programming (LP), Inductive Logic Programming (ILP), and Abductive
+Logic Programming (ALP) [FP94, FPS94].  The focus was on the
+synthesis of logic programs for "computational" concepts, that is
+concepts that may be computed by means of some looping construct (such
+as recursion or iteration).  For example, <em>sort</em>/2 is such a
+"computational" concept, whereas <em>elephant</em>/1 is not.  This
+clearly distinguished my research from more general Machine Learning
+or ILP work, and defined a very relevant niche thereof.  Moreover,
+this focus allowed me to take a Programming approach (rather than
+"only" an Artificial Intelligence one), taking advantage of algorithm
+design knowledge so as to structure the search space according to
+program schemas [FLO98] and structure the background knowledge
+according to types, domains, etc.  Correctness of the synthesised
+programs (that is, soundness and convergence of the synthesiser) was a
+central theme.  Together with <font color="#0000FF">Serap
+Yilmaz</font>, I discussed current research results and trends in this
+area [FY99].</p>
+
+<p>My <a href="pub/dialogs.tar.gz">DIALOGS</a> system
+(<em>Dialogue-based Inductive and Abductive LOGic program
+Synthesiser</em>) [Fle97] starts from no evidence at all and asks the
+specifier for exactly what it needs, and nothing else.  The queries
+and answers of the dialogue are kept entirely in terms of the
+specifier's (initially unknown) conceptual language, and such that the
+specifier <em>must</em> know the answers if s/he is interested at all
+in the resulting program.  This is a drastic simplification, though
+with no loss of power, of my <a href="pub/synapse.tar.gz">SYNAPSE</a>
+system (<em>SYNthesis of Algorithms from PropertieS and Examples</em>)
+[Fle95a, FD93ab, Fle93, FD92], which is not interactive.  This
+progress was mostly based on my later results, e.g., on <em>predicate
+invention</em> [Fle95b].</p>
+
+<p>With <font color="#0000FF">Serap Yilmaz</font>, I extended these
+ideas, and she implemented them into a successor system, called <a
+href="pub/dialogs2.tar.gz">DIALOGS-II</a>, for her MSc thesis
+[Yil97].</p>
+
+<p>With <a href="http://people.sabanciuniv.edu/esraerdem">Esra
+Erdem</a>, I proposed the notion of <em>construction modes</em> as a
+new declarative bias for ILP [EF00].  We applied this to develop a
+powerful and efficient algorithm for inductively inferring the clausal
+definition of an undefined operator of a clausal theory [EF99].</p>
+
+<p>With <a
+href="https://www.uni-bamberg.de/en/kogsys/team/schmid">Ute
+Schmid</a>, I revisited the research area years later and we wrote a
+survey [FS08] and three entries [FS16a, FS16b, FS16c] for the
+Encyclopedia of Machine Learning and Data Mining.</p>
+
+<!-- /div -->
+<!-- End maincontent, start footer -->
+<!-- div id="footer" class="sidfot" -->
+<hr />
+<address>
+<!-- hhmts start -->Last modified: Thu Jun 20 15:31:52 CEST 2024 <!-- hhmts end -->
+</address>
+</div>
+<!-- End footer -->
+</body>
+</html>
