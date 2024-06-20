@@ -1,0 +1,345 @@
+/*                                                                   */
+/*  maincss.css :: Åke Johansson 2004-06-30 :: Uppsala universitet   */
+/*  maila förbättringsförslag till: ake.johansson[a]uadm.uu.se       */
+/*                                                                   */
+html, body {  	
+	/* nedanstående rad saboterar marginalen för IE/Mac 5.x  */
+	/* background-color: transparent; */
+	margin: 0;
+	padding: 0;
+	font-family : Verdana, arial, Sans-serif;
+	font-size: 84%;  /* skall fontstorlek ändras, gör det här! */
+	height:100%;
+}
+html>body {
+	font-size: 97% /* Var snäll mot Opera  */;
+}
+body.red {   /* Ger röd vänstermarginal */
+	background-image: url(../uu_img/rededge.gif); 
+	background-repeat: repeat-y; 	
+}
+body.grey {   /* Ger grå vänstermarginal */
+	background-image: url(../uu_img/greyedge.gif); 
+	background-repeat: repeat-y; 
+}
+body.lightgrey {   /* Ger grå vänstermarginal */
+	background-image: url(../uu_img/lightgreyedge.gif); 
+	background-repeat: repeat-y; 
+}
+body.white {  /* Ger vit vänstermarginal */
+	background-image: url(../uu_img/whiteedge.gif); 
+	background-repeat: repeat-y; 
+}
+/* basix för vänstermarginalen */
+#leftcolumn {
+	position: absolute;
+	left:0;
+	top:0;
+	width:160px;
+	height:100%; /* funkar bara om parent container har höjdvärde */ 
+    font: normal 1.0em/1.6em Verdana, Helvetica, Sans-serif;
+}
+/* Ser till att text i vänsterkolumn (på röd marginal) är vit */
+#leftcolumn p {
+   	padding: 0 5px 3px 8px;
+	color: #fff;
+}
+/* Ser till att länkar i vänsterkolumn (på röd marginal) är vita */
+#leftcolumn A {
+	color: #fff;	
+	text-decoration: none;
+}
+#leftcolumn A:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+/* Ser till att text i vänsterkolumn (på vit marginal) är svart */
+body.white #leftcolumn p {
+   	padding: 0 5px 3px 8px;
+	color: #000;
+}
+/* Ser till att länkar i vänsterkolumn (på vit marginal) är röda */
+body.white #leftcolumn A {
+	color: #9A0000;	
+	text-decoration: none;
+}
+body.white #leftcolumn A:hover {
+	text-decoration: underline;
+	color: #00f;
+}
+/* Ser till att text i vänsterkolumn (på grå marginal) är svart */
+body.grey #leftcolumn p {
+	padding: 0 5px 3px 8px;
+	color: #000;
+}
+/* Ser till att länkar i vänsterkolumn (på grå marginal) är röda */
+body.grey #leftcolumn A {
+	color: #9A0000;	
+	text-decoration: none;
+}
+body.grey #leftcolumn A:hover {
+	text-decoration: underline;
+	color: #00f;
+}
+/* Ser till att text i vänsterkolumn (på grå marginal) är svart */
+body.lightgrey #leftcolumn p {
+	padding: 0 5px 3px 8px;
+	color: #000;
+}
+/* Ser till att länkar i vänsterkolumn (på grå marginal) är röda */
+body.lightgrey #leftcolumn A {
+	color: #990000;	
+	text-decoration: none;
+}
+body.lightgrey #leftcolumn A:hover {
+	text-decoration: underline;
+	color: #900;
+}
+/* Grundinställningar för huvudytan */
+#maincontent {
+	/* position: relative;  */
+	background:#fff;
+	margin-left: 180px;
+	width: 80%; /* Pierre: was 500px */
+	/* box model hack 	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 430px; */	
+}
+/* html>#maincontent 	{
+	width: 430px;
+	} */
+/* Grundinställningar för smulraden */
+#smulrad {
+	/*position: relative;*/
+	background:#fff;
+	margin: 0 0 20px 180px;
+	width: 80%; /* Pierre: was 500px */
+	/* box model hack 	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 430px;	 */
+}
+/* html>#smulrad 	{
+	width: 430px;
+	} */ 
+.smulrad {
+	color : black;
+	font-family : Verdana, arial, Sans-serif;
+	font-size: 1.0em;
+}
+/* Grundinställningar för  sidfoten */
+#footer {
+	/*position: absolute;*/
+	background:#fff;
+	margin-top: 40px;  
+	margin-left: 180px;
+	width: 80%;  /* Pierre: was 500px */
+	/* box model hack 	
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	width: 430px;	 */
+}
+/*html>#footer 	{
+	width: 430px;
+	}*/ 
+.sidfot { 
+	border: 1px #ccc solid; 
+	padding: 3px;
+	font: normal 95% Verdana, Helvetica, Sans-serif;
+}
+/* Ingen högerkolumn. Önskas dylik måste rightcol.css importeras  */		
+#rightcolumn {
+	display:none
+}
+#knapp {
+	margin-bottom:10px;
+	text-align:center
+}
+/* And the rest... */
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.8em;
+	color: #000;
+}
+h2 {
+	font-size: 1.6em;
+	font-family:Arial, Helvetica, sans-serif; 
+	color: #000; 
+	font-weight: bold
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	color: #000;
+}
+h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #000;
+}
+dt {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.0em;
+	font-weight:bold;
+	color:#000;
+}
+p, ul, ol, dd, div, td {
+	color : black;
+	font-family : Verdana, arial, Sans-serif;
+	font-size : 1.0em;
+	line-height: 1.5;
+}
+ul {
+	list-style-type:square
+}
+#leftcolumn ul  {
+	margin-left:0; padding: 0 1em;
+	list-style-type:none;
+}
+body.red #leftcolumn li  {
+	font-family : Verdana, arial, Sans-serif;
+	color:#fff;
+	font-size : 1.0em;
+	line-height: 1.5;
+}
+A  {
+	text-decoration : underline;
+	color : #9A0000;
+}
+A:hover {
+	text-decoration: underline;
+	color: #00f;
+}
+/* Ser till att länkar i smulrad och sidfot inte fetas */
+#smulrad A, #footer A {
+	color: #9A0000;	
+	text-decoration: none;
+}
+#smulrad A:hover, #footer A:hover {
+	text-decoration: underline;
+	color: #00f;
+}
+A.block {
+  display: block;
+  margin-bottom: 12px;
+  border: 1px solid #FFF;
+  padding: 4px;
+  color: #000;
+  text-decoration: none; 
+  font-weight:normal;
+}
+A.block:hover {
+  border: 1px solid #CCC;
+  color: #000;
+  background:#F3F3F3; 
+  text-decoration: none; 
+}
+.normal {
+	color : black;
+	font-family : Verdana, arial, Sans-serif;
+}
+/* Här definierar vi olika typer av inramningar, rutor, whatever.. */
+.ruta { 
+	border: 1px #000 solid; background-color: #CCC; 
+	padding: 10px;
+	color : black;
+	font-family : Verdana, arial, Sans-serif;
+}
+.vitruta { 
+	border: 1px #000 solid; 
+	background-color: #fff; 
+	padding: 10px;
+	color : black;
+	font-family : Verdana, arial, Sans-serif;
+}
+blockquote { 
+	background-color: #fff; 
+	padding: 10px;
+	margin: 20px; 
+	color : black;
+	font-family : Verdana, arial, Sans-serif;
+}
+/* En div av klass boxhdr används med fördel ovanför en div med klass box */
+/* Gör sig bra i högerkolumn                                              */
+.boxhdr {
+	background-color: #999;
+	font: normal 1.0em/1.6em Verdana, Helvetica, Sans-serif;
+	color: #fff;
+	margin-bottom: 3px; margin-top: 10px; 
+	padding-left: 3px;
+}
+.box { 
+	border: 1px #ccc solid; 
+	padding: 3px;
+	font: normal 1.0em/1.6em Verdana, Helvetica, Sans-serif;
+}
+.box p { 
+	margin: 0;
+}
+ol.boxlist {
+	margin: 0 0 10px 12px;
+	padding: 0 0 5px 12px;
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+/* .boxWhite { 
+	padding-top: 10px; padding-right: 3px; padding-bottom: 3px; padding-left: 5px;
+    font: normal 1.0em/1.6em Verdana, Helvetica, Sans-serif;
+	color: #fff
+} */
+hr.red {
+	height:1px;
+	background:#B4BEB3;
+	color: #B4BEB3;
+}
+/* Netscape ignorerar @media vilket vi utnyttjar nedan. */
+@media all{
+	input, textarea, select{
+		border-top : solid 1px #767065;
+		border-right : solid 1px #CCC;
+		border-left : solid 1px #767065;
+		border-bottom : solid 1px #CCC;
+		color : #666;
+		font : normal 11px verdana, sans-serif;
+	}
+}
+/* Ger stil till formulärknappar */
+.button{
+	border-bottom : solid 1px #767065;
+	border-left : solid 1px #ccc;
+	border-right : solid 1px #767065;
+	border-top : solid 1px #ccc;
+	background-color: #e8e8e8;
+}
+/* Stajla Läs Upp-knappen */
+.saysubmit {
+	border-bottom : solid 1px #666;
+	border-left : solid 1px #fff;
+	border-right : solid 1px #666;
+	border-top : solid 1px #fff;
+	background-color: #e8e8e8;
+}
+.floatleft	{
+	float		: left;
+	text-align	: left;
+}
+.floatright	{
+	float		: right;
+	text-align	: right;
+}
+/* specialare */
+.hide	{
+	display: none;
+}
+.ahem	{
+	display: none;
+}
+img	{
+	display: block;
+	border: 0;
+}
+.inline {
+	display: inline;
+}

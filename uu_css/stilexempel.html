@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv" lang="sv"><head>
+<title>Exempel p&aring; stilar i mallen</title>
+<link rel="stylesheet" type="text/css" media="screen" href="uu_css/maincss.css" />
+<link rel="stylesheet" type="text/css" media="print" href="uu_css/print.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="uu_css/rightcol.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--meta name="Description" content="Ange beskrivning h&auml;r och ta bort kommentering" /-->
+<!--meta name="Keywords" content="ange kommaseparerade nyckelord h&auml;r och ta sedan bort kommentering" /-->
+<!-- ReadSpeaker script nedan -->
+<script type="text/javascript" language="JavaScript"> <!--
+function sayit()
+{ if (window.getSelection) // recent Mozilla versions
+{ var selectedString = window.getSelection(); }
+else if (document.all) // MSIE 4+
+{ rng = document.selection.createRange(); selectedString=rng.text; }
+else if (document.getSelection) //older Mozilla versions
+{ var selectedString = document.getSelection(); }
+document.rs_form.rstext.value = selectedString;
+document.rs_form.url.value = document.location.href; } //-->
+</script>
+</head>
+<body class="red">
+<!-- Kom ih&aring; att byta i nedanst&aring;ende rad mot din enhet och dess url -->
+<div id="smulrad" class="smulrad"><a href="http://www.uu.se/" title="Till universitetets hemsida.">UU</a> : <a href="/" title="">inst</a>  :
+  Detta &auml;r smulraden</div>
+<!-- Start header -->
+<div id="leftcolumn">
+<a href="http://www.uu.se"><img class="red" src="uu_img/uulogo_red.gif" width="160" height="160" alt="Uppsala universitet" /></a>
+<!-- lyssna-knapp -->
+<div id="knapp">
+<form class="ISI_REMOVE" id="rs_form" name="rs_form" action="http://isi.phoneticom.com/cgi-bin/uursone" method="post" onsubmit="sayit()" target="rs">
+<input class="saysubmit" accesskey="L" type="submit" title="Lyssna p&aring; sidan/markerad text" alt="L&auml;s upp" value="L&auml;s upp" /><input type="hidden" name="rstext" /><input type="hidden" name="customerid" value="47" /><input type="hidden" name="url" /><input type="hidden" name="id" value="1" /><input type="hidden" name="type" value="2" /><input type="hidden" name="lang" value="sv" />
+</form>
+</div>
+<div class="hide"><a href="#maincontent" title="Skip navigation" accesskey="2">Skip navigation</a></div>
+<!-- Ange spr&aring; h&auml;r f&auml;r ReadSpeaker Navigator. Se www.uu.se/webbdesign/lyssna -->
+<p>Text i marginalen<br />
+<a href="http://www.uu.se/">L&auml;nk i marginalen</a>
+</p></div>
+<!-- End header, start main content -->
+<!-- ISI_LISTEN_START -->
+<div id="maincontent">
+<h1>Huvudrubrik h1</h1>
+<h2>Rubrik h2</h2>
+<h3>Rubrik h3</h3>
+<h4>Rubrik h4, h5, h6</h4>
+<p>Vanlig text i ett vanligt p-element. Efter denna text kommer ett exempel p&aring;
+  hur man kan h&ouml;ger- respektive v&auml;nsterst&auml;lla text. Titta i koden f&ouml;r att se
+  hur de olika stilarna anv&auml;nds p&aring; denna sida.</p>
+<div class="floatleft">floatleft</div>
+<div class="floatright">floatright</div>  
+<br /><br />
+
+<p class="ruta">Text i ett p-element av klassen &quot;ruta&quot;</p>
+<blockquote>Text i ett blockquote-element</blockquote>
+<p class="vitruta">Text i ett p-element av klassen &quot;vitruta&quot;&acute;</p>
+<p>Vanlig paragraf med en <a href="http://www.uu.se/">l&auml;nk</a>. </p>
+<a href="http://www.uu.se" class="block">Du kan l&auml;nka  ett helt parti
+text,
+exempelvis en ingress som leder till hela artikeln, rapporten eller vad det nu
+m&aring; vara. Testa effekten genom att f&ouml;ra muspekaren &ouml;ver denna text. Hur? S&auml;tt class=&quot;block&quot; p&aring; l&auml;nken. </a> 
+<dl>
+	<dt>Definitionstitel</dt>
+	<dd>H&auml;r ett exempel p&aring; en definitionslista. Denna text definierar ordet definitionstitel
+	  ovan och kallas definitionsdata. </dd>
+  </dl>
+<form name="form1" id="form1" method="post" action="">
+<p>Ett formul&auml;r med en knapp med class=&quot;button&quot; p&aring;: 
+  <input name="Submit" type="submit" class="button" value="Submit" /></p>
+</form>
+<ul>
+  <li>Och h&auml;r en helt vanlig lista</li>
+  <li>Med en andra punkt</li>
+  <li>och en tredje...</li>
+  </ul>
+<p>&nbsp;</p>
+<p>Fr&aring;gor, synpunkter, tips, f&ouml;rb&auml;ttringside&eacute;r etc.
+        v&auml;lkomnas. <br />
+      E-posta dem till Ake.Johansson [a] uadm.uu.se
+  eller sl&aring; en signal p&aring; 018 - 471 19 56</p>
+<p>&nbsp;</p>
+</div>
+<!-- End maincontent, start rightcolumn -->
+<div id="rightcolumn">
+<div class="boxhdr">boxhdr</div>
+<div class="box"><ol class="boxlist">
+  <li>
+    Denna div &auml;r av klassen &quot;box&quot;</li>
+  <li>I den en numrerad lista &lt;ol&gt; av klassen &quot;boxlist&quot;<a href="http://www.uu.se/Adresser/Directory/deps/AF1.html"></a>  </li>
+</ol>
+</div></div>
+<!-- End rightcolumn, start footer -->
+<!-- ISI_LISTEN_STOP -->
+<div class="sidfot" id="footer">
+Detta &auml;r en 
+sidfot och det h&auml;r b&ouml;r det finnas information om vem som ansvarar f&ouml;r sidan,
+n&auml;r den senast uppdaterades etc.
+<!-- End footer -->
+</div>
+</body>
+</html>

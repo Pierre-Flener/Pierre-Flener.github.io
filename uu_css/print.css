@@ -1,0 +1,148 @@
+/*                                                              */
+/* print.css :: Ake Johansson 2004-03-31 :: Uppsala universitet */
+/*                                                              */
+/*                                                              */
+body {
+   background: white;
+   background-image: none;
+   font-size: 12pt;
+   }
+#leftcolumn {
+   display: none;
+   }
+#knapp {
+   display: none;
+   }
+#rightcolumn {
+   background: white;
+   width: auto;
+   margin: 0 5%;
+   padding: 0;
+   border: 0;
+   float: none !important;
+   color: black;
+   background: transparent none;
+   padding-top: 1em;
+   border-top: 1px solid #990000;
+   }
+#maincontent {
+   background: white;
+   width: auto;
+   margin: 0 5%;
+   padding: 0;
+   border: 0;
+   float: none !important;
+   color: black;
+   background: transparent none;
+   padding-top: 1em;
+   border-top: 1px solid #990000;
+   }
+#smulrad {
+   background: white;
+   width: auto;
+   padding: 0 0 10pt 0;
+   border: 0;
+   float: none !important;
+   color: black;
+   background: transparent none;
+   border-bottom: 1px solid #990000;
+   margin: 0 5%;
+}
+#footer {
+   background: white;
+   width: auto;
+   padding: 0;
+   border: 0;
+   float: none !important;
+   color: black;
+   background: transparent none;
+   border-top: 1px solid #990000;
+   margin:40px 5%;
+}
+a:link, a:visited {
+   color: #000;
+   background: transparent;
+   text-decoration: underline;
+   }
+#maincontent a:link:after, #maincontent a:visited:after {
+   content: " [" attr(href)"] ";
+   font-size: 90%;
+   color:#666;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20pt;
+	color: #000;
+}
+h2 {
+	font-size: 18pt;
+	font-family:Arial, Helvetica, sans-serif; 
+	color: #000; 
+	font-weight: bold
+}
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16pt;
+	color: #000;
+}
+
+h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	color: #000;
+}
+dt, .boxhdr {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000;
+	font-weight:bold;
+}
+p, ul, ol, dd, td, div {
+	color : black;
+	font-family : Times, Serif;
+	font-size : 12pt;
+	}
+.normal {
+	color : black;
+	font-family : Times, Serif;
+}
+.smulrad {
+	color : black;
+	font-family : Verdana, arial, Sans-serif;
+	font-size: 10pt;
+}
+.sidfot {
+	color : black;
+	font-family : Verdana, arial, Sans-serif;
+	font-size: 10pt;
+}
+.ruta { 
+	border: 1px #000 solid; background-color: #CCC; 
+	color : black;
+	font-family : Times, Serif;
+	padding: 10px;
+}
+.vitruta { 
+	border: 1px #000 solid; background-color: #FFF; 
+	padding: 10px;
+	color : black;
+	font-family : Times, Serif;
+
+}
+.luftruta { 
+	border: 1px #000 solid; background-color: #CCC; 
+	padding: 10px;
+	margin: 20px; 
+	color : black;
+	font-family : Times, Serif;
+}
+.hide	{
+	display: none;
+}
+.ahem	{
+	display: none;
+}
+img	{
+	display: block;
+	border: 0;
+}

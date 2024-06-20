@@ -1,0 +1,47 @@
+/*                                                                   */
+/*  rightcol.css :: Åke Johansson 2004-03-31 :: Uppsala universitet  */
+/*  används för att få högerkolumn                               */
+/*  maila förbättringsförslag till: ake.johansson[a]uadm.uu.se       */
+/*                                                                   */
+/* inställningar för huvudytan */
+#maincontent {
+	/* position: relative;  */
+	background:#fff;
+	margin-left: 180px;
+	width: 380px;
+}
+/* Grundinställningar för smulraden */
+#smulrad {
+	/*position: relative;*/
+	background:#fff;
+	margin: 0 0 20px 180px;
+	width: 380px;  
+}
+.smulrad {
+	color : black;
+	font-family : Verdana, arial, Sans-serif;
+	font-size: 1.0em;
+}
+/* Grundinställningar för  sidfoten */
+#footer {
+	/*position: absolute;*/
+	background:#fff;
+	margin-top: 40px;  
+	margin-left: 180px;
+	width: 380px;  
+}
+.sidfot { 
+	border: 1px #ccc solid; 
+	padding: 3px;
+	font: normal 95% Verdana, Helvetica, Sans-serif;
+}
+/* Grundinställningar för högerkolumn  */		
+#rightcolumn {
+	background: #fff;
+	position: absolute;
+	left:580px; top:30px;
+	display:block;
+	float:right;
+	width:160px;
+	padding:0;
+}
