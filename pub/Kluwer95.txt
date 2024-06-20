@@ -1,0 +1,147 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+			 BOOK ANNOUNCEMENT
+
+
+	Logic Program Synthesis from Incomplete Information
+
+				by
+
+			   Pierre Flener
+
+		Bilkent University, Ankara, Turkey
+
+
+   THE KLUWER INTERNATIONAL SERIES IN ENGINEERING AND COMPUTER SCIENCE 295
+	    Kluwer Academic Publishers, Boston, January 1995
+   264 pages   Hardbound   ISBN 0-7923-9532-8   85USD   60.50GBP   165NLG 
+
+
+Program synthesis is a solution to the software crisis.  If we had a program
+that develops correct programs from specifications, then program validation
+and maintenance would disappear from the software life-cycle, and one could
+focus on the more creative tasks of specification elaboration, validation,
+and maintenance, because replay of program development would be less costly.   
+
+This monograph describes a novel approach to Inductive Logic Programming
+(ILP), which cross-fertilizes logic programming and machine learning.
+Aiming at the synthesis of recursive logic programs only, and this from
+incomplete information, we take a software engineering approach that is
+more appropriate than a pure artificial intelligence approach.   
+
+This book is suitable as a secondary text for graduate level courses in
+software engineering and artificial intelligence, and as a reference for
+practitioners of program synthesis.   
+
+
+			    Contents
+
+	Foreword (by Alan W. Biermann)
+
+	Preface
+
+			I: State of the Art
+
+	 1. Automatic Programming
+	 2. Deductive Inference in Automatic Programming
+	 3. Inductive Inference in Automatic Programming
+	 4. A Logic Program Development Methodology
+	 5. Objectives
+
+			II: Building Blocks
+
+	 6. A Specification Approach
+	 7. A Framework for Stepwise Logic Algorithm Synthesis
+	 8. Algorithm Analysis and Algorithm Schemata
+	 9. The Proofs-as-Programs Method
+	10. The Most-Specific-Generalization Method
+
+		III: A Logic Algorithm Synthesis Mechanism
+
+	11. Overview of the Synthesis Mechanism
+	12. The Expansion Phase
+	13. The Reduction Phase
+	14. Conclusion
+
+	Appendix: Conventions, Abbreviations, and Symbols
+
+	References
+
+	Subject Index   
+
+
+Keywords:
+
+Computer and Information Science: Programming Languages/Operating Systems
+Computer and Information Science: Software Engineering
+Computer and Information Science: AI Languages
+Computer and Information Science: Machine Learning
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                             ORDER FORM    
+
+Author: Pierre Flener
+Title : Logic Program Synthesis from Incomplete Information
+PB/HB : Hardbound
+ISBN  : 0-7923-9532-8  Price: USD 85.00, NLG 165.00, GBP 60.50
+
+Ref: KAPIS
+
+( ) Payment enclosed to the amount of ___________________________
+( ) Please send invoice
+( ) Please charge my credit card account:
+
+    Card no.: |_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|_|  Expiry date:______________
+
+    () Access       () American Express     () Mastercard
+    () Diners Club  () Eurocard             () Visa
+
+    Name of Card holder:___________________________________________________
+
+Delivery address:
+
+Title       :___________________________ Initials:_______________M/F_______
+
+First name  :______________________ Surname:_______________________________
+
+Organization:______________________________________________________________
+
+Department  :______________________________________________________________
+
+Address     :______________________________________________________________
+
+Postal Code :___________________ City:_____________________________________
+
+Country     :_____________________________Telephone:_______________________
+
+Email       :______________________________________________________________
+
+Date        :_____________________ Signature:______________________________
+
+Our European VAT registration number is: |_|_|_|_|_|_|_|_|_|_|_|_|_|_|
+
+To be sent to:
+For customers in Mexico, USA and Canada:    Rest of the world:
+
+Kluwer Academic Publishers                  Kluwer Academic Publishers Group
+Order Department                            Order Department
+P.O. Box 358                                P.O. Box 322
+Accord Station                              3300 AH Dordrecht
+Hingham, MA 02018-0358                      The Netherlands
+U.S.A.
+
+Tel    : 617 871 6600                       Tel   : +31 78 524400
+Fax    : 617 871 6528                       Fax   : +31 78 524474
+Email  : kluwer@world.std.com               Email : services@wkap.nl
+
+Payment will be accepted in any convertible currency. Please check the rate
+of exchange with your bank. Prices are subject to change without notice. All 
+prices are exclusive of Value Added Tax (VAT). Customers in the Netherlands 
+please add 6% VAT. Customers from other countries in the European Community:
+* please fill in the VAT number of your institute/company in the appropriate 
+  space on the orderform: or
+* please add 6% VAT to the total order amount (customers from the U.K. are
+  not charged VAT).
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,40 @@
+
+			Universite Catholique de Louvain
+
+			Faculte des Sciences Appliquees
+
+
+	    Logic Algorithm Synthesis from Examples and Properties
+
+				Pierre Flener
+
+
+				  June 1993
+
+		   These presentee en vue de l'obtention
+		du grade de Docteur en Sciences Appliquees
+
+
+				  Abstract
+
+In the context of logic programming-in-the-small, we propose logic
+specifications by examples and properties, the latter being disambiguating
+generalizations of the examples.  Such specifications are easy to elaborate,
+but are also usually incomplete, in the sense that the intentions need not
+(or cannot) be fully described.  Algorithm synthesis then consists of semi-
+automatically extrapolating these intentions, and of designing a (recursive)
+algorithm implementing them.  We develop a very disciplined approach to
+algorithm synthesis, namely stepwise instantiation of the place-holders of
+a divide-and-conquer algorithm schema. Moreover, rather than using a uniform
+method for these instantiations, we deploy for each place-holder the best-
+suited method from a generic tool-box of (deductive, inductive, ...) methods.
+Special care is taken to handle the correctness and progression aspects of the
+synthesis.
+
+				   Keywords
+
+Automatic programming, program synthesis, logic programming, intentions,
+specification, algorithm, algorithm design, algorithm schema, algorithm
+correctness, algorithm comparison, stepwise design, inductive logic
+programming, machine learning, inductive inference, generalization,
+deductive inference, automated theorem proving.
