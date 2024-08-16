@@ -1,0 +1,298 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<title>M4CO/COCP: Resources</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1>Modelling for Combinatorial Optimisation (course 1DL451) <br> & <br>
+Combinatorial Optimisation and Constraint Programming (course 1DL442)</h1>
+
+<p>(<a href="course.html">back to the course homepage</a>)</p>
+
+<h1>Resources</h1>
+
+<h2>MiniZinc</h2>
+
+<p>In Course 1DL451 and Part 1 of Course 1DL442, we use the <a
+href="https://www.minizinc.org">MiniZinc</a> modelling language and
+toolchain (free; open-source):</p>
+
+<h3>MiniZinc: Local Resources</h2>
+
+<ul>
+  
+  <li><p>The MiniZinc toolchain and all backends that must be used in
+  this course are installed on the <a
+  href="https://www.it.uu.se/datordrift/maskinpark/linux">ThinLinc
+  Linux hosts of the IT department</a>: this is explained in our <a
+  href="assignments/warmup-MiniZinc.pdf">warm-up for
+  MiniZinc</a></p></li>
+
+  <li><p>We have prepared some <a
+  href="assignments/exercises">exercises on comprehensions</a> (no
+  hand-in!) and strongly recommend you do them as soon as possible
+  after the second lecture; <a
+  href="assignments/exercises/comprehensions-solutions.pdf">solutions</a>
+  will appear in due time <!-- (published on Mon 5 Sep) -->
+  </p></li>
+
+  <li><p>For the assignments, you <em><strong>must</strong></em> use
+  our experiment script described in our <a
+  href="assignments/cheatsheet.pdf">MiniZinc Cheatsheet</a>: read this
+  document after the warm-up session!</p></li>
+
+  <li><p>For your project (but <em><strong>not</strong></em> the
+  assignments), consider using <a
+  href="https://minizinc-python.readthedocs.io">MiniZinc Python</a>, a
+  native Python interface for the MiniZinc toolchain, so that an
+  approach with any combination of pre-processing, running MiniZinc,
+  possibly on a pipeline of multiple models, and post-processing fits
+  into a standalone code (but at the cost of not being able to use the
+  experiment script of the previous item): see <a
+  href="https://user.it.uu.se/~pierref/courses/COCP/demoReport/mzn-python-demo.zip">our
+  instructions for a toy model</a></p></li>
+
+  <li><p>Our <a href="contact.html">Contact, Help, Ethics, and FAQ</a>
+  page lists resources where you can get help on MiniZinc, provided
+  ethics guidelines are followed</p></li>
+
+  <li><p>We unfortunately have <em><strong>no</strong></em> resources
+  to provide any support for installing the MiniZinc toolchain or
+  backends on your own computer</li>
+
+</ul>
+
+<h3>MiniZinc: Public Resources</h3>
+
+<ul>
+
+  <li><p>The <a
+  href="https://www.minizinc.org/doc-latest/index-en.html">MiniZinc
+  Handbook</a> includes installation instructions (in case you want to
+  install on your own computer some of the backends we use in this
+  course), a tutorial, the User Manual, and the Reference
+  Manual</p></li>
+
+  <li><p>Try the nice <a href="https://www.minizinc.org/ide">MiniZinc
+  IDE</a> (Integrated Development Environment) (the free <a
+  href="https://www.jetbrains.com/lp/mono">JetBrains Mono</a> font
+  makes the maths and logic operators look nice)</p></li>
+
+  <li><p><a href="https://minizinc-python.readthedocs.io">MiniZinc
+  Python</a> is a native Python interface for the MiniZinc
+  toolchain</p></li>
+  
+  <li><p>The MiniZinc models of the <a
+  href="https://github.com/MiniZinc/minizinc-benchmarks">MiniZinc
+  Benchmarks</a> and the annual <a
+  href="https://github.com/MiniZinc/mzn-challenge">MiniZinc
+  Challenge</a> are published</p></li>
+
+  <li><p>The MiniZinc Team moderates a <a
+  href="https://groups.google.com/g/minizinc">MiniZinc Discussion
+  Group</a>; do <em><strong>not</strong></em> ask for advice on
+  modelling in general, or on how to solve an assignment</p></li>
+  
+  <li><p>There are questions tagged with MiniZinc at <a
+  href="https://stackoverflow.com/questions/tagged/minizinc">Stack
+  Overflow</a>; do <em><strong>not</strong></em> ask for advice on how
+  to solve an assignment</p></li>
+
+   <li><p>To report an issue to the MiniZinc Team, follow the relevant
+  link at <a
+  href="https://www.minizinc.org/software.html">Bugs</a></p></li>
+
+  <li><p>The Coursera on-line courses <a
+  href="https://www.coursera.org/learn/basic-modeling">Basic Modeling
+  for Discrete Optimization</a> and <a
+  href="https://www.coursera.org/learn/advanced-modeling">Advanced
+  Modeling for Discrete Optimization</a> are also based on MiniZinc,
+  but have a less pronounced model-once-solve-everywhere focus than
+  this course; see the <a
+  href="https://www.youtube.com/watch?v=hc3cBvtrem0">advertisement</a>
+  for these courses on YouTube</p></li>
+
+  <li><p>Reference book by Mark Wallace: <a
+  href="https://www.springer.com/gp/book/9783030417314">Building
+  Decision Support Systems using MiniZinc</a>, Springer, 2020, ISBN
+  9783030417321</p></li>
+  
+  <li><p><a href="https://www.csplib.org">CSPlib</a>, a library of
+  constraint problems, has MiniZinc models for some problems</p></li>
+
+  <li><p>Håkan Kjellerstrand's <a
+  href="http://www.hakank.org/minizinc">MiniZinc page</a> has a lot of
+  MiniZinc models and a <a
+  href="http://www.hakank.org/minizinc/minizinc.el">MiniZinc mode for
+  Emacs</a></p></li>
+
+  <li><p><a href="demoReport/mznlisting.tex">LaTeX parameters</a> for
+  typesetting MiniZinc source code using the <a
+  href="https://www.ctan.org/pkg/listings">listings</a>
+  package</p></li>
+
+  <li><p><a href="https://github.com/astenmark/sublime-mzn">MiniZinc
+  mode for Sublime Text</a></p></li>
+
+  <li id="automata"><p>The <a href="https://fado.dcc.fc.up.pt">FAdo</a>
+  toolkit has many algorithms (including conversion and minimisation)
+  for working with a regular expression, NFA, or DFA</p></li>
+
+  <li><p>Another <a
+  href="https://cyberzhg.github.io/toolbox">toolbox</a> has converters
+  (not checked by the instructors) for transforming a regular
+  expression into an NFA or (minimised) DFA</p></li>
+
+</ul>
+
+<h2>LaTeX and Demo Report <!-- &amp; Slides --></h2>
+
+<p>We highly recommend you learn or use LaTeX for typesetting your
+assignment &amp; project reports
+<!-- and project slides -->
+in a professional way, but this is optional.  The learning of LaTeX is
+<em><strong>outside</strong></em> your time budget for these courses,
+but very well-invested as you will find out during these courses or
+later.  Here are some LaTeX resources:</p>
+
+<ul>
+
+  <li><p>See our <a href="assignments/warmup-LaTeX.pdf">warm-up for
+  LaTeX</a></p></li>
+  
+  <li><p><a href="demoReport/demo-M4CO.pdf">Demo report M4CO</a>
+  <!-- and <a href="demoReport/demo-CP.pdf">demo report CP</a> -->
+  (LaTeX <a href="demoReport/demoReport.zip">source</a>),
+  which also contains examples of all LaTeX commands you need for
+  these courses; from the command line (or with Emacs/Aquamacs),
+  compile with <code>pdflatex</code> (once or twice, depending on
+  whether cross-references need to be recomputed), and run
+  <code>bibtex</code> whenever the bibliography was modified</p></li>
+
+<!-- dropped from ht23 on:
+  <li><p><a href="demoSlides/demoSlides.pdf">Demo slides M4CO</a>
+  (LaTeX <a href="demoSlides">source</a>)</p></li>
+-->
+  
+  <li><p><a href="https://www.latex-project.org">LaTeX</a></p></li>
+
+  <li><p><a
+  href="https://tug.ctan.org/info/lshort/english/lshort.pdf">The (Not
+  So) Short Introduction to LaTeX2e</a></p></li>
+  
+  <li><p><a href="https://en.wikibooks.org/wiki/LaTeX">The LaTeX
+  wikibook</a>: a gentle but thorough introduction</p></li>
+  
+  <li><p>Don't know the LaTeX code for that mathematical symbol you
+  need? Draw it by hand at <a
+  href="https://detexify.kirelabs.org/classify.html">Detexify</a>, and
+  the applet will find the code for you</p></li>
+  
+  <li><p>Recommended text editors: <a
+  href="https://www.gnu.org/software/emacs/">Emacs</a>, <a
+  href="https://aquamacs.org/">Aquamacs</a>; we strongly recommend
+  <em><strong>not</strong></em> to use WYSIWYG editors for LaTeX like
+  LyX</p></li>
+
+</ul>
+
+<h2>MiniCP</h2>
+
+<p>In Part 2 of Course 1DL442, we use <a
+href="http://www.minicp.org">MiniCP</a>, a white-box bottom-up
+teaching framework for CP implemented in Java (free; open-source):</p>
+
+<ul>
+
+  <li><p>We have prepared some <a
+  href="https://user.it.uu.se/~frekn832/courses/COCP/assignments/warmup">exercises
+  on lambda expressions</a> (no hand-in!) and strongly recommend you
+  do them as soon as possible after the first lecture on MiniCP;
+  solutions will appear there in due time</p></li>
+
+  <li><p>Other than at the warm-up and help sessions, and only time
+  permitting, we unfortunately have <em><strong>no</strong></em>
+  resources to provide any support for installing MiniCP and a
+  suitable IDE (we recommend <a
+  href="https://www.jetbrains.com/idea/">IntelliJ</a>) on your own
+  computer</p></li>
+
+</ul>
+
+<h2>Constraint Programming (CP)</h2>
+
+<p>Our <a
+href="https://www.it.uu.se/research/group/optimisation">Optimisation</a>
+research group has a rather comprehensive <a
+href="https://www.it.uu.se/research/group/optimisation/resources/constraint">list
+of blogs, archives &amp; libraries, associations, books, conferences
+&amp; workshops, courses &amp; tutorials, journals, solvers &amp;
+languages / libraries, etc</a> on constraint programming.</p>
+
+<!--
+<h2>Gecode</h2>
+
+<p>In Part 2 of Course 1DL442, we use <a
+href="https://www.gecode.org">Gecode</a>, a C++ finite-domain CP
+library (version 6.2.0; free; open-source):</p>
+
+<ul>
+
+  <li><p>You can use Gecode on any Linux computer of the IT
+  department</p></li>
+
+  <li><p><a href="https://www.gecode.org/download.html">Download Gecode
+  to your own computer</a>:</p>
+
+  <ul>
+
+    <li><p>Preferably use the pre-compiled binaries (available for
+    Linux/x86, macOS, and Windows)</p></li>
+
+    <li><p>We unfortunately have <em><strong>no</strong></em>
+    resources to provide any support for installing Gecode on your own
+    computer</p></li>
+
+  </ul>
+
+  </li>
+
+  <li><p><a href="https://www.gecode.org/doc-latest/MPG.pdf">How to
+  program, compile, link, and execute a Gecode model</a>:
+  <em><strong>you should read the recommended chapters (at <a
+  href="lectures.html">Lectures, Slides, and Literature</a>) of this
+  document as soon as possible!!!</strong></em></p></li>
+
+  <li><p>You can use and adapt our <a
+  href="assignments/assignment4/makefiles">makefiles</a> for compiling
+  the <code>queens.cpp</code> file of Assignment 4</p></li>
+
+  <li><p>Our <a href="contact.html">Contact, Help, Ethics, and FAQ</a>
+  page lists resources where you can get help on Gecode, provided
+  ethics guidelines are followed</p></li>
+
+</ul>
+-->
+
+<hr>
+<address>
+<!-- hhmts start -->Last modified: Wed Apr 24 19:55:52 CEST 2024 <!-- hhmts end -->
+</address>
+<!-- The following testifies to my ignorance about how to make each -->
+<!-- link to an anchor within this page actually put the line of that -->
+<!-- anchor at the top of the browser tab/window. -->
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+</body>
+</html>

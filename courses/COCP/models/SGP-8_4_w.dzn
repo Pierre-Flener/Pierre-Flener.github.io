@@ -1,0 +1,3 @@
+nGroups = 8;
+nSlots  = 4;
+nWeeks  = 4; % fill in any number in the feasible range 1..10

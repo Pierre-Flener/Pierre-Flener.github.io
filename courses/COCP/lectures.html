@@ -1,0 +1,376 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<title>M4CO/COCP: Lectures, Slides, and Literature</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1>Modelling for Combinatorial Optimisation (course 1DL451) <br> & <br>
+Combinatorial Optimisation and Constraint Programming (course 1DL442)</h1>
+
+<p>(<a href="course.html">back to the course homepage</a>)</p>
+
+<h1>Lectures, Slides, and Literature</h1>
+
+<h2>Lectures and Slides</h2>
+
+<p>The main objective of lectures is to cover the required theoretical
+content of the course, illustrated by as many examples as possible.
+<!--
+The lectures are mostly <em><strong>independent</strong></em> of the
+CP solver used in Assignments 4 to 6.
+-->
+Lecture attendance is <em><strong>highly recommended</strong></em> in
+general, and sometimes <em><strong>mandatory</strong></em> (see
+below).  The essential aspects, in the eyes of the head teacher, will
+be pointed out.  Common misunderstandings will be discussed.  The
+slides are not self-contained at all: they are only a support for the
+lectures, but not equivalent to their much more detailed content, so
+you <em><strong>ought to take notes</strong></em>.  If you miss a
+lecture, then find other sources, such as
+<!--
+  the live recordings of 2020 linked-to below (on an older version of
+  the slides) or
+-->
+the recommended extra material mentioned below or the Coursera on-line
+courses mentioned under <a href="resources.html">Resources</a>.</p>
+
+<p>There is no planned correspondence between the scheduled lectures
+and the topics of the course: topic starts and ends need not be
+aligned with lecture starts and ends, as it all depends on the
+questions asked during the lectures.  Revised slides (<a
+href="slides/changelog.txt">change log</a>) may be uploaded any time,
+with an announcement in Studium.  The models and data linked to within
+the slides are available collectively as the file <a
+href="slides/allModelsData.zip">allModelsData.zip</a> and individually,
+together with the slides, in the folder <a href="models">models</a>.</p>
+
+<h3>Part 1: Modelling (courses 1DL451 and 1DL442)</h3>
+
+<table border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th style="text-align:left">Topic
+      <th style="text-align:left">Slides</th>
+      <!--
+        (and live recordings of 2020, for preview and as backup,
+        but note that the slides have slightly changed)
+      -->
+      <th style="text-align:left">Extra Material (recommended)</th>
+      <th style="text-align:left">Lecturer</th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>Introduction</td>
+      <td>
+	slides <em>numbered</em> 1-81 &amp; 89-92 of
+	<a href="slides/T01-Introduction.pdf">T01.pdf</a>
+      </td>
+      <td>
+	<a href="assignments/RealityQuiz-M4CO.pdf">RealityQuiz-M4CO.pdf</a>
+	<!-- (the link will work in due time) -->
+      </td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Basic Modelling</td>
+      <td>
+	<a href="slides/T02-BasicModelling.pdf">T02.pdf</a>
+      </td>
+      <td>
+	Sections 1 to 2.2 of
+	<a
+	href="https://www.minizinc.org/doc-latest/index-en.html">MiniZinc
+	Handbook</a> (<em><strong>read this now!!!</strong></em>)
+      </td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Constraint Predicates</td>
+      <td>
+	<a href="slides/T03-ConsPredicates.pdf">T03.pdf</a>
+      </td>
+      <td>Section 2.3.1 and 
+	<a href="https://www.minizinc.org/doc-latest/en/lib-globals.html">Section 4.2.2 of MiniZinc Handbook</a>;
+	models in
+	<a href="https://github.com/MiniZinc/minizinc-benchmarks">MiniZinc Benchmarks</a> and
+	<a href="https://github.com/MiniZinc/mzn-challenge">MiniZinc Challenge</a>;
+	<a href="https://sofdem.github.io/gccat/">Global Constraint Catalogue &amp; Seeker</a>
+      </td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>
+	<strong>Mon 9 Sep 2024 (to be confirmed) at 11:15: mandatory</strong> guest
+	lecture (normal lecture from 10:15 to 11:00)
+      </td>
+      <td>
+	<!-- topic to be announced -->
+	Optimisation Problems @ Ericsson
+      </td>
+      <td>
+      </td>
+      <td>
+	<!-- speaker to be announced -->
+	<a href="https://www.linkedin.com/in/erikcervinedin/">Erik Cervin-Edin</a> of <a href="https://www.ericsson.com">Ericsson</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Modelling (for CP &amp; LCG)</td>
+      <td>
+	<a href="slides/T04-Modelling.pdf">T04.pdf</a>
+      </td>
+      <td><a href="https://www.minizinc.org/doc-latest/en/efficient.html">Section 2.7 of MiniZinc Handbook</a></td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Symmetry</td>
+      <td>
+	<a href="slides/T05-Symmetry.pdf">T05.pdf</a>
+      </td>
+      <td>see the bibliography in the slides</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Case Studies</td>
+      <td>
+	<a href="slides/T06-CaseStudies.pdf">T06.pdf</a>
+      </td>
+      <td>see the bibliography in the slides</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Solving Technologies</td>
+      <td>
+	<a href="slides/T07-SolvingTechs.pdf">T07.pdf</a>
+      </td>
+      <td>
+	<a href="https://link.springer.com/chapter/10.1007%2F978-3-319-44953-1_4">linearisation
+	of MiniZinc models</a> (the link works from the UU network)
+      </td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Inference &amp; Search for CP &amp; LCG</td>
+      <td>
+	<a href="slides/T08-InferenceSearchCP.pdf">T08.pdf</a>
+      </td>
+      <td>Section 2.5 and
+	<a href="https://www.minizinc.org/doc-latest/en/lib-stdlib-annotations.html">Section 4.2.1.2 of MiniZinc Handbook</a> (look for "propagation strength" and "search" annotations)
+      </td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>
+	Modelling for CBLS
+	(<em><strong>not to be seen in autumn 2024</strong></em>)
+      </td>
+      <td><a href="slides/T09-CBLS.pdf">T09.pdf</a></td>
+      <td> </td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>
+	Modelling for SAT, SMT, and OMT
+	(<em><strong>not to be seen in autumn 2024</strong></em>)
+      </td>
+      <td><a href="slides/T10-SAT-SMT.pdf">T10.pdf</a></td>
+      <td><a href="https://www.minizinc.org/doc-latest/en/sat.html">Section 2.8 of MiniZinc Handbook</a></td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>
+	Modelling for MIP
+	(<em><strong>not to be seen in autumn 2024</strong></em>)
+      </td>
+      <td><a href="slides/T11-MIP.pdf">T11.pdf</a></td>
+      <td> </td>
+      <td>Pierre Flener</td>
+    </tr>
+<!-- dropped from ht23 on:
+    <tr>
+      <td><strong>Mon 17 Oct 2022 at 13:15: mandatory</strong> project presentations 1</td>
+      <td> </td>
+      <td> </td>
+      <td>some students</td>
+    </tr>
+    <tr>
+      <td><strong>Mon 17 Oct 2022 at 15:15: mandatory</strong> project presentations 2</td>
+      <td> </td>
+      <td> </td>
+      <td>more students</td>
+    </tr>
+    <tr>
+      <td><strong>Tue 18 Oct 2022 at 10:15: mandatory</strong> project presentations 3</td>
+      <td> </td>
+      <td> </td>
+      <td>other students</td>
+    </tr>
+-->
+  </tbody>
+</table>
+
+<p>A missed guest lecture
+<!-- or project presentation session -->
+(in case of no force majeure) can be compensated for by a
+summary of a research paper chosen by the head teacher.</p>
+
+<h3>Part 2: Constraint Programming (course 1DL442 only)</h3>
+
+<table border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th style="text-align:left">Topic</th>
+      <th style="text-align:left">Slides,
+	<!-- (the <tt>xx.pdf</tt> links will work in due time!), -->
+	Theoretical Questions, Programming Exercises</th>
+      <th style="text-align:left">Extra Material (recommended)</th>
+      <th style="text-align:left">Lecturer</th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>CP and MiniCP</td>
+      <td>
+	slides <em>numbered</em> 82-91 &amp; 93 of
+	<a href="slides/T01-Introduction.pdf">T01.pdf</a> (updated!); <br>
+	<a href="slides/T12-CP-MiniCP.pdf">T12.pdf</a>
+      </td>
+      <td>
+	<a href="assignments/RealityQuiz-CP.pdf">RealityQuiz-CP.pdf</a>
+	<!-- (the link will work in due time) -->
+      </td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>TinyCSP</td>
+      <td>Module 1
+	(see <a href="https://www.edx.org/course/constraint-programming">edX
+	course "Constraint Programming"</a> for videos, but use <a href="https://uppsala.instructure.com/courses/85157/files/folder/MiniCP%20slides">our
+	updated slides</a>, which are not pushed to edX yet)
+      </td>
+      <td><a href="https://doi.org/10.1007/s12532-020-00190-7">paper on MiniCP</a> (<a href="https://minicp.github.io/website/_static/mini-cp.pdf">preprint</a>) (<a href="slides/delta.txt">delta</a>)</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>MiniCP Solver</td>
+      <td>Module 2 (ditto)</td>
+      <td>see above</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Sum and Element Constraints</td>
+      <td>Module 3 (ditto)</td>
+      <td>see above</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Table Constraint</td>
+      <td>Module 4 (ditto)</td>
+      <td>see above</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>AllDifferent Constraint</td>
+      <td>Module 5 (ditto)</td>
+      <td>see above</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Circuit Constraint, TSP, VRP, Optimisation, and LNS</td>
+      <td>Module 6 (ditto)</td>
+      <td>see above</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Cumulative Scheduling</td>
+      <td>Module 7 (ditto)</td>
+      <td>see above</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Disjunctive Scheduling</td>
+      <td>Module 8 (ditto) (<a href="https://uppsala.instructure.com/courses/85157/files/folder/MiniCP%20slides?preview=6011640">whiteboard notes</a>)</td>
+      <td>see above</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>
+	<strong>Tue 17 Dec 2024 at 11:15: mandatory</strong> guest lecture (normal lecture from 10:15 to 11:00)
+      </td>
+      <td>
+	<!-- topic to be announced -->
+	CP for Product Configuration at Tacton
+	<!-- confidential! -->
+      </td>
+      <td> </td>
+      <td>
+	<!-- speaker to be announced -->
+	<a href="https://www.linkedin.com/in/jean-noel-monette-6781583">Jean-Noël Monette</a> of <a href="https://www.tacton.com">Tacton Systems AB</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Black-Box Search</td>
+      <td>Module 9 (ditto)</td>
+      <td>see above</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>
+	Modelling
+	(<em><strong>not to be seen in autumn 2024</strong></em>)
+      </td>
+      <td>Module 10 (ditto), but we will <em><strong>not</strong></em> cover it, as it is redundant with the MiniZinc part of our course</td>
+      <td>see above</td>
+      <td>Pierre Flener</td>
+    </tr>
+    <tr>
+      <td>Conclusion</td>
+      <td>
+	<a href="slides/T18-Conclusion.pdf">T18.pdf</a>
+      </td>
+      <td> </td>
+      <td>Pierre Flener</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A missed guest lecture (in case of no force majeure) can be
+compensated for by a summary of a research paper chosen by the head
+teacher.</p>
+
+<h2>Textbooks</h2>
+
+<p>There are <em><strong>no</strong></em> textbooks for these courses.
+Links to particularly good tutorials on some topics are given in the
+<strong>Extra Material</strong> columns of the tables above.</p>
+
+<h2>Reference Books (<em><strong>not</strong></em> Textbooks)</h2>
+
+<p>For the bigger picture of Course 1DL451, which is Part 1 of Course
+1DL442, we recommend the following reference book:</p>
+
+<ul>
+  <li>Mark Wallace, <a href="https://www.springer.com/gp/book/9783030417314">Building
+  Decision Support Systems using MiniZinc</a>, Springer, 2020, ISBN 9783030417321</li>
+</ul>
+
+<p>In the <em><strong>voluntary</strong></em> case where you want a
+deeper understanding of the theory behind consistency and propagation
+in Part 2 of Course 1DL442, we recommend the following reference
+book:</p>
+
+<ul>
+  <li>Krzysztof R. Apt, <a href="https://www.cambridge.org/se/academic/subjects/computer-science/artificial-intelligence-and-natural-language-processing/principles-constraint-programming">Principles of Constraint Programming</a>, Cambridge University Press, 2010, ISBN 9780521125499 (<a href="https://homepages.cwi.nl/~apt/errata04.ps">errata.ps</a>)</li>
+</ul>
+
+<hr>
+<address>
+<!-- hhmts start -->Last modified: Mon Jun 17 12:55:03 CEST 2024 <!-- hhmts end -->
+</address>
+</body>
+</html>

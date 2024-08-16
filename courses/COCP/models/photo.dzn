@@ -1,0 +1,21 @@
+% From Chapter 15 of https://www.gecode.org/doc-latest/MPG.pdf
+Students = {Betty, Chris, Donald, Fred, Gary, Mary, Paul, Peter, Susan};
+Wish = [ % 17 wishes, of which at most 10 are grantable simulteaneously
+  (who: Betty,  whom: Donald, bid:  1), % ungrantable in optimum
+  (who: Betty,  whom: Gary,   bid:  1),
+  (who: Betty,  whom: Peter,  bid:  1),
+  (who: Chris,  whom: Gary,   bid:  1),
+  (who: Chris,  whom: Susan,  bid:  1),
+  (who: Donald, whom: Fred,   bid:  1),
+  (who: Donald, whom: Gary,   bid:  1), % ungrantable in optimum
+  (who: Fred,   whom: Betty,  bid:  1),
+  (who: Fred,   whom: Gary,   bid:  1),
+  (who: Gary,   whom: Mary,   bid:  1),
+  (who: Gary,   whom: Betty,  bid:  1),
+  (who: Mary,   whom: Betty,  bid:  1),
+  (who: Mary,   whom: Susan,  bid:  1),
+  (who: Paul,   whom: Donald, bid:  1),
+  (who: Paul,   whom: Peter,  bid:  1),
+  (who: Peter,  whom: Susan,  bid:  1),
+  (who: Peter,  whom: Paul,   bid:  1)
+];

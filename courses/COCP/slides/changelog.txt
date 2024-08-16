@@ -1,0 +1,689 @@
+Change Log
+
+2023-10-23:
+T01:25: "combinatorial problem" defined, because used from T01:71 on
+T01:56: accidentally invisible last line made visible again
+T01:73+78: clarified that the peer review is individual
+T01:85: part numbers updated into module numbers of MOOC on edX.org
+T01:84+93: updated for autumn 2023
+T02:35: layout fixed
+T03:24: "Ågren" updated into "Rattfeldt"
+T04:11: "lines 5 & 6" corrected into "lines 6 & 8" at code line 10
+T07:44: "Ågren" updated into "Rattfeldt"
+T12:06: ", called a propagator" appended to the last line
+T12:08-33: part numbers updated into module numbers of MOOC on edX.org
+T18:14+16: job-shop problem added to where CP is the technology of choice
+
+2023-08-03:
+T01-T08,T12,T18: changed slides to 16 x 9 geometry, and a lot of minor rewrites
+T01-T08: added links to models and data, for downloading
+T01:47+51: added "record" and "tuple" as type constructors
+T01:62: added HiGHS (MIP) and Atlantis (CBLS)
+T01:73,74,78,79,81,88,91-93: updated for autumn 2023
+T02:05+06: replaced "The" by "Some", as there are also records and tuples now
+T02:16: mentioned the convenient existence of show2d
+T02:23+23: rewrote the model with records for the preferences, now called wishes
+T02:39: added a definition of derived parameters
+T02:59: added item 1; merged old items 1 and 4 into item 2
+T03:12: defined global_cardinality_closed as well, because used in Topics 4 & 5
+T03:38 (was 39): replaced integer arguments to regular by enumeration items
+T03:38 (was 39): mentioned regular_nfa
+T03:39 (was 40): replaced integer arguments to table by enumeration items
+T03:45 (was 46): added a note on precomputation vs derived parameters
+T04:14: added the second solution for n=4; updated the statistics at the bottom
+T04:17: clarified the definitions of mutual and non-mutual redundancy
+T04:17: added a note on redundant variables vs derived paramaters
+T04:17: added an item on mutual redundancy for Sport Scheduling
+T04:18: added a question to the n-queens example
+T04:18: clarified the definitions of 1-way and 2-way channelling
+T04:18: deleted "vs 2-way" from the sentence on the Warehouse Location problem
+T04:18: replaced the last item by the 2-way channelling for Sport Scheduling
+T04:21+22: added a note that precomputation can yield derived parameters
+T04:22: added the second example
+T05:13+T06:26+T08:39: added that only n=4 is unsatisfiable
+T05:34: corrected increasing(X) into strictly_increasing(X)
+T06:06: added :: domain_propagation to code line 7
+T06:18+24: corrected "Two-way" into "One-way"
+T06:19+28: some rewriting, as global_cardinality_low_up[_closed] is deprecated
+T07:31: added HiGHS, which is now also bundled
+T07:52: added Atlantis; deleted part 2 of 1DL442
+T08:10: added example, pointing back to T06:06
+T08:36: added "the first seen" before "one-way", due to change in T06:18
+T08:37: replaced "one-way two-way" by "1way(17) 1way(18)" due to changed T06:18
+demo-M4CO.[tex|pdf]: made extensive simplifications and modifications
+
+2022-12-07:
+T18:09: Extensional corrected into Table; Distinct corrected into AllDifferent
+T18:13: added "and Solvers" in line 1
+
+2022-09-28:
+T01:25: added "languages" in first line
+T01:80: clarified that there is no competition between teams on same problem
+T02:21: two X[i] colour-coded in order to stress that they are variables
+T04:22: renamed objVal into ObjVal, for consistency with T02:57
+T06:11: all Start[j] colour-coded in order to stress that they are variables
+T07:07+39+52: updated 1DL441 into 1DL442
+T12:04: added "languages" in first line
+T12:07: example reworked; search decision and definition of "subsumed" added
+T12:15: annotation names updated by adding "_propagation"
+T12:25: soon-to-be-deprecated "alldifferent" replaced by "all_different"
+demo-M4CO.[tex|pdf]:7: clarified that fzn-oscar-cbls is no longer used in course
+
+2022-08-05:
+T01-08: inference concepts in LimeGreen (not OliveGreen), for better contrast
+T01-08: all soon-to-be-deprecated "alldifferent" replaced by "all_different"
+T01:74: added slide on need for detailed written reports, not just code
+T01:79+80: added slides on project guidelines
+T02:08: added that a variable can be equality-constrained at its declaration
+T02:39: counterexample deleted, as flattening now takes care of it
+T02:43: added slide on disjunctive constraints
+T02:55: added slide on non-existing array variables and string variables
+T02:58: added slide on model debugging & acceleration
+T03:08: added pointers to two examples of all_different_except
+T03:12: added pointers to four more examples of global_cardinality
+T04 to T07: made only cosmetic changes
+T08: most ":: domain" and ":: bounds" updated into ":: domain_propagation" 
+     and ":: bounds_propagation", but some kept as such for brevity
+T08:08+10: value propagation added
+Demo
+demo-M4CO.[tex|pdf]: clarified Section C about model description
+
+2021-11-23
+P08:02+14: items 1&2 de-numbered, as one can select a value and then a variable
+P08:04: clarification "Value Selection for" added to the heading
+P08:13: clarification "of the fixpoint algorithm" added
+P08:14: plot of the remaining lecture added
+P08:15: insight of P01:102 added
+P08:23: "highest" corrected into "lowest"
+P08:30: clarification "of the fixpoint algorithm" added
+P08:34: was slide 38; assumption "y!=b leads to fixing y" added
+P08:35: was slide 37
+P08:36-38: were slides 34-36
+P08:37 (was 35): x7&x8 parenthesised, as not branched on due to earlier failure
+P08:38 (was 36), top: x7&x8 parenthesised, as not branched on due to failure
+P08:38 (was 36), bottom: now a ternary tree, with leaves at x6 instead of x8
+P08:39: x7&x8 parenthesised, and variable order added for every red subtree
+P09:08: "achieve" clarified into "aim at"
+P09:12: "2n" corrected into "2n-1"
+P09:20: "task" replaced by "activity", the synonym used throughout other slides
+P09:28: red-to-blue precedence relaxed now, so that the makespan might improve
+
+2021-11-15
+P03:26-27: inconsistent use  of ", limit" deleted, but it exists in practice
+P04b:28-38: stable mariage replaced by stable matching
+P06:18: clarification added that alternating paths can have more than 2 edges
+P06:24: confusing first sentence deleted
+P07:07: T[1,5] corrected into 2, and Element2D clarification added
+P07:09: removal of b from D(z) made explicit (so far only mentioned at slide 16)
+P07:21: note on "supports" differing from the "supported" of slide 9 added
+
+2021-11-10
+P06:22: definition of white edges added, and subsequent text clarified
+P06:23: rightmost graph: edge 0-3 painted blue; white edges 5-7 and 8-6 added
+P02:02+27+36+43: clarification ": Fixpoint Algorithm" added
+P02:05-11: clarification "Invariant:" added
+
+2021-11-01
+P01:82: data-driven fixpoint algorithm clarified
+P01:88: reddened "4" on the vertical axis, as it is removed in the second round
+
+2021-10-20
+T01:52: correct poster included (Clint Eastwood is "the good" one):
+        thanks to Andreas Pihl for pointing this out!
+T12: new batch of slides, "CP and MiniCP"; alternative to T12a "CP and Gecode"
+T16:04: all "If ..., then ... is propagated" clarified into "When ..., post ..."
+T16:04: clarification on \neg\gamma added at the bottom
+T16:06: "var {0,9}: x" rewritten in context into "constraint x in {0,9}"
+T16:24: inadequate reference "(Van Hentenryck & Carillon, 1988)" deleted
+T18:13: "Mini-CP" corrected into "MiniCP"
+Demo
+demo-M4CO.[tex|pdf]: all "has not been covered yet" clarified into
+                     "is not in the announced scope of the current assignment"
+mznlisting.tex: among, restart_constant, and relax_and_reconstruct added
+
+2021-09-22
+T04:06+19: alldifferent_except() /\ count() of line 5 rewritten as 1 constraint
+T07:11+19+25: clarification "(in MiniZinc syntax)" added to all examples
+T07:13: algorithm made recursive, by moving old step 1 into its invocation
+T07:19: missing keyword "constraint" added to second line of code
+T07:28: step 3 was garbled (before this change log was introduced) and
+        this went unnoticed for years: fixed, including other changes:
+        many thanks to Hussain Kara Fallah for spotting this!
+T07:35: algorithm made recursive, by moving old step 1 into its invocation
+T07:35: "(see step 3 ... slide 28)" replaced by "at step 3" and "and backtrack"
+T08:07: same fixes as at T07:35
+T08:18: inspiration from greedy algorithms added to the best-first principle
+T08:26: same reformulation as at T04:06+19
+
+2021-09-20
+Slides
+T01:84: Assignment 4 is pass/fail now
+T01:87: there also is a COCP helpdesk at Studium, for the same purpose
+T04:08-11: all alldifferent_except_0(A) rewritten as alldifferent_except(A,{0})
+T04:09: code line 8 replaced by comment that it logically follows from line 12
+T04:21-22: clarified that code line 5 has constraints on x, nbrWinners, etc.
+Demo
+demo-M4CO.[tex|pdf]: "Picat" corrected into "PicatSAT" in Table 1 at page 6
+demo-M4CO.tex: obsolete "(Only ... course.)" deleted from caption of Table 1
+demo-M4CO.[tex|pdf]: redundant "Checklist before Submitting" removed from page 8
+demoSlides.[tex|pdf]: "Picat" corrected into "PicatSAT" in table at slide 20
+demoReport and demoSlides folders: README.txt added
+Cheatsheet
+cheatsheet.pdf: many things explained in a clearer way
+cheatsheet.pdf: abbreviation "CLI" introduced at page 1
+cheatsheet.pdf: "Picat" corrected into "PicatSAT" in Table 1 at page 5
+
+2021-08-19
+Slides
+T01:17: "assign to each variable" replaced by "maps each variable to",
+        because it sounded procedural
+T01:37: "summation" corrected into "counting"
+T01:40: value colouring of T01:07 adopted
+T01:41: "array1d" coercion is no longer needed for count at code lines 3 and 4
+T01:30: "interval" replaced by "range", as in MiniZinc documentation
+T01:75+78: updated for course of autumn 2021 at Uppsala University
+T01:81-82: switch to MiniCP.org and Java, from Gecode.org and C++
+T01:88-90: updated for course of autumn 2021 at Uppsala University
+T02:05+07: "interval" replaced by "range", as in the MiniZinc documentation
+T02:06+08+38+52+56: set variables are allowed again
+T02:22-23: array "Weight" shortened into "Fee", for space reasons
+T02:22-24: ",1" and ",2" corrected into ",who" and ",whom" respectively
+T02:31: SMT-lib link updated
+T02:39: red text and second example improved, for the reason at T02:56 below
+T02:53: new slide
+T02:56 (ex 55): item 2 toned down, as "var int: x" is fine for x=..., say
+T04:06: "nStudents+1..nChairs" added as option for dummy students to Viewpoint 2
+T04:06+19: code lines 5 and 6 merged into one line
+T06:07-11: new problem, replacing the former Antenna Placement Problem
+T07:36: "interval" replaced by "range", as in MiniZinc documentation
+T08:26: code lines 5 and 6 merged into one
+T08:42: "where f<s" moved behind "f,s in Teams", for elegance reasons
+
+2020-11-26
+Slides
+T07:55: clarified that LNS is only for COPs
+T15:25: link to Ruskey's book draft fixed
+T17:16+33: INITIALASSIGNMENT() replaced by INITIALASSIGNMENT(V,U)
+T17:33: link back to slide 16 added
+T17:36: copy of T12a:06 inserted here
+T17:50 (ex 49): "CP" replaced by "CP by Systematic Search"
+T17:54 (ex 53): stated that Localizer inspired Comet; link to OscaR.cbls fixed
+T17:60 (ex 59): clarified that LNS is only for COPs; "SELECT" replaced by "Best"
+T17:62 (ex 61): "Localizer" added to the bibliography
+T18:13: links to Choco, OscaR.cp, and OscaR.cbls fixed
+
+2020-11-20
+Slides
+T02:10: "function" replaced by "constraint", for "forall"
+T02:21: this is former slide 15, moved to here; last code line added to example
+T02:22+23: "formulated using implicit reification" added to objective
+T02:55: item 1 added: an enum is to be used instead of ranges such as 1..2
+T13:19: "5" added to s(y) before propagation
+T17:10: difference with constraint store in Topics 12 to 16 pointed out
+T17:10: f(s) corrected into f(s(v_1),...,s(v_m))
+T17:11: "or both" added to send example
+T17:23: size of the neighbourhood corrected
+T17:28: "(by the search)" added to 3rd bullet item
+T17:39: difference between implicit constraint and implied constraint stated
+T17:59: f(s^*) corrected into f(s∗(v_1),...,s^∗(v_m))
+Demo
+demoSlides.[tex|pdf]: efficiency and correctness arguments are now required
+
+2020-11-13
+Slides
+T04:03: "and Dummy Values" added to the heading of Section 1
+T04:06: advice added on trying both 0 and nStudents+1 as dummy student
+T04:06: missing count constraint added as code line 6 for viewpoint 2
+T04:06: forward references to Topics 5 and 8 added after the example
+T04:08: advice added on trying both 0 and c+1 as dummy colour
+T04:19: model changes above of T04:06 reflected here as well
+T04:19: advice added on trying both 0 and nPgms+1 as dummy programme
+T04:19: missing "_except" and ", {dummyP}" added to code line 16
+T05:27: "Careful ..." advice expanded with the choice of dummy values
+T05:36: advice on dummy values added at the bottom
+T08:26: inserted new slide on interaction with the choice of dummy values
+T15:19: k introduced (as on T05:07) and "n!" replaced by "k!"
+T16:04: both "becomes" replaced by "becomes fixed to"
+T16:04+22: "decision[s]" replaced by "guess[es]" (see 2020-11-06 for T15:06)
+T16:06: warning phrased more like on slide T02:42
+T16:17: "Four values ..." sentence added within the example
+T16:18: "DC takes time exponential in n" augmented by "enforcing DC is NP-hard"
+T16:18: "solutions" replaced by "supports"
+T16:30: generalisation to NFA added at the bottom
+T08:14+17+18+19+25: "split[ting]" removed as synonym for "partition[ing]",
+        hence the following other changes:
+T07:37: "split" replaced by "partition"
+T12a:13: "Variable/Split" deleted
+T15:08+17: "splitting" replaced by "partitioning"
+T03: all counting predicates now work in MiniZinc (but not in Gecode)
+     on arrays of arbitrary dimensions, hence the following changes:
+T02:36+44: all "1d" requirements deleted for array A
+T03:04+08+10+12: all "1d" requirements deleted for array A
+T06:28: "array1d" coercion deleted for use of global_cardinality_closed
+Demo
+demo-M4CO.[tex|pdf]:4: efficiency argument is now always required
+demo-M4CO.[tex|pdf]:4: correctness argument is now required for projects
+
+2020-11-06
+Demo
+demo-CP.[tex|pdf]: redundancy can also be about ease of modelling
+demo-M4CO.[tex|pdf]: redundancy can also be about ease of modelling
+Slides
+T02:22-23: column index set 1..2 of 2d array Pref replaced by enum {who,whom}
+T02:51: "given" added before "finite set"
+T03:08: "alldifferent_except_0(A)" modernised into "alldifferent_except(A,{0})"
+T03:43: enum items N(ormal),L(ong),S,O changed into r(egular),e(xtended),s,o 
+T05:23: each game "(x,y)" rewritten as "x vs y"
+T06:26: "Slots = 1..2" replaced by enumeration "Slots = {one,two}"
+T06:27+30: slot "1" replaced by enum item "one", and slot "2" replaced by "two"
+T06:31: each game "(x,y)" rewritten as "x vs y"
+T08:23: "given" added for \Sigma
+T08:39+41: slot "1" replaced by enum item "one", and slot "2" replaced by "two"
+T08:43: each game "(x,y)" rewritten as "x vs y"
+T14:28: "Q \subseteq R" made explicit as a pre-condition
+T15:08+10: "p_" added to the propagators in the built guesses
+T15:09: "given" added for \Sigma
+T15:06: "decision" removed as synonym for "guess", because it
+        sounds non-backtrackable, hence the following other changes:
+T15:08: "decisions" replaced by "guesses"
+T15:10: "decisions" replaced by "guesses"
+
+2020-11-03
+Slides
+T15:06: quantification and types of R and s added to the first definition
+T15:06: "[,f]" added to the model <V,U,P,r> in the second definition
+T15:11: explanation added before the pseudo-code
+T15:13: "[,f]" added to the model <V,U,P,r>
+
+2020-11-02
+Slides
+T14:23: missing "monotonic" added to first line
+T14:26: "[,f]" added to the model <V,U,P>
+T14:26+28+31+35: "the weakest common fixpoint" replaced by "a fixpoint",
+        as monotonicity of propagators is now optional (see 2020-10-26)
+
+2020-11-01
+Slides
+T01:55: "mzn-gecode" updated into "minizinc --solver gecode"
+T13:06: "assigned" removed as synonym for "fixed" because it sounds procedural:
+         the side effects on other slides are included below
+T05:23: "Fix" replaced by "Restrict"
+T06:31: "Fix" replaced by "Restrict"
+T07:35: "unfixed" replaced by "non-fixed" in item 5
+T08:07: "unfixed" replaced by "non-fixed" in item 5
+T08:20+22+24: "unfixed" replaced by "non-fixed"
+T08:35: "unassigned" replaced by "non-fixed"
+T08:43: "Fix" replaced by "Restrict"
+T11: topic number also given in lower-left corner of every slide
+T12a:08: inserted new slide with the roadmap for the remaining topics
+T13:05: item "Sometimes, we refer to a single constraint as a CSP" removed,
+        as no argument hinging on it was found
+T13:06: definition of "fixed store" added
+T13:07: definition of "solution store" shortened by using "fixed store"
+T13:08: definition of "solver correctness" added
+T13:09: inserted new slide with the overview for the remaining sections
+T13:11 (formerly 10): "is assigned" replaced by "becomes fixed"
+T13:12 (formerly 11): "is assigned a value" replaced by "becomes fixed",
+        and "the semantics of" added
+T13:16: "In general, a domain is a union of intervals" added,
+        and "from 1 interval into 2 intervals" added to both overlays
+T13:17: other naive way added: "Execute the DC definition ..."
+T13:19: "1" replaced by "0" in s(y), as BC can tighten by more than one unit
+T13:20: "Note that bounds(D) is not a misspelling of bounds($\mathbb{D}$)" added
+T13:21: "In general, a domain is a union of intervals" added,
+        and "into a tighter interval" added to both overlays
+T13:24: "Terminology" replaced by "Definition", and some material of
+        former T13:12 inserted here, with "achieving" removed as a synonym
+	for "enforcing", and the rest of T13:24 spilled to the next slide
+T13:25: remaining material of T13:24 and former T13:12 moved to this
+        new slide and rephrased, plus new sentences added
+T13:31 (formerly 30): "like under VC" added to item 1
+T13:31 (formerly 30): "assigned" replaced by "fixed"
+T14:18: "unfixed" replaced by "non-fixed" in step 4
+T14:21: "Contraction" requirement renamed into "Contracting"
+T14:21: "Solution preservation" moved here from T14:23, renamed into "Correct",
+        and rephrased more compactly but equivalently
+T14:21: "Solution identification" requirement renamed into "Checking" and
+        corrected so as really to imply non-solution identification at slide 23
+T14:21: "Monotonicity" requirement renamed into "Monotonic" and put last in list
+T14:22: "Justification" replaced by "Motivation"
+T14:23: "if only monotonic propagators" added to first property
+T14:23: definition of "solution preservation" moved as "correct" to T14:21,
+        and item rewritten here as "Correctness"
+T14:24: first sentence of Terminology removed, as redundant with revised T13:24,
+        and "contracting" corrected into "contraction"
+T14:24: "Similarly for a model of a COP" added to the final definition
+T15:07: "unfixed" replaced four times by "not fixed" or "non-fixed"
+T16:05: "assigned" replaced by "fixed to"
+T16:17: "if wanted" added behind "to achieve idempotency"
+T16:18: "if non-idempotent, else per iteration" added for linear equality
+T16:18: "DC is cheaper than BC(R)" clarified into "BC(.)=DC; O(n) time"
+
+2020-10-26
+Slides
+T12a:09: added that Gecode (like C++) indexes from 0, unlike MiniZinc
+T12a:09: added that Gecode does not coerce Booleans into integers
+T12a:09: added a note on simplified Gecode syntax in these slides
+T12a:18: safe use of "var int" rewritten like in demoSlides (see 2020-10-20)
+T12a:21: added a note that MiniModel enables some functional syntax
+T14:21: monotonicity marked as optional
+T14:22: last line added, on potential unexpected solver behaviour
+T14:23: clarified that only order independence relies on monotonicity
+
+2020-10-25
+Slides
+T02:10: "index_set(X)" replaced by "1..n": restrict index_set to predicate def's
+T02:10: "returns" corrected into "denotes": there is no procedural context
+T02:15-17: former slide 17 moved in front of former slides 15-16
+T02:15 (formerly 17): "unexpected behaviour (see doc Section 2.4.2)" added
+T02:17 (formerly 16): methodology tip for Gecode added at the bottom
+T02:21: clarified that reification is also implicit via the coloured parentheses
+T02:25: "returning" corrected into "denoting a": there is no procedural context
+T02:26: "returned" corrected into "denoted": there is no procedural context
+T02:30: both "return" corrected into "denote": there is no procedural context
+T02:37+40+55: all "superlinear" rephrased into "nonlinear"
+T02:41: "try and use * or" replaced by "reformulate or use"
+T02:42: "if ... then ... else ... endif" added to the sources of disjunction
+T02:42: example improved in order also to address a common modelling flaw
+T02:54: inserted new slide on syntactic conventions of all slides
+T02:55 (formerly 54): warning on reification added as item 7
+T03:19: inserted new slide: another example in the spirit of slide 13
+T08:34: inference annotation ::domain added to the capacity constraint
+T08:14: note on MIP added at the bottom
+T08:20+21+24: links to MiniZinc Handbook updated
+T08:22: methodology tip for Gecode added at the bottom
+T12a:19: rewriting of line 3 aligned with the one of T03:16
+T12a:34: link to MiniZinc default definition updated
+T12a:40: clarified that value_precede[_chain] can serve other purposes
+T13:04: definitions of "constraint" and "objective" added within the definition
+T13:04: mention of "objective function" added to the definition
+T13:06: clarified that only CP solvers with systematic search have a store
+T13:06: clarified that each current domain is initialised to the declared domain
+T13:06: example extended by the second line
+T13:07: definition of "solution" added within the first definition
+T13:08: inserted new slide with a definition
+
+2020-10-20
+Demo
+demo-M4CO.[tex|pdf] & minMagicSquare.mzn:8: safe use of "var int" rewritten
+demoSlides.[tex|pdf]: major reshuffling, upon prescribed limit to 1 approach
+demoSlides.[tex|pdf] & WLP2.mzn: two safe uses of "var int" rewritten
+
+2020-10-13
+Slides
+T02:54: fifth item added
+T03:51: second item clarified
+
+2020-10-09
+Slides
+T07:38: "configuration" and "routing" added to application areas
+T08:18: "participate in" generalised to "lead to"
+T13: topic number also given in lower-left corner of every slide
+T13:04: set N (of natural numbers) generalised to set Z (of integers)
+T13:30-32: slides transferred to T14
+T14:02: "Theory" replaced by "Algorithms", and "Solving: Overview" added
+T14:08: "Common fixpoint reached" replaced by "Propagation"
+T14:14-16: slides transferred from T13, with examples added
+T14:24 (was T14:20): final sentence added
+T15-T16: topic number also given in lower-left corner of every slide
+T17:59: "(or: relaxed)" added behind "thawed"
+T18: topic number also given in lower-left corner of every slide
+T18:14: "routing" and "timetabling" added to success stories
+T18:16: "routing" and "timetabling" added to application areas
+
+2020-10-06
+Slides
+T02:13: \bot replaced by its MiniZinc syntax <>, and its semantics added
+T02:13: reference added to example at slide 17 with implicit option variables
+T02:13: explicit option variables are now forbidden in this course
+T02:17: "errors" clarified into "impossible flattening"
+T02:54: explicit option variables are now forbidden in this course
+Demo
+demo-M4CO.[tex|pdf]:07: all "crash" generalised into "error"
+
+2020-10-02
+Slides
+T03:13: advice at the bottom lifted out of example, and expanded
+T03:51: item "Constraints over shared variables are merged" added
+T04:05: one constraint replaced by a constraint mentioned in new slide 19
+T04:06: new slide 19 mentioned at the bottom
+T04:17: distinction between mutual and non-mutual redundancy added
+T04:18: definition of channelling constraint clarified
+T04:18: distinction between one-way and two-way channelling added
+T04:19: inserted new slide
+T06:06: "mutually" and "2-way" added
+T06:14: "but not mutually" added
+T06:18: "actually opened" added to the English paraphrase of (2)
+T06:29: sentence on mutual redundancy added at the bottom
+T06:30: "two-way" added
+T08:33: "but not mutually" added
+T08:34: "non-mutually" and "one-way" added
+T08:35: "is necessary" corrected into "accelerates search"
+T08:35: clarification "faster than ..." added at the bottom
+T08:40: sentence on mutual redundancy added at the bottom
+T08:41: "two-way" added
+T08:41: concrete example in last line generalised into a 2d array comprehension
+T08:42: paragraph on the Team[p,w,s] variables clarified
+T12: topic number also given in lower-left corner of every slide
+T12:17: "non-mutually" added
+Demo
+demo-CP.[tex|pdf]:02: "mutually or not?" and "one-way or two-way?" added
+demo-CP.[tex|pdf]:03: "mutually or not" and "one-way or two-way" added
+demo-M4CO.[tex|pdf]:02: "mutually or not?" and "one-way or two-way?" added
+demo-M4CO.[tex|pdf]:03: "mutually or not" and "one-way or two-way" added
+minMagicSquare.mzn: "array1d" omitted at code lines 11+46, as no longer needed
+minMagicSquare.mzn: "complete" omitted at code lines 45+46 (see 2019-10-24)
+demoSlides.[tex|pdf]:10 & WLP2.mzn: above changes of T08:34 made
+demoSlides.[tex|pdf]:10: "mutually or not" and "one-way or two-way" added
+demoSlides.[tex|pdf]:15 & WLP2.mzn: "non-mutually" and "one-way" added
+demoSlides.[tex|pdf]:17: "non-mutually" added
+
+2020-09-23
+Slides
+T01:45-48: all index identifiers "q" replaced by "c" (mnemonic for column)
+T01:49: "and rename the file 8-queens.mzn into n-queens.mzn" added
+T04:17: index identifier "q" replaced by "c" (mnemonic for column)
+T04:18: wrong channelling constraint for n-queens replaced by a correct one
+T08:11+12: all index identifiers "q" replaced by "c" (mnemonic for column)
+T17: topic number also given in lower-left corner of every slide
+T17:41+54+55: all index identifiers "i" replaced by "c" (mnemonic for column)
+
+2020-09-21
+Slides
+T06:09: clarifying comment added to code line 1
+T06:09: "int" improved into "0..sum(ExpGain)" in code line 14
+T06:09: "int" improved into "0..(antennae*max(Cost))" in code line 16
+T06:09: equality constraint of code line 16 pushed into new code line 17
+T06:10: column caption "types" corrected into "t"
+T07:12: sentence about recipes added, analogous to the one already at T07:30
+T07:27: sentence about simplex method corrected, as it takes exponential time
+T07:30: "encode" clarified into "linearise"
+
+2020-09-18
+Slides
+T02:14: note on = vs == added
+T02:18: note on = vs == added; set constructor ".." moved to "Sets"
+T02:39: example added, on deriving a tight domain from parameters
+T06:04: storyline added in last line, and line numbers added to code
+T06:05: storyline added in last line, and line numbers added to code
+T06:06: line numbers added to code
+T06:08: "lower-left" corrected into "upper-left"
+T06:14: "functions" clarified into "total functions"
+T06:18: discussion of symmetries added
+T06:19: "This model" corrected into "This alternative formulation"
+T06:30: reminder on symmetry-breaking constraint added
+
+2020-09-14
+Demo
+demo-M4CO.tex, res-M4CO.tex, demo-M4CO.pdf: changes of 2020-09-02 undone
+
+2020-09-13
+Slides
+T05:08: "Boolean" replaced by "0..1", for consistency with T04:17
+T05:13: clarification "periods per week" added
+T05:15: clarifications "groups per week" and "players per group" added
+T05:28: clarification "on the parameters" added
+T05:29: "array values" clarified into "values of array Game"
+T05:30: "array values" clarified into "values of the array"
+T05:34: "If ..., then ..." clarified into "Let ...: rather ..."
+T06:25: clarification "periods per week" added
+T08:38: clarification "periods per week" added
+Demo
+macros.tex and mznlisting.tex: minor fixes made
+
+2020-09-08
+Slides
+T01:42: domain of "Salary" changed from "int" to "0..1000" in code line 1
+T03:05: examples added
+T03:13: "index_set(v)" corrected into "index_set(V)"
+T03:15: all "i" typeset in colour (cf T03:16) to stress i is a variable index
+T03:16: domain of "Salary" changed from "int" to "0..1000" in code line 1
+T03:48: all "dom(x)" replaced by "1..9"
+T03:48: some "x" typeset in colour, for emphasis when x is a variable index
+T04:14: all "0..n" corrected into "I"
+Demo
+demo-M4CO.[tex|pdf]: "Problem 5" corrected into "Problem 6" at page 4
+
+2020-09-07
+Slides
+T02:21: "Boolean expression" is now in red; "including" replaced by "implicit"
+T03:13: example rewritten with index_set(V) instead of 1..n
+T03:21: "NP-complete" corrected into "NP-hard"
+T03:45: missing spaces added to both regular expressions
+
+2020-09-03
+Slides
+T01:68: "Combinatorial" replaced by "Constraint", for consistency with T01:17
+T02:09: example with slicing added, taken from T01:32
+T02:33: "constructive" replaced by "systematic", for consistency with new T01:56
+
+2020-09-02
+Demo
+demo-M4CO.tex, res-M4CO.tex, demo-M4CO.pdf: OptiMathSAT added at pages 5 & 6
+
+2020-09-01:
+Slides
+T01:56: "LS and GA solvers" corrected into "LS and GA technologies"
+T01:75: "(overlap with Assignments 2 and 3)" added
+
+2020-08-30
+Slides
+T01:75: "25 September" corrected into "23 September"
+T01:76: "D_i - 7" corrected into "D_i - 8"
+T01:88: SMT replaced by OMT; "list and set" replaced by "array"
+
+2020-08-26
+Slides
+T01-T08,14: topic number also given in lower-left corner of every slide
+T01:07: colour-coding & rephrasing of doctor tasks
+T01:26: OMT added
+T01:37: simpler model-line 2 (instead of line 3) is paraphrased
+T01:40: rephrasing of doctor tasks, as also done at slide 7
+T01:56: "Constructive" replaced by "Systematic"; "Perturbative" replaced by "Local"
+T01:56-57: OMT added
+T01:62: SMT replaced by OMT; fzn2smt replaced by emzn2fzn + fzn2omt
+T01:74: OMT added
+T01:87-88: updated for course instance of autumn 2020 at Uppsala University
+T01:89-90: new slides
+T07:07: "model" replaced by "model & data"
+T07:07+09: OMT added
+T07:16: "Lingeling" replaced by "Plingeling"
+T07:17: OMT added
+T07:18: OMT added; last line rephrased
+T07:22: OMT added
+T07:23: OptiMathSAT added
+T07:33: 4th bullet item rephrased
+T07:46: OMT added
+T14:14,22,24,27,31,32: "pick" replaced by "select"
+
+2019-12-02
+Slides
+T17:05: drawing improved: branching on different variables at level 2,
+        and different number of levels in left and right subtrees
+T17:56: system assignment deltas in right margin corrected (to be as on p48)
+
+2019-11-20
+Slides
+T15:14: "difficult to implement," deleted for trailing
+T16:30: forward and backward phases removed from step 2
+T16:38: "solved the space issue, but" deleted for the naïve propagator
+
+2019-11-15:
+Slides
+T01:41: lines -4 and 2 (in the model) and -4 (in the data) generalised
+
+2019-11-01:
+Slides
+T01:21: "NP-hard" replaced by "NP-hard or worse"
+T01:87: email address replaced
+T01:88: added note about copyrighted skeleton codes
+
+2019-10-24
+Slides
+T01:85: new teams in period 2 must be declared by email, not via the portal
+T01:87: email policy clarified
+T02:09: clarifying comment added to line 3 of example
+T02:10: first example augmented with a "where" test
+T02:21: "Reification" replaced by "Reification (including via bool2int)",
+        and "such as some of those in Topic 3" added to final bullet item
+T03:04: final bullet item added
+T07:13,35: "pick" replaced everywhere by "select"
+T08:14,17-19,21,22,24,25: "value selection" replaced everywhere by
+                          "domain splitting (or: partitioning)"
+T08:16: "pick" replaced by "select"
+T08:17: "values are selected" replaced twice by "domain is split into singletons"
+T08:18: best-first principle rephrased
+T08:20,22,24,25,29,36,42: the 4th argument of a brancher, which always
+                          was "complete", is no longer required
+T08:35,42: "choose" replaced everywhere by "select"
+
+2019-10-15
+Slides
+T02:40: final sentence removed
+
+2019-10-14
+Slides
+T02:08: "var 0..23: hour = x + n" replaced by "var 0..23: hour",
+        as a thus-defined variable ("hour" here) does not show up
+	in the output, which breaks our experiment script
+T02:12: bool is actually no longer disjoint from int, but a subtype thereof;
+        explicit bool2int coercion is no longer advised in this course
+T02:21: example extended with two implicit bool2int coercions
+T02:22,23: explicit bool2int coercion removed from the objective
+T02:24,36,44: example rewritten with index_set(A) instead of 1..n
+T02:25: second example added, and text changed after the first example
+T02:41: first example removed
+T02:43: explicit bool2int coercion removed from second and third model snippets
+T02:54: explicit bool2int coercion is no longer advised in this course
+T03:04: all examples rewritten with index_set(A) instead of 1..n;
+        explicit bool2int coercion removed from the second bullet item;
+        second and third bullet items merged and condensed,
+        because at_least, at_most, and exactly will be deprecated
+T03:13: comment on exactly(...) removed from the first model snippet
+T03:48: first example generalised by using an array comprehension
+T03:51: first bullet item removed
+T04:08: "exactly(s-n,Colour,0)" replaced by "count(Colour,0) = s - n"
+T04:14: explicit bool2int coercion removed from the first constraint
+T04:20: third bullet item removed
+T06:09: explicit bool2int coercion removed from line 15
+T06:17: explicit bool2int coercion removed from the constraint,
+        and final sentence modified
+T06:19: explicit bool2int coercion removed from the first constraint
+
+2019-09-17
+Slides
+T04:09: new slide with previously not shown set-variable model for viewpoint 2
+T04:10  (previously T04:09): adjusted text below the integer-variable model
+T06:44: caveat added in new last two lines
+
+2019-09-11
+Slides
+T03:21: constant 10 in model line 3 replaced by (1505 div min(Cost))
+T03:30: last line added, in order to mention the new graph constraints
+T03:47: added "MiniZinc or" to the first bullet item
+
+2019-09-09
+Slides
+T02:10: sum([i*j | i, j in 1..5]) replaced by sum([i*j | i in 1..5, j in 1..5])
+T02:24: second example added
+T02:40: example improved

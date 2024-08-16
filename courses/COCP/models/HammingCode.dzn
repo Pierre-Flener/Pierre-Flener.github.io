@@ -1,0 +1,4 @@
+% From https://www.gecode.org/doc/6.2.0/reference/hamming_8cpp_source.html:
+n = 32;
+m = 20;
+d =  3;

@@ -1,0 +1,39 @@
+Changes to the API of MiniCP:
+- since the paper "MiniCP: A Lightweight Solver for Constraint Programming" (at https://doi.org/10.1007/s12532-020-00190-7 and a pre-print at https://minicp.readthedocs.io/en/latest/_static/mini-cp.pdf) was published;
+- since the Keynote slides uploaded at http://minicp.org were made; and
+- since the corresponding videos at YouTube (linked to from http://minicp.org) were filmed.
+
+Listing 4 p145:
+IntVar: isBound --> isFixed
+IntVar: assign --> fix
+IntVar: propagateOnBind --> propagateOnFix
+Listing 7 p147:
+IntDomain: isBound --> isSingleton
+Listing 8 p147:
+DomainListener: bind --> fix
+Listing 10 p148:
+SparseSetDomain: isBound --> isSingleton
+Listing 11 p151:
+IntVarImpl: onBind --> onFix
+IntVarImpl: onBounds --> onBound
+IntVarImpl: bind --> fix
+IntVarImpl: isBound --> isFixed
+IntVarImpl: assign --> fix
+IntVarImpl: propagateOnBind --> propagateOnFix
+Listing 29 p165:
+IntVarViewOffset: isBound --> isFixed
+IntVarViewOffset: assign --> fix
+IntVarViewOffset: propagateOnBind --> propagateOnFix
+Listing 30 p166:
+whenBind --> whenFix
+
+Errata in the paper:
+p145, Listing 4: the methods "whenFix" (used as "whenBind" in
+                 the example in Listing 30 at page 166), "whenBoundChange"
+                 (was "whenBoundsChange" before the API change),
+                 and "whenDomainChange" of IntVar are missing
+p148, last line: U --> U-1
+p151, Listing 11, line 42: propagateOnBounds --> propagateOnBoundChange
+p151, Listing 11: same for IntVarImpl as for IntVar at p145, Listing 4
+p154, Listing 15, line 25: insert "public" and indent
+p165, Listing 29, line 24: propagateOnBounds -(twice)-> propagateOnBoundChange

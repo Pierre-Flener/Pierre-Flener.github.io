@@ -1,0 +1,3 @@
+Varieties = {barley,corn,millet,oat,rye,spelt,wheat};
+blockSize = 3;
+balance = 1;

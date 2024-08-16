@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<title>M4CO/COCP: Assignments</title>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1>Modelling for Combinatorial Optimisation (course 1DL451) <br> & <br>
+Combinatorial Optimisation and Constraint Programming (course 1DL442)</h1>
+
+<p>(<a href="../course.html">back to the course homepage</a>)</p>
+
+<h1>Assignments</h1>
+
+<h2>Organisation</h2>
+
+<p>For Course 1DL451 and Part 1 of Course 1DL442 (in period 1), there
+are 3 mandatory <strong>modelling assignments</strong> (numbered 1 to
+3 below, whose statements will appear in due time), worth 3
+higher-education credits (ECTS credits) in total.  For Part 2 of
+Course 1DL442 (in period 2), there are 3 mandatory <strong>programming
+assignments</strong> (numbered 4 to 6 below, whose statements will
+appear in due time), worth 5 higher-education credits (ECTS credits)
+in total.  The main objective of the assignments, which are to be done
+in <strong>teams</strong>, is to exercise the theoretical knowledge
+gained in the lectures, on carefully selected problems of our choice.
+We are not just interested in sufficiently correct and efficient
+models or programs, but also in explanations and experimental
+evaluations, hence a report is also required for each assignment and
+its quality has an impact on the assignment score.</p>
+
+<p>For each assignment, the <a href="../contact.html">assistants</a>
+supervise 3 <strong>help sessions</strong> for troubleshooting in the
+preparation of your reports.  Assignments 1 and 4 are scored pass/fail
+in order to get started gently on each part of the course, and each
+other assignment gets an <strong>assignment score</strong> in
+\(0..5\).  An insufficiently good report in part 1 of the course can
+be defended orally to an assistant in a scheduled <strong>grading
+session</strong>.  Solutions and collective feedback are given by an
+assistant in a <strong>solution session</strong>.</p>
+
+<p>PhD students do either the assignments (possibly in a duo team), or
+just the <a href="../project.html">project</a> (solo; possibly in
+connection with their PhD research; but they are highly encouraged to
+do the assignments nevertheless), or both: contact the head
+teacher.</p>
+
+<!-- THIS IS A LONG TIME AGO NOW:
+<p>Students who took the old local course "Combinatorial Optimisation
+with Constraint Programming" (until autumn 2017 also with code 1DL442,
+formerly 1DL023, 1DL118, and 1DL440), or an equivalent course
+elsewhere, are encouraged to study in advance the slides of <a
+href="../slides/T08-InferenceSearchCP.pdf">Topic 8: Inference & Search
+in CP & LCG</a> (also see Sections 2.5 and 4.2.1 in the <a
+href="https://www.minizinc.org/doc-latest/index-en.html">MiniZinc
+Handbook</a>), so as to use annotations for CP/LCG inference and
+CP/LCG search in all assignments, due to the slight overlap with such
+a course.</p>
+-->
+
+<h2>Help Sessions</h2>
+
+<p>The objective of a help session is <em><strong>only</strong></em>
+for the assistants to help you prepare an acceptable solution for the
+assignment with the closest upcoming deadline.  The assignment
+problems will normally be published at least a week prior to the first
+help session.  Also, the necessary course material will normally have
+been presented in lectures at least a week prior to the first help
+session.  You are thus able and even <em><strong>strongly
+encouraged</strong></em> to prepare your solution as far as possible
+until the help sessions and to attend them, in order to make best use
+of that reserved time span of personal attention by the
+assistants.</p>
+
+<p>Note that <em><strong>no</strong></em> further tutoring on lecture
+topics, such as exercises whose solutions are given or to be handed in
+at the end of the session, will be performed by the assistants at the
+help sessions.</p>
+
+<h2>Initial Grading</h2>
+
+<p>The <strong>initial score</strong>, in the integer interval 0..5
+(or pass/fail for Assignments 1 and 4), of your assignment report will
+normally be determined by the late afternoon on the day before the
+grading and solution sessions for that assignment.  Toward this, the
+assistants run your code on a grading test suite and examine your
+report.  An initial score is the <strong>final score</strong> if in
+the set {0,3,4,5} (or pass for Assignments 1 and 4).</p>
+
+<h2>Grading Session</h2>
+
+<p>The objective of a grading session is to determine your
+<strong>final score</strong> for the submitted report for the
+assignment of the previous deadline.  Each team with an initial score
+in the set {1,2} (or fail for Assignment 1) will normally be given an
+appointment with an assistant during the scheduled grading session, in
+a location of her/his choice, toward correcting
+<em><strong>minor</em></strong> mistakes during that meeting and
+possibly increasing your score by one unit.  An initial score of 1 (or
+fail for Assignment 1) upon only <em><strong>major</em></strong>
+mistakes cannot be increased at a grading session.</p>
+
+<p>Appointment times are <em><strong>strict</strong></em>: the initial
+score is final in case of a missed appointment.  Exceptions must be
+negotiated in due time during work hours with the head teacher, upon
+reporting a convincing case of force majeure.</p>
+
+<h2>Solution Session</h2>
+
+<p>The objective of a solution session is
+<em><strong>only</strong></em> for an assistant to give collective
+feedback and discuss acceptable solutions to the assignment of the
+previous deadline.  <em><strong>No</strong></em> code will be handed
+out.  The first five solution sessions are merged with the initial
+help sessions to the next assignment.</p>
+
+<p>Some comments on your submitted report can be found at Studium;
+more detailed individual feedback can be obtained orally from the
+assistants upon appointment.</p>
+
+<p>Note that <em><strong>no</strong></em> further tutoring on lecture
+topics, such as exercises whose solutions are given or to be handed in
+at the end of the session, will be performed by the assistants at the
+solution sessions.</p>
+
+<h2>Important Dates for Autumn 2024</h2>
+
+<table align="center" border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th style="text-align:left">Assignment</th>
+      <th style="text-align:left">Help session a</th>
+      <th style="text-align:left">Help session b</th>
+      <th style="text-align:left">Help session c</th>
+      <th style="text-align:left">Deadline</th>
+      <th style="text-align:left">Grading session</th>
+      <th style="text-align:left">Solution session</th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>
+	<a href="warmup-MiniZinc.pdf">warmup-MiniZinc.pdf</a>,
+	<a href="exercises">exercises on comprehensions (no hand-in)</a>,
+	and <a href="warmup-LaTeX.pdf">warmup-LaTeX.pdf</a>
+      	<!-- (the links will work in due time) -->
+      </td>
+      <td>Fri 06 Sep</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>
+	<a href="assignment1/assignment1.pdf">assignment1.pdf</a>
+	(the link will work in due time)
+      </td>
+      <td>Fri 06 Sep</td>
+      <td>Mon 09 Sep</td>
+      <td>Wed 11 Sep</td>
+      <td>Fri 13 Sep at 13:00</td>
+      <td>Thu 19 Sep</td>
+      <td>Thu 19 Sep</td>
+    </tr>
+    <tr>
+      <td>
+	<a href="assignment2/assignment2.pdf">assignment2.pdf</a>
+	(the link will work in due time)
+      </td>
+      <td>Thu 19 Sep</td>
+      <td>Mon 23 Sep</td>
+      <td>Wed 25 Sep</td>
+      <td>Fri 27 Sep at 13:00</td>
+      <td>Thu 03 Oct</td>
+      <td>Thu 03 Oct</td>
+    </tr>
+    <tr>
+      <td>
+	<a href="assignment3/assignment3.pdf">assignment3.pdf</a>
+ 	(the link will work in due time)
+     </td>
+      <td>Thu 03 Oct</td>
+      <td>Mon 07 Oct</td>
+      <td>Wed 09 Oct</td>
+      <td>Fri 11 Oct at 13:00</td>
+      <td>Thu 17 Oct</td>
+      <td>Thu 17 Oct</td>
+    </tr>
+    <tr>
+      <td>
+	<a href="https://user.it.uu.se/~frekn832/courses/COCP/assignments/warmup">warmup-MiniCP.pdf and exercises on lambda expressions (no hand-in)</a>
+	<!--
+ 	  <a href="warmup-Gecode-IT.pdf">warmup-Gecode-IT.pdf</a> and
+	  <a href="warmup-Gecode.pdf">warmup-Gecode.pdf</a>
+	-->
+      	<!-- (the material will appear in due time) -->
+      </td>
+      <td>Fri 08 Nov</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+      <td>none</td>
+    </tr>
+    <tr>
+      <td>
+	<a href="assignment4/assignment4.pdf">assignment4.pdf</a>
+	(the link will work in due time)
+      </td>
+      <td>Fri 15 Nov</td>
+      <td>Mon 18 Nov</td>
+      <td>Wed 20 Nov</td>
+      <td>Fri 22 Nov at 13:00</td>
+      <td>none</td>
+      <td>Fri 29 Nov</td>
+    </tr>
+    <tr>
+      <td>
+	<a href="assignment5/assignment5.pdf">assignment5.pdf</a>
+	(the link will work in due time)
+      </td>
+      <td>Fri 29 Nov</td>
+      <td>Mon 02 Dec</td>
+      <td>Wed 04 Dec</td>
+      <td>Fri 06 Dec at 13:00</td>
+      <td>none</td>
+      <td>Fri 13 Dec</td>
+    </tr>
+    <tr>
+      <td>
+	<a href="assignment6/assignment6.pdf">assignment6.pdf</a>
+	(the link will work in due time)
+      </td>
+      <td>Fri 13 Dec</td>
+      <td>Wed 18 Dec</td>
+      <td>Mon 13 Jan</td>
+      <td>Fri 17 Jan at 13:00</td>
+      <td>none</td>
+      <td>none</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--
+<p>The slides <a href="warmup-Gecode.pdf">warmup-Gecode.pdf</a> are
+copyright <a href="https://chschulte.github.io">Christian
+Schulte</a>.</p>
+-->
+
+<h2>Submission and Deadlines</h2>
+
+<p>All assignment reports, with <a
+href="../demoReport/demo-M4CO.pdf">imposed M4CO structure</a>
+<!--
+and <a href="../demoReport/demo-CP.pdf">imposed CP structure</a>
+-->
+(LaTeX <a href="../demoReport/demoReport.zip">source</a>),
+but no imposed CP structure,
+<!-- -->
+must be submitted electronically via Studium, whose clock may be
+different from yours.  Submission deadlines are
+<em><strong>hard</strong></em>. Exceptions must be negotiated in due
+time during work hours with the head teacher, upon reporting a
+convincing case of force majeure. Grading will only start after a
+deadline, so you can submit multiple times until then.</p>
+
+<h2 id="Teams">Teams</h2>
+
+<p>For pedagogic and resource reasons, every assignment report and
+project deliverable <em><strong>must</strong></em> be prepared by a
+team of 2 students, both being first-time students or both being
+non-first-time students of this course.  <em><strong>No</strong></em>
+permission will ever be granted for teams of three or more
+students.</p>
+
+<p>Until 23:59 of Sun 8 Sep 2024, you can declare a team at Studium:
+both teammates must consent to forming a team.  If you are not
+formally registered yet, or if your team is the union of two
+one-person teams in each of the two courses, then you can declare your
+team by email to the COCP helpdesk by that hard deadline.  You are
+<em><strong>strongly encouraged</strong></em> to advertise your search
+for a teammate at a course event or by using the Teammate Search
+discussion at Studium.  If you are however fine with a
+<em><strong>randomly</strong></em> assigned teammate, then declare
+this by email to the COCP helpdesk by that hard deadline: you might
+not get any teammate, because you are the odd one out or because the
+assigned one drops the course on short notice, so <em><strong>start
+working solo</strong></em> on Assignment 1 in order to guard against
+this possibility.  All students who have done neither of those actions
+by that hard deadline will be considered to have dropped the course,
+but will not be unregistered by us: their submitted deliverables will
+normally not be graded.</p>
+
+<p>Teams may change between assignments: permission will be granted,
+as long as you inform the COCP helpdesk in advance and the total
+number of teams does not increase.</p>
+
+<p>Only <em><strong>one</strong></em> teammate of each team should
+submit each assignment report or project deliverable.</p>
+
+<p>Exceptions for solo work must be negotiated in due time, during
+work hours, with the head teacher, upon reporting a convincing case of
+force majeure.  The assignments are calibrated somewhat smaller for
+those students.  Such an exception is only valid for the assignment(s)
+it was negotiated for.</p>
+
+<h2 id="ethics">Ethics</h2>
+
+<p>The <a
+href="https://www.it.uu.se/student/programmes_and_courses#cheating">legislation
+on plagiarism and cheating</a> (<a
+href="../../../ethics.html">summary</a>) of Uppsala University will be
+rigorously applied, without exceptions.  This disallows using a public
+repository (such as GitHub, where you should use a <a
+href="https://education.github.com/pack">free private student
+repository</a>) for code management within your team: this is
+particularly important for part 2 of course 1DL442, where the same
+quizzes and assignments and are used worldwide in a massive open
+online course.  We reserve the right to use plagiarism detection tools
+and point out that they are extremely powerful.</p>
+
+<p><em><strong>When submitting you implicitly certify that your report
+and all its uploaded attachments were produced solely by your team,
+except where explicitly stated otherwise and clearly referenced, that
+each teammate can individually explain any part starting from the
+moment of submitting your report, and that your report and attachments
+are not freely accessible on a public repository.</strong></em></p>
+
+<p>We reserve the right to give different assignment scores to the
+teammates of a team, depending on the performance at the grading
+session.</p>
+
+<p>Please report any problems within a team to the head teacher, who
+will handle the case in confidence, in the best interest of both
+teammates, keeping the ethics dimension in mind.</p>
+
+<h2>Expected Effort</h2>
+
+<p>One higher-education credit (ECTS credit) translates under Swedish
+university law into an expected 26.67 hours of work for the average
+student:</p>
+
+<ul>
+  
+<li><p>The modelling assignments (of Course 1DL451 and Part 1 of
+Course 1DL442, in period 1) are worth 3 credits: discounting about
+half of the 21 hours spent on the lectures
+<!-- and project presentation sessions -->
+(the other half being similarly discounted on the 2 project credits),
+<em><strong>the modelling assignments are calibrated to take about 21
+hours of work on average by the average student, for each
+teammate</strong></em>, including the help, grading, and solution
+sessions.</p></li>
+
+<li><p>The programming assignments (of Part 2 of Course 1DL442, in
+period 2) are worth 5 credits: discounting the 22.5 hours spent on the
+lectures and warm-up, <em><strong>the programming assignments are
+calibrated to take about 37 hours of work on average by the average
+student, for each teammate, including the help, grading, and solution
+sessions</strong></em>.</p></li>
+
+</ul>
+
+<p>All this does not clash with other courses you are taking, as
+university studies are legally defined to take 400 hours of work per
+study period (normally 10 weeks), and the standard 15 credits targeted
+in a study period are calibrated to reach that total.</p>
+
+<h2>Assignment Grades</h2>
+
+<ul>
+
+<li><p>The <strong>modelling assignment grade</strong> for Course
+1DL451 or for Part 1 of Course 1DL442 is determined by a <a
+href="../grades.html#p1a">published scale</a>, depending on the
+modelling assignment scores.</p></li>
+
+<li><p>The <strong>programming assignment grade</strong> for Part 2 of
+Course 1DL442 is determined by a <a
+href="../grades.html#p2a">published scale</a>, depending on the
+programming assignment scores.</p></li>
+
+</ul>
+
+<h2>Need Help?</h2>
+
+<p>See <a href="../contact.html">Contact, Help, and FAQ</a>.</p>
+
+<h2>Overall Grades</h2>
+
+<ul>
+
+<li><p>The <strong>overall grade</strong> for Course 1DL451 is
+determined by a <a href="../grades.html#p1o">published scale</a>,
+depending on the modelling assignment scores and the project
+score.</p></li>
+
+<li><p>The <strong>overall grade</strong> for Course 1DL442 is
+determined by a <a href="../grades.html#p2o">published scale</a>,
+depending on the modelling assignment scores, the project score, and
+the programming assignment scores.</p></li>
+
+</ul>
+
+<!--
+<h2>Failure</h2>
+
+<p>There is normally no complementation opportunity as the full
+budgeted time of the teachers is allocated within the two periods
+where the courses take place: with two or three help sessions and one
+grading session per assignment, there is a lot of support available
+for submitting and improving a report that clears the low 20%
+threshold (not 50% like in other courses!) per assignment, and for
+clearing the 50% threshold over all assignments.</p>
+
+<p>The lecture contents, assignment questions, submission rules, or
+head teacher of a course can change from one academic year to another,
+and the incremental completion of assignment duties over the years is
+<em><strong>not</strong></em> a student right: it is best to complete
+(the assignments of) a course the year it is taken. The head teacher
+stopped granting that right (see the previous item) as the
+administration thereof turned out to be more time-consuming than the
+alternative.</p>
+-->
+
+<h2>Contract</h2>
+
+<p>These rules are effective as of Mon 2 Sep 2024.  The head teacher
+reserves the right to modify them at any moment, should special
+circumstances call for this.</p>
+
+<hr>
+<address>
+<!-- hhmts start -->Last modified: Tue Jun 11 09:43:29 CEST 2024 <!-- hhmts end -->
+</address>
+<!-- The following testifies to my ignorance about how to make each -->
+<!-- link to an anchor within this page actually put the line of that -->
+<!-- anchor at the top of the browser tab/window. -->
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+</body>
+</html>

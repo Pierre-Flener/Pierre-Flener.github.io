@@ -1,0 +1,4 @@
+% 864 lex^2 solutions
+Varieties = anon_enum(25);
+blockSize = 5;
+balance = 1;

@@ -1,0 +1,22 @@
+%% Page 179 in "The OPL Optimization Programming Language" by Pascal Van Hentenryck, at The MIT Press, 1999:
+Warehouses = {Bern, Cork, Lyon, Oslo, Roma};
+Shops = {Shop1, Shop2, Shop3, @...@, Shop10};
+% Each warehouse has the same maintenance cost:
+maintCost = 30; 
+% Capacity[w] = supply capacity of warehouse w:
+Capacity = [1,4,2,1,3];
+% SupplyCost[s,w] = supply cost to s from w:
+SupplyCost =
+  [| 20, 24, 11, 25, 30 |
+     28, 27, 82, 83, 74 |
+     @...@ 
+     47, 65, 55, 71, 95 |];
+%% rows 3 to 9 of SupplyCost:
+%     74, 97, 71, 96, 70 |
+%      2, 55, 73, 69, 61 |
+%     46, 96, 59, 83,  4 |
+%     42, 22, 29, 67, 59 |
+%      1,  5, 73, 59, 56 |
+%     10, 73, 13, 43, 96 |
+%     93, 35, 63, 85, 46 |
+%% Bern was Bonn; Cork was Bordeaux; Lyon was London; Oslo was Paris

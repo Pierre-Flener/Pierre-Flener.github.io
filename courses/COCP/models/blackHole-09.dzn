@@ -1,0 +1,20 @@
+% Instance 9 from MiniZinc Challenge 2009
+Fan = [
+  (top: 31, mid: 15, bot: 22), 
+  (top: 43, mid: 35, bot: 20), 
+  (top: 24, mid:  9, bot: 48), 
+  (top: 32, mid: 25, bot: 12), 
+  (top:  8, mid: 52, bot: 27), 
+  (top: 26, mid: 44, bot: 38), 
+  (top: 29, mid: 41, bot: 36), 
+  (top: 28, mid: 23, bot: 10), 
+  (top: 50, mid:  7, bot:  2), 
+  (top: 30, mid: 40, bot: 39), 
+  (top:  4, mid: 13, bot: 33), 
+  (top: 42, mid: 45, bot: 16), 
+  (top: 21, mid: 17, bot: 46), 
+  (top:  5, mid: 18, bot: 14), 
+  (top: 34, mid: 11, bot: 37), 
+  (top: 51, mid:  3, bot: 19), 
+  (top:  6, mid: 49, bot: 47)
+];

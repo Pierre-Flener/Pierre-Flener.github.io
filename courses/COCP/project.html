@@ -1,0 +1,398 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<title>M4CO/COCP: Project</title>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1>Modelling for Combinatorial Optimisation (course 1DL451) <br> & <br>
+Combinatorial Optimisation and Constraint Programming (course 1DL442)</h1>
+
+<p>(<a href="course.html">back to the course homepage</a>)</p>
+
+<h1>Project</h1>
+
+<h2>Organisation</h2>
+
+<p>The project is to be done in teams (<a
+href="assignments/index.html#Teams">team-building instructions</a>)
+and is worth 2 higher-education credits (ECTS credits).  The main
+objective of the project is to exercise further the theoretical
+knowledge gained in the lectures, but on a problem that you propose
+and that gets our approval.</p>
+
+<p>Let an <em>approach</em> be either a MiniZinc model for the entire
+problem, or a script (find a Python-based way of doing that at <a
+href="resources.html">Resources</a>) with pre-processing, solving
+(possibly on a pipeline of multiple models), and post-processing.  We
+are not just interested in a sufficiently complete and efficient
+approach, but also in explanations and experimental evaluations, hence
+<!-- a <strong>presentation</strong> and -->
+a <strong>report</strong> is
+<!-- are -->
+also required for the project and the quality of the report determines
+the project score.</p>
+
+<p>Six <strong>help sessions</strong> are scheduled for the project.</p>
+
+<p>PhD students do either the <a href="assignments">assignments</a>
+(possibly in a duo team), or just the project (solo; possibly in
+connection with their PhD research; but they are highly encouraged to
+do the <a href="assignments">assignments</a> nevertheless), or both:
+contact the head teacher.</p>
+
+<h2>Project Proposal</h2>
+
+<p>A <strong>project proposal</strong> of three problems, listed by
+decreasing preference, each answering two questions (what?  which
+third-party instance data?) must be submitted at Studium (as a single
+file in .pdf format; all other formats will be rejected; state the
+team number and the names of the team members): the head teacher and
+assistants may interactively (via Studium) negotiate revisions with
+you during the subsequent seven days until ideally our
+<strong>approval</strong> (if approved, then <em>pass</em>, else
+<em>fail</em>).  The problems can be your own or drawn from the
+following websites (in the latter case, it suffices to name the
+problem):
+<ul>
+  <!-- dropped from ht22 on, as most are too hard:
+  <li><a href="https://codingcompetitions.withgoogle.com/hashcode/archive">Google Hash Code</a>: do <em>not</em> consider any of the problems from 2020 on (as we have not vetted them for suitability yet), <em>nor</em> the "City Plan", "Delivery", "Loon", "Photo Slideshow", "Router Placement", "Self-Driving Rides", and "Street View Routing" problems</li>
+  -->
+  <li><a href="https://storage.googleapis.com/coding-competitions.appspot.com/HC/2017/hashcode2017_qualification_task.pdf">Streaming Videos</a> (<a href="https://storage.googleapis.com/coding-competitions.appspot.com/HC/2017/qualification_round_2017.in.zip">data</a>), a problem of the former Google Hash Code competition</li>
+  <li><a href="https://www.csplib.org">CSPlib</a>: <em>only</em>
+  consider problems 11 (<a href="https://fado.dcc.fc.up.pt">FAdo</a>
+  might be useful here),
+  31, 40, 51, 62, 63 (solo teams only), 69, 82, and 131</li>
+   <!-- dropped from ht21 on, as Mattias cannot share data yet: CSPlib 115 -->
+  <li><a href="https://arxiv.org/abs/1610.00585">Business Dinner</a> (ignore everything about Howell designs)</li>
+  <li><a href="https://norvig.com/carcassonne.html">Carcassonne</a>
+  (use the <a href="https://github.com/amirbaghi/cocp-carcassonne-project-post-processing">post-processing</a> by two teams of autumn 2022)</li>
+  <!-- dropped from ht21 on:
+  <li><a href="https://www.bradyharanblog.com/blog/mondrian-art-puzzle">Mondrian Art Puzzle</a></li>
+  -->
+  <!-- dropped from ht21 on, for lack of publicly accessible data:
+  <li><a href="https://arxiv.org/abs/1801.09973">Social Event Scheduling</a></li>
+  -->
+</ul>
+<p>Let us know if you think some problem ought to be taken off this
+list, for instance because an approach with MiniZinc or OPL can be
+found on the internet.  If your approach turns out to be competitive,
+then you can even contribute it to the annual <a
+href="https://www.minizinc.org/challenge.html">MiniZinc Challenge</a>
+or to <a href="https://www.csplib.org">CSPlib</a>!</p>
+
+<h2>Project Rules and Grading Criteria</h2>
+
+<p>An approved project proposal entitles to continuation (deadlines
+and schedule in the tables below):</p>
+
+<ul>
+  
+  <li><p><strong>Initial report</strong>:
+  <!-- , before your presentation: -->
+  See the <a href="slides/T01-Introduction.pdf#page=88">slides
+  numbered 79 and 80 of Topic 1<a>.
+  If your initial report is submitted on time at Studium and (1)
+  follows the <a href="demoReport/demo-project.pdf">imposed structure</a>
+  of the demo report, which is longer than the one for assignments
+  (LaTeX <a href="demoReport/demoReport.zip">source</a>, if you
+  use LaTeX: comment away line 15 and uncomment line 16),
+  (2) cites the source of the problem and every included
+  third-party picture, (3) has a description of the problem in your
+  own words, (4) discusses a single approach (see above for the
+  definition of approach), and (5) every model follows the structure
+  of the <a href="demoReport/skeleton.mzn">skeleton model</a>,
+  then you <em>pass</em>,
+  <!-- and are entitled to a presentation, -->
+  else you <em>fail</em> and are not entitled to a
+  <!-- presentation and -->
+  final report.  One or two students are assigned at Studium for
+  <!-- two phases of what is called <em>opposition</em>: -->
+  written peer review(s) of your initial report: see below.</p>
+
+  <p>The demo report has an additional task for project reports, and
+  here are the instructions. <em>Correctness:</em> How do you argue
+  for the correctness of the approach?  For example, did you use a
+  checker based on another model, say a model by another team or a
+  translation of a MIP model given somewhere?  Did you use the same
+  new instances as another team?  If it is a satisfaction problem: did
+  you compare the numbers of solutions with numbers reported somewhere
+  or by another team? If it is an optimisation problem: did you
+  compare objective values proven optimal before timing out
+  (respectively objective values known when timing out) with optimal
+  objective values (respectively best-known objective values) reported
+  somewhere or by another team?</p>
+  </li>
+
+<!-- dropped from ht23 on:
+
+  <li><p><strong>Presentation</strong>: If your presentation (1) is
+  intelligible, and <em>either</em> (2a) the approach (single!)  and
+  experiments are already complete <em>or</em> (2b) a convincing
+  completion plan is outlined, and (3) the teammates speak for about
+  the same time and (4) on about equally complex material, then you
+  <em>pass</em> and are entitled to a final report, else you
+  <em>fail</em> and are not entitled to a final report.</p>
+
+  <p>
+    If you are scheduled to present via Zoom, then you are
+    encouraged to pre-record and upload your presentation (there is
+    a link to a dropzone at an announcement in Studium: use
+    <em>t</em><code>-presentation</code> as filename, where
+    <em>t</em> is your team number), so that the Zoom host (a
+    teacher) plays it (this works much better under Zoom than when a
+    participant plays it), but you can also present live.
+    If you are scheduled to present in an auditorium, then
+
+  Figure out <em>in advance</em> how to connect your hardware to the
+  projector and how to make your voice carry over the entire
+  auditorium.
+
+    Either way, your faces must be visible during your presentation.
+
+  Your presentation must be 12 to 15 minutes long (and will be
+  interrupted after 15 minutes).
+
+    The presentation sessions will not be recorded.
+  </p>
+  </li>
+      
+  <li><p><strong>Slides</strong>: If your actual presentation slides
+  are submitted on time at Studium and follow the <a
+  href="demoSlides/demoSlides.pdf">imposed structure</a> of the demo
+  slides (LaTeX <a href="demoSlides">source</a>, if you use LaTeX),
+  then you <em>pass</em>, else you <em>fail</em>.</p>
+  </li>
+
+  <li><p><strong>Oral opposition</strong>: If each member of your
+  opposition team
+
+    (1)
+
+  orally asks you constructive questions immediately after your
+  presentation
+
+    and (2) their faces are visible while doing so,
+
+  then they <em>pass</em>, else they <em>fail</em>.
+
+    Recall that the presentation sessions will not be recorded if
+    you present via Zoom.
+
+  </p>
+
+  <p>Opposition teams and the rest of the audience are encouraged to
+  have the modelling <a href="demoReport/checklist.pdf">checklists</a>
+  of the final slides of Topics 2 and 3 handy during the
+  presentations.</p>
+  </li>
+
+-->
+
+  <li>
+  <p>
+  <strong>Written peer review</strong>: If
+  you (1) attach (<a href="how-to-attach-a-PDF.png">like this</a>) a peer review
+  to the initial report of your assigned team on time at Studium
+  (so that the other team can see your review),
+  and (2) submit your peer review on time also at Studium to the assignment
+  "Project Peer Review" (so that the teachers can grade it),
+  and (3) your peer review is individually written (a duo team writes two reviews)
+  and (4) constructive
+  and (5) follows the imposed <a href="https://www.diana.ibg.uu.se/digitalAssets/446/c_446850-l_1-k_feedback-text.pdf">form</a> (<a href="https://www.diana.ibg.uu.se/digitalAssets/446/c_446850-l_1-k_studentguide-text-comments.pdf">instructions</a>,
+  plus: Author = team number of the initial report you review,
+  and: Advisor = your name),
+  then you <em>pass</em>, else you <em>fail</em>.
+  </p>
+  </li>
+
+  <li><p><strong>Final report</strong>: The
+  written peer review(s) and feedback by the teachers
+  will help you prepare your final report (including model and data
+  files, if not other code; there is no imposed filename): it will get
+  a score \(p \in 0..10\), under (1--5) the same conditions as the
+  initial report, but (6) it is rewritten where relevant and not just
+  expanded incrementally.</p>
+  </li>
+
+<!-- dropped from ht23 on:
+
+  <li><p><strong>Attendance</strong> at <em>all</em> project
+  presentation sessions is <em>mandatory</em>: each missed project
+  presentation session (in case of no force majeure) can be
+  compensated for by writing a two-page summary of a research paper
+  chosen by the head teacher.</p>
+  </li>
+
+-->
+  
+</ul>
+
+<!-- dropped from ht23 on:
+<p> A detailed timetable giving the day and duration of your
+presentation will be made available here in due time.</p>
+-->
+
+<h2>Important Dates for Autumn 2024</h2>
+
+<table align="center" border="1" cellpadding="10">
+  <thead>
+    <tr>
+      <th style="text-align:left">Deliverable or Event</th>
+      <th style="text-align:left">Deadline or Date</th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>Proposal</td>
+      <td>Wed 18 Sep at 13:00</td>
+    </tr>
+    <tr>
+      <td>Approval (pass/fail)</td>
+      <td>Wed 25 Sep at 13:00</td>
+    </tr>
+    <tr>
+      <td>Help a</td>
+      <td>Fri 27 Sep</td>
+    </tr>
+    <tr>
+      <td>Help b (also for Assignment 3)</td>
+      <td>Thu 03 Oct</td>
+    </tr>
+    <tr>
+      <td>Help c (also for Assignment 3)</td>
+      <td>Mon 07 Oct</td>
+    </tr>
+    <tr>
+      <td>Help d (also for Assignment 3)</td>
+      <td>Wed 09 Oct</td>
+    </tr>
+    <tr>
+      <td>Help e</td>
+      <td>Wed 16 Oct</td>
+    </tr>
+    <tr>
+      <td>Help f</td>
+      <td>Thu 17 Oct</td>
+    </tr>
+    <tr>
+      <td>Initial Report (pass/fail)</td>
+      <td>Fri 18 Oct at 13:00</td>
+    </tr>
+ <!-- dropped from ht23 on:
+    <tr>
+      <td>
+	Presentation (pass/fail)
+	(<em><strong>mandatory</strong></em> attendance at
+	<em><strong>all</strong></em> presentation sessions!)
+      </td>
+      <td>Mon 17 Oct and Tue 18 Oct</td>
+    </tr>
+    <tr>
+      <td>Oral opposition (pass/fail)</td>
+      <td>Mon 17 Oct and Tue 18 Oct</td>
+    </tr>
+    <tr>
+      <td>Slides (pass/fail)</td>
+      <td>Tue 18 Oct at 13:00</td>
+    </tr>
+-->
+    <tr>
+      <td><!-- Written --> Peer review (pass/fail)</td>
+      <td>Wed 23 Oct at 13:00</td>
+    </tr>
+    <tr>
+      <td>Final Report (score \(p \in 0..10\))</td>
+      <td>Fri 01 Nov at 13:00</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- dropped from ht23 on:
+<h2>Presentation & Opposition Timetable for Autumn 2022, including Location</h2>
+
+<p>See the <a href="project-timetable.html">presentation & opposition
+timetable</a>.
+-->
+
+<h2>Submission and Deadlines</h2>
+
+<p>The project proposal, initial and final reports,
+<!-- slides, -->
+and peer review must be submitted electronically via Studium, whose
+clock may be different from yours.  Submission deadlines are
+<em><strong>hard</strong></em>.  Exceptions must be negotiated in due
+time during work hours with the head teacher, upon reporting a
+convincing case of force majeure.  Grading will only start after a
+deadline, so you can submit multiple times until then.</p>
+
+<h2>Ethics</h2>
+
+<p>The <a href="assignments/index.html#ethics">considerations on ethics
+of the assignment reports</a> also apply to the project report.
+<!-- and slides. -->
+</p>
+
+<p>We reserve the right to give different project scores to the
+teammates of a team, depending for example on the performance at the
+<!-- presentations and opposition. -->
+peer review.</p>
+
+<h2>Expected Effort</h2>
+
+<p>Each higher-education credit (ECTS credit) translates under Swedish
+university law into an expected 26.67 hours of work for the average
+student.  The project is worth 2 credits: discounting about half of
+the 21 hours spent in period 1 on the lectures
+<!-- and project presentation sessions -->
+(the other half being similarly discounted on the 3 assignment
+credits), <em><strong>the project and peer review should reflect 49.5
+hours of work by the average student, for each teammate</strong></em>.
+This does not clash with other courses you are taking, as university
+studies are legally defined to take 400 hours of work per study period
+(normally 10 weeks), and the standard 15 credits targeted in a study
+period are calibrated to reach that total.</p>
+
+<h2>Project Grade</h2>
+
+<p>The <strong>project grade</strong> is determined by a <a
+href="grades.html#p1p">published scale</a>, depending on your project
+score \(p \in 0..10\).</p>
+
+<h2>Need Help?</h2>
+
+<p>See <a href="contact.html">Contact, Help, and FAQ</a>.</p>
+
+<h2>Overall Grades</h2>
+
+<ul>
+
+<li><p>The <strong>overall grade</strong> for Course 1DL451 is
+determined by a <a href="grades.html#p1o">published scale</a>,
+depending on the modelling assignment scores and the project score
+\(p\).</p></li>
+
+<li><p>The <strong>overall grade</strong> for Course 1DL442 is
+determined by a <a href="grades.html#p2o">published scale</a>,
+depending on the modelling assignment scores, the project score \(p\),
+and the programming assignment scores.</p></li>
+
+</ul>
+
+<h2>Contract</h2>
+
+<p>These rules are effective as of Mon 2 Sep 2024.  The head teacher
+reserves the right to modify them at any moment, should special
+circumstances call for this.</p>
+
+<hr>
+<address>
+<!-- hhmts start -->Last modified: Mon Jun  3 15:32:03 CEST 2024 <!-- hhmts end -->
+</address>
+</body>
+</html>
