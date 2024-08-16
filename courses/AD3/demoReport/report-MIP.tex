@@ -1,0 +1,118 @@
+\section*{Problem 1: Mixed Integer Programming (MIP)}
+
+%% Fix below and drop the invocation of the \todo command:
+\newcommand{\SolverMIP}{\todo{Gurobi}\xspace}  % or CPLEX, or Xpress, or Cbc
+\newcommand{\TimeoutMIP}{\todo{300.00}}  % timeout, in CPU seconds; MIN 300.00
+
+\paragraph{Task~a: Model.}~
+\todo{What are the variables, their meanings, their constraints, and
+  the objective function?
+  % 
+  For example, for the investment design problem, one might write:
+  ``Let variable~$m_{ij}$ take value~$1$ if basket~$i$ invests in
+  credit~$j$, and value~$0$ otherwise, with $i \in 1 \twodots v$ and
+  $j \in 1 \twodots b$.
+  % 
+  The constraint that each row must sum up to~$r$ can then be linearly
+  modelled as
+  \[
+    \forall i \in 1 \twodots v : \sum_{j \in 1 \twodots b} m_{ij} = r
+  \]
+  % 
+  Etc.''
+  %
+}
+
+\paragraph{Task~b: Implementation.}
+Our model \texttt{servStatLoc.mod} is \todo{uploaded} with this report
+(but not listed inside it): we \todo{checked} that its constraints and
+objective function are linear (and we are aware that four points will
+otherwise be deducted from our score for this problem).
+%
+We chose the MIP solver~\SolverMIP for our experiments, which we ran
+\todo{on the NEOS server or
+  % specification of the ThinLinc Linux hosts of the IT department,
+  % where the academic site license for Gurobi is installed, but note
+  % that no classroom license for AMPL is installed there, so replace
+  % if need be by a similar-looking specification of your own hardware:
+  under Linux Ubuntu~18.04 ($64$~bit) on an Intel Xeon E5520 of
+  $2.27$~GHz, with $4$~processors of $4$~cores each, with a $70$~GB
+  RAM and an $8$~MB L3 cache (a ThinLinc computer of the IT
+  department)}.
+
+\paragraph{Task~c: 10 Zones.}
+The results are in Table~\ref{tab:res:mip}.
+%% not needed from vt24 on:
+% When~$s$ increases, the optimal objective value~\todo{\filler}.
+
+\paragraph{Task~d: 20 Zones.}
+The results are in Table~\ref{tab:res:mip}.
+%% not needed from vt24 on:
+% When~$s$ grows beyond~$4$, the optimal objective value \todo{\filler}.
+
+\paragraph{Task~e: 40 Zones.}
+The results are in Table~\ref{tab:res:mip}.
+
+\paragraph{Task~f: 80 Zones.}
+The results are in Table~\ref{tab:res:mip}.
+%% not needed from vt24 on:
+% Upon~$s=16$ service stations with~$v=1$ vehicle each, the optimal
+% objective value is \todo{\filler} the one for~$s=8$ and~$v=2$, because
+% \todo{\filler}.
+
+\paragraph{Task~g: 120 Zones.}
+The results are in Table~\ref{tab:res:mip}.
+%
+Our model \todo{does not time out}.
+%% If it does time out, then see the demo sentence under Task h below!
+
+\paragraph{Task~h: 250 Zones.}
+The results are in Table~\ref{tab:res:mip}.
+%
+Our model \todo{times out, so our proposed algorithm for delivering a
+  not necessarily optimal solution in reasonable running time is
+  \filler}.
+
+\paragraph{Task~i: Brute-Force Algorithm.}
+The size of the search space of a totally brute-force search algorithm
+is \todo{$\binom{z!}{\cos c} \cdot \log_s v$}, because \todo{\filler}.
+
+The numbers of candidate solutions this brute-force search algorithm
+has to examine per second in order to match the reported runtime
+performance of~\SolverMIP on our model are given in the right-most
+column of Table~\ref{tab:res:mip}, for each instance that~\SolverMIP
+solved to proven optimality without timing out.
+%
+%% not needed from vt24 on:
+% We think that \todo{\filler}, because \todo{\filler}.
+
+\begin{table}[t]  % make it float to the top of a page
+  \centering
+  \begin{tabular}{rrrrrrrr}  % right alignment --> decimal point alignment
+    $z$ & $s$ & $v$ & $c$ & time & objective value & optimality gap & brute-force \\
+    \midrule
+    \input{results-MIP.tex} %% let your experiment script write directly
+                            %% into this file, making sure every number
+                            %% in a column has the _same_ number of decimals
+  \end{tabular}
+  \caption{Service station location: runtime (in seconds), objective
+    value, and optimality gap (in percent; positive if an optimal
+    solution was not found and proven before timing out)
+    using~\SolverMIP, with a timeout of $\TimeoutMIP$~CPU seconds.
+    The right-most column gives the number of candidate solutions the
+    brute-force search algorithm has to examine per second in order to
+    match the runtime performance of~\SolverMIP, if the instance was
+    solved to proven optimality, and~`n/a' for `non-applicable'
+    otherwise.
+    %% delete the following sentence:
+    \todo{(The sample performance of this demo report is made up,
+      but the two optimal objective values are correct!)}
+    % 
+  }
+  \label{tab:res:mip}
+\end{table}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "demoReport"
+%%% End:

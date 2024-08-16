@@ -1,0 +1,270 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<title>AD3: Resources</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1>Algorithms and Data Structures III (course 1DL481)</h1>
+
+<p>(<a href="course.html">back to the course homepage</a>)</p>
+
+<h1>Resources</h1>
+
+<h2>Computers at the IT Department</h2>
+
+<ul>
+
+<li><p><a href="https://www.it.uu.se/datordrift/maskinpark/linux">Linux hosts</a></p>
+
+<li><p><a href="https://www.it.uu.se/datordrift/programvara/unix#programmering">Programming languages on Linux hosts</a></p>
+
+</ul>
+
+<h2>Solvers for Discrete Satisfaction or Optimisation Problems</h2>
+
+<p>For the help sessions and in order to allow you to focus on the
+actual assignments (rather than dealing with installation difficulties
+and licenses), we provide links to pre-installed solvers that are
+accessible via web browsers:</p>
+
+<ul>
+
+<li><p>Problem 1 (in Assignment 1):
+  <!--
+    We strongly recommend you use the Python interface to our academic
+    site license (on the Linux hosts of the IT department) of the
+    world-class commercial MIP solver <a
+    href="https://www.gurobi.com">Gurobi Optimizer</a>.</p><p>
+  -->
+  Effortless and free access to MIP solvers is
+  <!-- also -->
+  provided by the <a href="https://neos-server.org/neos/solvers">NEOS
+  Server for Optimisation</a> (search for "mixed integer linear programming").
+  <!-- , but not via programming languages. -->
+  We then recommend you use the world-class commercial MIP solver
+  <a href="https://www.gurobi.com">Gurobi Optimizer</a>
+  <!--
+    , or <a href="https://www.ibm.com/analytics/cplex-optimizer">CPLEX
+    Optimizer</a>, or <a
+ href="https://www.fico.com/en/products/fico-xpress-solver">FICO
+    Xpress Solver</a>
+  -->
+  (or, but only in case of a temporary licensing issue with Gurobi at
+  NEOS, the open-source MIP solver <a
+  href="https://github.com/coin-or/Cbc">Cbc</a>), via the <a
+  href="https://ampl.com">AMPL</a> modelling language: when using the
+  NEOS server, you do <em>not</em>  need to install the AMPL integrated
+  development environment (IDE) or AMPL command-line interface (CLI)
+  or a MIP solver.  Use a commands file with <tt>option gurobi_options
+  'outlev=1';</tt> as the single line in order to turn on verbose
+  printing, which includes the optimality gap.</p>
+
+  <p>The effort of installing the following
+  <!-- two -->
+  free alternative is outside the course time budget (and we have no
+  resources to help you with installation issues), since NEOS provides
+  access to installed versions: If you have and prefer to use your own
+  hardware, then you can
+  <!--
+    either (1) obtain and install a free individual academic license
+    by following the instructions for the Python interface to Gurobi
+    Optimizer at <a href="https://pypi.org/project/gurobipy">gurobipy</a>
+    (careful, the license is limited to one computer, so install it on
+    the most suitable computer for help sessions and meetings with your
+    teammate), or (2)
+  -->
+  install the AMPL IDE or AMPL CLI bundled with
+  <!--
+    <a href="https://www.ibm.com/analytics/cplex-optimizer">CPLEX
+    Optimizer</a> and
+  -->
+  <a href="https://www.gurobi.com">Gurobi Optimizer</a> (first
+  download the bundle
+  <!-- via "AMPL Software for Assignment 1" -->
+  from the
+  Files section at the AD3 page of Studium and then follow the <a
+  href="https://ampl.com/ampl-course-install">installation
+  instructions</a>): a course license was provided free-of-charge by
+  <a href="https://ampl.com">AMPL.com</a>: it expires on 15 August 2024
+  and can only be used for course purposes; use the AMPL command
+  <tt>option solver gurobi; option gurobi_options 'outlev=1';</tt>
+  before you run <tt>solve</tt> in order to turn on verbose printing,
+  which includes the optimality gap.</p>
+
+  <p>The <a href="https://ampl.com/learn/ampl-book/">AMPL book</a> can
+  be downloaded free of charge, but you normally do not need to read
+  it, as the sample models on the lecture slides suffice.</p></li>
+
+<li><p>Problem 3 (in Assignment 2): We recommend you use the SAT
+solver <a href="http://minisat.se">MiniSat</a>, and possibly first
+play with it a bit via <a
+href="http://logicrunch.it.uu.se:4096/~wv/minisat">our web
+interface</a> (where the time-out is 300 seconds).  Use the <a
+href="http://www.satcompetition.org/2009/format-benchmarks2009.html">DIMACS
+CNF</a> format for SAT solvers, by <a
+href="http://dimacs.rutgers.edu">DIMACS</a>, the Center for Discrete
+Mathematics and Theoretical Computer Science.</p></li>
+
+<li><p>Problem 4 (in Assignment 2): We recommend you use the SMT
+solver <a href="https://github.com/Z3Prover/z3/wiki">Z3</a> (possibly
+via its <a
+href="https://microsoft.github.io/z3guide/playground/Freeform%20Editing/">playground</a>
+web interface) or the <a href="
+http://logicrunch.it.uu.se:4096/~wv/princess">web interface to the SMT
+solver Princess</a>.  Use the <a
+href="https://smtlib.cs.uiowa.edu/standard.shtml">SMT-LIB</a> format
+for SMT solvers
+(<a href="https://smtlib.cs.uiowa.edu/papers/smt-lib-reference-v2.6-r2017-07-18.pdf">tutorial</a>).
+<!--
+  (<a href="https://smtlib.github.io/jSMTLIB/SMTLIBTutorial.pdf">tutorial</a>).
+-->
+</p></li>
+
+<li><p>The Coursera on-line course <a
+href="https://www.coursera.org/learn/solving-algorithms-discrete-optimization">Solving
+Algorithms for Discrete Optimization</a> has lectures on mixed integer
+programming (MIP) and local search (SLS); see the <a
+href="https://www.youtube.com/watch?v=-EiRsK-Rm08">advertisement</a>
+for this course on YouTube.</p></li>
+
+<li><p>The Coursera on-line course <a
+href="https://www.coursera.org/learn/discrete-optimization">Discrete
+Optimization</a> also has lectures on mixed integer programming (MIP)
+and local search (SLS); see the <a
+href="https://www.youtube.com/watch?v=2IbJf4oXOxU">advertisement</a>
+for this course on YouTube.</p></li>
+
+</ul>
+
+<h2>Algorithms and Data Structures</h2>
+
+<ul>
+
+<li><p><a href="https://visualgo.net">VisuAlgo</a>, visualising data
+structures and algorithms through animation, a project led by Steven
+Halim</p></li>
+  
+<li><p><a href="https://www.cs.usfca.edu/galles/visualization">Data
+Structure Visualizations</a> by David Galles</p></li>
+
+<li><p><a href="https://xlinux.nist.gov/dads">Dictionary of Algorithms
+and Data Structures</a> by Paul E. Black</p></li>
+
+<li><p><a href="https://algs4.cs.princeton.edu">Algorithms</a>, a
+textbook by Robert Sedgewick and Kevin Wayne, fourth edition,
+published by Addison Wesley in 2011</p></li>
+
+<li><p><a href="https://www.algorist.com/algorist.html">The Stony Brook
+Algorithm Repository</a> by Steven Skiena, based on his textbook <a
+href="https://www.algorist.com">The Algorithm Design Manual</a>, third
+edition, published by Springer-Verlag in 2020</p></li>
+
+<li><p><a href="http://www.mhhe.com/dasgupta">Algorithms</a>, a
+textbook by Sanjoy Dasgupta, Christos Papadimitriou, and Umesh
+Vazirani, published by McGraw-Hill in 2007</p></li>
+
+<li><p><a
+href="https://www.wiley.com/en-se/Algorithm+Design:+Foundations,+Analysis,+and+Internet+Examples-p-9780471383659">Algorithm
+Design: Foundations, Analysis, and Internet Examples</a>, a textbook
+by Michael T. Goodrich and Roberto Tamassia, published by John Wiley &
+Sons in 2001</p></li>
+
+</ul>
+
+<h2>Useful Links</h2>
+
+<ul>
+
+<li><p><a
+href="https://bibiserv.cebitec.uni-bielefeld.de/adp/welcome.html">Algebraic
+Dynamic Programming</a> (ADP), a method to design and implement, tune,
+test, and teach dynamic programming algorithms</p></li>
+
+<li><p><a
+href="https://www.csc.kth.se/~viggo/problemlist/compendium.html">Compendium
+of NP Optimisation Problems</a></p></li>
+
+<li><p><a href="https://www.math.uwaterloo.ca/tsp/concorde/">Concorde
+TSP Solver</a> for the <a
+href="https://www.math.uwaterloo.ca/tsp">Travelling Salesperson
+Problem</a></p></li>
+
+<li><p><a href="https://mathworld.wolfram.com">MathWorld</a>, allegedly
+the web's most extensive mathematics resource</p></li>
+
+<li><p><a href="https://oeis.org">On-Line Encyclopedia of Integer
+Sequences</a></p></li>
+
+<li><p><a href="https://topp.openproblem.net">The Open Problems
+Project</a></p></li>
+
+</ul>
+
+<h2>LaTeX and Demo Report</h2>
+
+<p>We highly recommend you learn or use LaTeX for typesetting your
+assignment reports and presentation slides in a professional way, but
+this is optional.  The learning of LaTeX is
+<em><strong>outside</strong></em> your time budget for this course,
+but very well-invested as you will find out during the course or
+later.  Here are some LaTeX resources:</p>
+
+<ul>
+  
+  <li><p><a href="demoReport/demoReport.pdf">Demo report</a> (LaTeX <a
+  href="demoReport">source</a>), which also contain examples of all
+  LaTeX commands you need for this course; from the command line (or
+  with Emacs/Aquamacs), compile with <code><tt>pdflatex</tt></code>
+  (once or twice, depending on whether cross-references need to be
+  recomputed), and run <code>bibtex</code> whenever the bibliography
+  was modified</p></li>
+
+  <li><p><a href="https://www.latex-project.org">LaTeX</a></p></li>
+
+  <li><p><a
+  href="https://tug.ctan.org/info/lshort/english/lshort.pdf">The (Not
+  So) Short Introduction to LaTeX2e</a></p></li>
+  
+  <li><p><a href="https://en.wikibooks.org/wiki/LaTeX">The LaTeX
+  wikibook</a>: a gentle but thorough introduction</p></li>
+  
+  <li><p>Don't know the LaTeX code for that mathematical symbol you
+  need? Draw it by hand at <a
+  href="https://detexify.kirelabs.org/classify.html">Detexify</a>, and
+  the applet will find the code for you</p></li>
+
+  <li><p><a
+  href="https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/clrscode4e.sty">clrscode4e</a> (<a
+  href="https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/11599/clrscode4e.pdf">documentation</a>)
+  package for typesetting algorithms like in CLRS4</p></li>
+  
+  <li><p>Recommended text editors: <a
+  href="https://www.gnu.org/software/emacs/">Emacs</a>, <a
+  href="https://aquamacs.org/">Aquamacs</a>; we strongly recommend
+  <em><strong>not</strong></em> to use WYSIWYG editors for LaTeX like
+  LyX</p></li>
+
+</ul>
+
+<hr>
+<address>
+<!-- hhmts start -->Last modified: Wed Feb  7 13:26:31 CET 2024 <!-- hhmts end -->
+</address>
+<!-- The following testifies to my ignorance about how to make each -->
+<!-- link to an anchor within this page actually put the line of that -->
+<!-- anchor at the top of the browser tab/window. -->
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+</body>
+</html>

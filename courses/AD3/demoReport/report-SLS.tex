@@ -1,0 +1,225 @@
+\section*{Problem 2: Stochastic Local Search (SLS)}
+
+\todo{
+  %% delete this paragraph, including its footnote:
+  The \emph{investment design problem} is about finding a matrix of
+  $v$~rows and $b$~columns of~$0$-$1$ integer values, such that each
+  row sums up to~$r$, with $v \geq 2$ and $b \geq r \geq 1$, and the
+  largest dot product between all pairs of rows is minimised.
+  % 
+  Equivalently, one has to find~$v$ subsets of size~$r$ within a given
+  set of $b$~elements, such that the largest intersection of any two
+  of the $v$~sets has minimal size.
+  % 
+  An instance of the problem is parametrised by a
+  triple~$\Tuple{v,b,r}$.\footnote{\todo{Your report need not contain
+      an explanation of the problem to be solved: you can assume the
+      reader has read the problem statement in the assignment
+      instructions.  We just repeat it here for self-sufficiency of
+      this document.}}
+  
+  %% delete this paragraph:
+  This is an abstract description of a problem that appears in
+  finance: see Figure~\ref{fig:wallStreet}.  In a typical investment
+  design in finance, we have $4 \leq v \leq 25$ and
+  $250 \leq b \leq 500$, with $r \approx 100$.
+
+  %% delete this figure:
+  \begin{figure}[b]  % make it float to the bottom of a page
+    \centering
+    \includegraphics[height=5cm]{wallStreet}
+    \caption{\todo{Wall Street (\copyright\ www.forbes.com, 2014)}}
+    \label{fig:wallStreet}
+  \end{figure}
+  
+  %% delete this paragraph, if you want:
+  A lower bound on the number~$\lambda$ of shared elements of any
+  pair among $v$~subsets of size~$r$ drawn from a given set of
+  $b$~elements is given in~\cite{ASTRA:AOC}:
+  \begin{equation}\label{eq:lb}
+  \text{lb}(\lambda) = 
+    \Ceiling{
+      \frac{\Ceiling{\frac{rv}{b}}^{2} ((rv) \bmod b)  +
+        \Floor{\frac{rv}{b}}^{2} (b - ((rv) \bmod b)) - rv}
+      {v(v-1)}
+    }
+  \end{equation}
+  
+}
+
+\paragraph{Task~a: SLS Algorithm.}
+\begin{enumerate}
+\item Representation.  \todo{Describe how to represent the problem:
+  what are the variables, their meanings, their constraints, and the
+  objective function?}
+\item Initial Assignment.  \todo{Describe an algorithm for generating
+  (fast) a randomised initial assignment.}
+\item Move.  \todo{Describe one or more moves that go from an
+  assignment to a neighbouring assignment by changing the values of
+  a few variables.}
+\item Constraints.  \todo{Describe for each constraint how its
+  satisfaction is either algorithmically checkable efficiently or
+  guaranteed to be preserved by the previous two design choices.}
+\item Neighbourhood.  \todo{Describe a neighbourhood based on the
+  proposed moves.
+  % 
+  Derive a formula for computing the size of the neighbourhood in
+  terms of the problem parameters.
+  % 
+  Discuss whether the neighbourhood makes the search space connected,
+  in the sense that every feasible assignment (that is, every
+  assignment satisfying all the constraints, whether optimal or not)
+  is reachable from every initial assignment (you only need to sketch
+  a proof if the search space is connected, and give a counterexample
+  otherwise).}
+\item Cost Function.  \todo{Describe a cost function, whose value is
+  to be minimised during search.}
+\item Probing.  \todo{Describe how a neighbouring assignment, as
+  reachable by a move, can be probed efficiently:
+  % 
+  describe how the cost function can be evaluated efficiently and
+  incrementally, and describe the data structures used to do so.
+  % 
+  Give, without proof, the time complexity of probing; ideally, it is
+  (sub-)linear in the problem parameters.}
+\item Heuristic.  \todo{Describe a heuristic for exploring (via
+    probing) the neighbourhood and selecting a neighbouring assignment
+    to commit to.
+  % 
+  State whether the neighbourhood is explored exhaustively and, if
+  so, how you determine when it was exhausted.
+  % 
+  Explain how you ensure that the same neighbour is not probed twice
+  during a given exploration.}
+\item Optimality.  \todo{Describe how you use a bound on the objective
+  value in order to terminate sometimes the search with proven
+  optimality, as part of the heuristic.}
+\item Meta-Heuristic.  \todo{Describe a meta-heuristic based on tabu
+  search: explain how the tabu list is represented; choose (a
+  formula for) its size; explain how fine-grained its content is;
+  and describe how it can be looked up and maintained efficiently;
+  note that the tabu list is not necessarily an actual list, but
+  rather a concept; make sure that worsening moves are sometimes
+  made.}
+\item Random Restarts.  \todo{Describe how to detect or guess that a
+  random restart should be made, as part of the meta-heuristic.}
+\item Optional Tweaks.  \todo{Describe ideas that you used in order to
+  improve your algorithm.}
+\end{enumerate}
+In summary, the local-search parameters (not the problem
+parameters~$v$,~$b$,~$r$) are~\todo{$\alpha$ and~$\beta$.}
+
+\paragraph{Task~b: Implementation.}
+We chose the high-performance programming language \todo{Java}, for
+which a \todo{compiler or interpreter} is available on the Linux
+computers of the IT department.  All source code is \todo{uploaded}
+with this report (but not listed inside it).  The compilation and
+running instructions are \todo{\filler}.
+
+An executable called \texttt{InvDes} reads the problem
+parameters~$v$,~$b$,~$r$ as command-line arguments and writes to
+standard output a line with the space-separated values
+of~$v$,~$b$,~$r$, the lower bound~$\text{lb}(\lambda)$ on~$\lambda$,
+and the achieved~$\lambda$, followed by one line per row of
+a~$v \times b$ matrix representing the solution, the~$0$-$1$ cell
+values being space-separated.
+
+We validated the correctness of our implementation by \todo{checking
+  its outputs on 1,258 instances via the provided polynomial-time
+  solution checker}.
+
+\paragraph{Task~c: Experiments.}
+%% Note the non-breaking spaces, typeset via ~, between numbers and
+%% their units:
+All experiments were run under
+% specification of the ThinLinc machines of the IT department, or
+% replace by a similar-looking specification of your own hardware:
+\todo{Linux Ubuntu~18.04 ($64$~bit) on an Intel Xeon E5520 of
+  $2.27$~GHz, with $4$~processors of $4$~cores each, with a $70$~GB
+  RAM and an~$8$~MB L3 cache (a ThinLinc computer of the IT
+  department).}
+
+We fine-tuned the local-search parameters as follows.  \todo{Discuss
+  the impact of the local-search parameters~$\alpha$ and~$\beta$ on
+  the performance of your SLS algorithm.}
+
+\newcommand{\TimeoutSLS}{\todo{300.0}}  % timeout, in CPU seconds; MIN 300.0
+\newcommand{\RunsSLS}{\todo{5}}         % independent runs per instance; MIN 5
+
+The \todo{median} runtime (in seconds), \todo{median} number of steps,
+and \todo{median} achieved~$\lambda$ over~$\RunsSLS$ independent runs
+for each of the $21$~instances of the assignment instructions are
+given in Table~\ref{tab:res:sls}, for \todo{two} configurations
+%% remember: AT LEAST TWO, except for solo teams!
+of values for the local-search parameters~\todo{$\alpha$ and~$\beta$}.
+The timeout was~$\TimeoutSLS$~CPU seconds per run.%
+%
+%% Delete this footnote:
+\footnote{\todo{Hint: In order to save a lot of time, it is very
+    important that you write a script that conducts the experiments
+    for you and directly generates a result table (see the \LaTeX\
+    source code of Table~\ref{tab:res:sls} for how to do that), which
+    is then automatically imported, rather than manually copied, into
+    your report: each time you change the code, it suffices to re-run
+    that script and re-compile your report, without any tedious
+    copying!  The sharing of scripts is allowed and even encouraged.}}
+
+\begin{table}[t]  % make it float to the top of a page
+  \centering
+  \begin{tabular}{rrrrrrrrrrr}  % right alignment --> decimal point alignment
+    & & &
+    & \multicolumn{3}{c}{\todo{$\Tuple{\alpha,\beta}=\Tuple{10,5}$}}
+    & \multicolumn{3}{c}{\todo{$\Tuple{\alpha,\beta}=\Tuple{20,8}$}} \\
+    \cmidrule(r){5-7} \cmidrule(r){8-10}
+    $v$ & $b$ & $r$ & $\text{lb}(\lambda)$
+        & time & steps & $\lambda$
+        & time & steps & $\lambda$ & exact \\
+    \midrule
+    \input{results-SLS.tex} %% let your experiment script write directly
+                            %% into this file, making sure every number
+                            %% in a column has the _same_ number of decimals
+  \end{tabular}
+  \caption{Investment design: median runtime (in seconds), median
+    number of steps, and median achieved~$\lambda$, for \todo{two}
+    configurations
+    %% remember: AT LEAST TWO, except for solo teams!
+    of values for the local-search parameters~\todo{$\alpha$
+      and~$\beta$}, over~$\RunsSLS$~independent runs per instance,
+    with a timeout of $\TimeoutSLS$~CPU seconds per run.
+    %
+    The right-most column gives the number of candidate solutions the
+    outlined exact algorithm has to examine per second in order
+    to match the runtime performance of the seemingly best
+    configuration of values for the local-search parameters, namely
+    \todo{$\Tuple{\alpha,\beta}=\Tuple{20,8}$}, if the instance
+    was solved to proven optimality, and `n/a' for `non-applicable'
+    otherwise.
+    %% delete the following sentence:
+    \todo{(The sample performance of this demo report is made up!)}
+    %
+  }
+  \label{tab:res:sls}
+\end{table}
+
+We observe that \todo{\filler}, because \todo{\filler}.
+
+\paragraph{Task~d: Exact Algorithm.}
+An exact algorithm could work as follows: \todo{discuss its features
+  (for instance, does it perform brute-force search?).}
+%
+The size of the search space of this exact algorithm is
+\todo{$\binom{r!}{\cos b} \cdot \log v$}, because \todo{\filler}.
+
+The number of candidate solutions this exact algorithm has to examine
+per second in order to match the runtime performance of the seemingly
+best configuration of values for the local-search parameters,
+according to Task~c, of our stochastic local search algorithm is given
+in the right-most column of Table~\ref{tab:res:sls}, for each instance
+solved to proven optimality.
+%
+We think that \todo{\filler}, because \todo{\filler}.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "demoReport"
+%%% End:
