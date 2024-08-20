@@ -1,5 +1,14 @@
 Change Log
 
+2024-08-20:
+T01:73,78,79,81,84,88,91-93: updated for autumn 2024
+T01-08 + demo-M4CO.[tex|pdf]: all links to defunct user.it.uu.se updated
+T01:56+62: systematic & local search vs exact solving clarified
+T02:19: added reference to added slide T02:22
+T02:20: added mention of "explicit reification"
+T02:22: added slide, clarifying that "where" on variables just hides implication
+T07:55: "PC" corrected into "CP"
+
 2023-10-23:
 T01:25: "combinatorial problem" defined, because used from T01:71 on
 T01:56: accidentally invisible last line made visible again
