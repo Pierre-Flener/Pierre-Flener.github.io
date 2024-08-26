@@ -1,5 +1,15 @@
 Change Log
 
+2024-08-26:
+T01:26: added portfolios as a solving technology
+T01:56: clarified that LS [almost] always times out
+T01:62: clarified that CBLS almost always times out
+T01:62: moved CP-SAT from LCG to portfolio technology
+T07:07: added portfolios as a solving technology
+T07:09: applied changes of 2024-08-20 and today to T01:56
+T07:53: renamed section by adding "& Portfolios"
+T07:56: moved CP-SAT from LCG to portfolio technology
+
 2024-08-20:
 T01:73,78,79,81,84,88,91-93: updated for autumn 2024
 T01-08 + demo-M4CO.[tex|pdf]: all links to defunct user.it.uu.se updated
