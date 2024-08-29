@@ -5,10 +5,12 @@ code 1DL451) by Prof. Pierre Flener at Uppsala University in Sweden.
 The course is held every autumn semester.
 
 The first half of the COCP course is the M4CO course and comprises the
-first 11 topics (T01 to T11): we use the MiniZinc language and
-toolchain (https://www.minizinc.org) in order to model various
-problems and run the models under solvers of various technologies (CP,
-SAT, MIP, local search, and hybrids thereof).
+first 11 topics (T01 to T11, though topics T09 to T11 are incomplete
+have not been used or evolved for several years): we use the MiniZinc
+language and toolchain (https://www.minizinc.org) in order to model
+various problems and run the models under solvers of various
+technologies (CP, SAT, MIP, local search, and hybrids & portfolios
+thereof).
 
 The second half of the COCP course is now based on, and contributes
 to, the MiniCP teaching project (http://www.minicp.org), with files
@@ -19,6 +21,6 @@ constraint programming (CP) technology and used the Gecode C++ library
 currently not maintained, but left here for archival purposes.
 
 If you are an instructor and would like to use the LaTeX source of
-these slides, then contact me (https://user.it.uu.se/~pierref); under
-additional conditions, I can also give you the source code of
+these slides, then contact me (https://pierre-flener.github.io);
+under additional conditions, I can also give you the source code of
 assignment questions.
