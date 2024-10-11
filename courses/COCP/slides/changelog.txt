@@ -1,5 +1,8 @@
 Change Log
 
+2024-10-11:
+T12:10: ", which must be finite" appended to the second item
+
 2024-08-26:
 T01:26: added portfolios as a solving technology
 T01:56: clarified that LS [almost] always times out
