@@ -33,64 +33,34 @@ accessible via web browsers:</p>
 
 <ul>
 
-<li><p>Problem 1 (in Assignment 1):
-  <!--
-    We strongly recommend you use the Python interface to our academic
-    site license (on the Linux hosts of the IT department) of the
-    world-class commercial MIP solver <a
-    href="https://www.gurobi.com">Gurobi Optimizer</a>.</p><p>
-  -->
-  Effortless and free access to MIP solvers is
-  <!-- also -->
-  provided by the <a href="https://neos-server.org/neos/solvers">NEOS
-  Server for Optimisation</a> (search for "mixed integer linear programming").
-  <!-- , but not via programming languages. -->
-  We then recommend you use the world-class commercial MIP solver
-  <a href="https://www.gurobi.com">Gurobi Optimizer</a>
-  <!--
-    , or <a href="https://www.ibm.com/analytics/cplex-optimizer">CPLEX
-    Optimizer</a>, or <a
- href="https://www.fico.com/en/products/fico-xpress-solver">FICO
-    Xpress Solver</a>
-  -->
-  (or, but only in case of a temporary licensing issue with Gurobi at
-  NEOS, the open-source MIP solver <a
+  <li><p>Problem 1 (in Assignment 1): Effortless and free access to
+  MIP solvers is provided by the <a
+  href="https://neos-server.org/neos/solvers">NEOS Server for
+  Optimisation</a> (search for "mixed integer linear programming").
+  We then recommend you use the world-class commercial MIP solver <a
+  href="https://www.gurobi.com">Gurobi Optimizer</a> (or, but only in
+  case of a temporary licensing issue with Gurobi at NEOS, the
+  open-source MIP solver <a
   href="https://github.com/coin-or/Cbc">Cbc</a>), via the <a
   href="https://ampl.com">AMPL</a> modelling language: when using the
-  NEOS server, you do <em>not</em>  need to install the AMPL integrated
+  NEOS server, you do <em>not</em> need to install the AMPL integrated
   development environment (IDE) or AMPL command-line interface (CLI)
   or a MIP solver.  Use a commands file with <tt>option gurobi_options
   'outlev=1';</tt> as the single line in order to turn on verbose
   printing, which includes the optimality gap.</p>
 
-  <p>The effort of installing the following
-  <!-- two -->
-  free alternative is outside the course time budget (and we have no
-  resources to help you with installation issues), since NEOS provides
-  access to installed versions: If you have and prefer to use your own
-  hardware, then you can
-  <!--
-    either (1) obtain and install a free individual academic license
-    by following the instructions for the Python interface to Gurobi
-    Optimizer at <a href="https://pypi.org/project/gurobipy">gurobipy</a>
-    (careful, the license is limited to one computer, so install it on
-    the most suitable computer for help sessions and meetings with your
-    teammate), or (2)
-  -->
-  install the AMPL IDE or AMPL CLI bundled with
-  <!--
-    <a href="https://www.ibm.com/analytics/cplex-optimizer">CPLEX
-    Optimizer</a> and
-  -->
-  <a href="https://www.gurobi.com">Gurobi Optimizer</a> (first
-  download the bundle
-  <!-- via "AMPL Software for Assignment 1" -->
-  from the
-  Files section at the AD3 page of Studium and then follow the <a
+  <p>The effort of installing the following free alternative is
+  outside the course time budget (and we have no resources to help you
+  with installation issues), since NEOS provides access to installed
+  versions: If you have and prefer to use your own hardware, then you
+  can install the AMPL IDE or AMPL CLI bundled with <a
+  href="https://www.gurobi.com">Gurobi Optimizer</a> (first download
+  the bundle from the Files section at the AD3 page of Studium and
+  then follow the <a
   href="https://ampl.com/ampl-course-install">installation
   instructions</a>): a course license was provided free-of-charge by
-  <a href="https://ampl.com">AMPL.com</a>: it expires on 15 August 2024
-  and can only be used for course purposes; use the AMPL command
+  <a href="https://ampl.com">AMPL.com</a>: it expires on 15 August
+  2025 and can only be used for course purposes; use the AMPL command
   <tt>option solver gurobi; option gurobi_options 'outlev=1';</tt>
   before you run <tt>solve</tt> in order to turn on verbose printing,
   which includes the optimality gap.</p>
@@ -100,11 +70,14 @@ accessible via web browsers:</p>
   it, as the sample models on the lecture slides suffice.</p></li>
 
 <li><p>Problem 3 (in Assignment 2): We recommend you use the SAT
-solver <a href="http://minisat.se">MiniSat</a>, and possibly first
-play with it a bit via <a
-href="http://logicrunch.it.uu.se:4096/~wv/minisat">our web
-interface</a> (where the time-out is 300 seconds).  Use the <a
-href="http://www.satcompetition.org/2009/format-benchmarks2009.html">DIMACS
+solver <a href="http://minisat.se">MiniSat</a>.
+<!--
+  , and possibly first play with it a bit via <a
+  href="http://logicrunch.it.uu.se:4096/~wv/minisat">our web
+  interface</a> (where the time-out is 300 seconds).
+-->
+Use the <a
+href="https://web.archive.org/web/20190325181937/https://www.satcompetition.org/2009/format-benchmarks2009.html">DIMACS
 CNF</a> format for SAT solvers, by <a
 href="http://dimacs.rutgers.edu">DIMACS</a>, the Center for Discrete
 Mathematics and Theoretical Computer Science.</p></li>
@@ -113,15 +86,18 @@ Mathematics and Theoretical Computer Science.</p></li>
 solver <a href="https://github.com/Z3Prover/z3/wiki">Z3</a> (possibly
 via its <a
 href="https://microsoft.github.io/z3guide/playground/Freeform%20Editing/">playground</a>
-web interface) or the <a href="
-http://logicrunch.it.uu.se:4096/~wv/princess">web interface to the SMT
-solver Princess</a>.  Use the <a
+web interface).
+<!--
+  or the <a href="http://logicrunch.it.uu.se:4096/~wv/princess">web
+  interface to the SMT solver Princess</a>.
+-->
+Use the <a
 href="https://smtlib.cs.uiowa.edu/standard.shtml">SMT-LIB</a> format
 for SMT solvers
-(<a href="https://smtlib.cs.uiowa.edu/papers/smt-lib-reference-v2.6-r2017-07-18.pdf">tutorial</a>).
 <!--
-  (<a href="https://smtlib.github.io/jSMTLIB/SMTLIBTutorial.pdf">tutorial</a>).
+  (<a href="https://smtlib.cs.uiowa.edu/papers/smt-lib-reference-v2.6-r2017-07-18.pdf">tutorial</a>).
 -->
+(<a href="https://smtlib.github.io/jSMTLIB/SMTLIBTutorial.pdf">tutorial</a>).
 </p></li>
 
 <li><p>The Coursera on-line course <a
@@ -216,12 +192,12 @@ later.  Here are some LaTeX resources:</p>
 <ul>
   
   <li><p><a href="demoReport/demoReport.pdf">Demo report</a> (LaTeX <a
-  href="demoReport">source</a>), which also contain examples of all
-  LaTeX commands you need for this course; from the command line (or
-  with Emacs/Aquamacs), compile with <code><tt>pdflatex</tt></code>
-  (once or twice, depending on whether cross-references need to be
-  recomputed), and run <code>bibtex</code> whenever the bibliography
-  was modified</p></li>
+  href="https://github.com/Pierre-Flener/Pierre-Flener.github.io/tree/main/courses/AD3/demoReport">source</a>),
+  which also contain examples of all LaTeX commands you need for this
+  course; from the command line (or with Emacs/Aquamacs), compile with
+  <code><tt>pdflatex</tt></code> (once or twice, depending on whether
+  cross-references need to be recomputed), and run <code>bibtex</code>
+  whenever the bibliography was modified</p></li>
 
   <li><p><a href="https://www.latex-project.org">LaTeX</a></p></li>
 
@@ -244,7 +220,8 @@ later.  Here are some LaTeX resources:</p>
   
   <li><p>Recommended text editors: <a
   href="https://www.gnu.org/software/emacs/">Emacs</a>, <a
-  href="https://aquamacs.org/">Aquamacs</a>; we strongly recommend
+  href="https://aquamacs.org/">Aquamacs</a>, and share-editing via <a
+  href="https://www.overleaf.com/">Overleaf</a>; we strongly recommend
   <em><strong>not</strong></em> to use WYSIWYG editors for LaTeX like
   LyX</p></li>
 
@@ -252,7 +229,7 @@ later.  Here are some LaTeX resources:</p>
 
 <hr>
 <address>
-<!-- hhmts start -->Last modified: Wed Feb  7 13:26:31 CET 2024 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Mon Nov 18 17:08:15 CET 2024 <!-- hhmts end -->
 </address>
 <!-- The following testifies to my ignorance about how to make each -->
 <!-- link to an anchor within this page actually put the line of that -->
