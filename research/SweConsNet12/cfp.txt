@@ -1,0 +1,33 @@
+First call for presentations and participation:
+
+       SweConsNet Workshop 2012
+       (http://web.it.kth.se/~cschulte/events/SweConsNet-2012/)
+
+       The 11th workshop of SweConsNet,
+       the Network for Sweden-based researchers and practitioners
+       of Constraint programming
+
+       Collocated with the 27th annual workshop of the 
+       Swedish Artificial Intelligence Society (SAIS)
+       (http://www.sais.se/sais2012/)
+
+       Hosted at Örebro University
+       Örebro, Sweden
+       May 14th, 2012
+
+The Network for Sweden-based researchers and practitioners of Constraint technology (SweConsNet) kindly invites you to participate in the yearly SweConsNet Workshop.  The purpose of the workshop is to learn about ongoing research in Constraint Programming, existing projects and products, and further development of the network. SweConsNet Workshop 2012 is the 11th edition of this annual event.
+
+The workshop is open to everybody interested in the theory and practice of constraint programming, whether based in Sweden or elsewhere.  The scope of the workshop spans all areas of Constraint Programming, and is open to presentations and discussions addressing topics related to both theory and application.
+
+We hope for your participation, and highly encourage you to submit a proposal for a presentation of your ongoing work, recent results, or of a relevant discussion topic.  There are no paper submissions, reviews, or proceedings, hence recent conference/journal papers may also be presented.  
+
+To register, please send a brief statement of intent, and desirably the title and abstract of your talk, to Christian Schulte (cschulte at kth.se).  In order to facilitate organization, please notify us of your intention to participate as soon as possible, and at the latest before April 30th, 2012. The workshop does not have a registration fee.  
+
+A preliminary list of speakers is provided at the workshop website, and several time slots remain available.
+
+Please forward this message to anyone who might be interested in this workshop but is not yet on the SweConsNet mailing list.
+
+Best regards,
+	Christian Schulte
+
+P.S.: If you wish to subscribe to the mailing list, please send a message to Justin Pearson (Justin.Pearson at it.uu.se).

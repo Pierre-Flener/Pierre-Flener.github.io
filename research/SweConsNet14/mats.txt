@@ -1,0 +1,11 @@
+   Previous approaches for scheduling a league with round-robin and
+   divisional tournaments involved decomposing the problem into easier
+   subproblems. This approach, used to schedule the top Swedish
+   handball league Elitserien, reduces the problem complexity but can
+   result in suboptimal schedules. This paper presents an integrated
+   constraint programming model that allows to perform the scheduling
+   in a single step. Particular attention is given to identifying
+   implied and symmetry-breaking constraints that reduce the
+   computational complexity significantly. The experimental evaluation
+   of the integrated approach takes considerably less computational
+   effort than the previous approach.

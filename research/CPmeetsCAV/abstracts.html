@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="description" content="" />
+<meta name="keywords" content="constraint programming, program verification" />
+<meta name="author" content="Pierre Flener" />
+<link rel="stylesheet" type="text/css" href="style.css" title="Variant Rounded" media="screen,projection" />
+<title>CP meets CAV: Abstracts</title>
+</head>
+
+<body><div id="wrap">
+
+<div id="header">
+  <h1>CP meets CAV</h1>
+  <p id="slogan">Abstracts</p>
+</div>
+
+<div id="sitemenu">
+  <ul>
+    <li><a href=".">Welcome</a></li>
+    <li><a href="location.html">Location & Cost</a></li>
+    <li><a class="current" href="programme.html">Programme</a></li>
+    <li><a href="participants.html">Participants</a></li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+
+<div id="extras">
+  <h2>Location</h2>
+  <ul>
+    <li>Turun&ccedil;, Turkey</li>
+  </ul>
+  <h2>Dates</h2>
+  <ul>
+    <li>Monday 25 June - Friday 29 June 2012</li>
+  </ul>
+  <h2>Organisers</h2>
+  <ul>
+    <li><a href="http://user.it.uu.se/~parosh/">Parosh Aziz Abdulla</a></li>
+    <li><a href="http://user.it.uu.se/~pierref/">Pierre Flener</a></li>
+    <li><a href="http://user.it.uu.se/~justin/">Justin Pearson</a></li>
+    <li><a href="http://www.cs.brown.edu/~pvh/">Pascal Van Hentenryck</a></li>
+  </ul>
+</div>
+
+<div id="content">
+
+<p class="center">
+<a title="ITAP"
+href="images/Joe/DSCN0348.jpg"><img src="images/Joe/sDSCN0348.jpg"
+alt="ITAP" width="130" /></a>
+<a title="View from the ITAP housing area"
+href="images/Dario/IMG_0339.jpg"><img src="images/Dario/sIMG_0339.jpg"
+alt="View from the ITAP housing area" width="130" /></a>
+<a title="ITAP terrace"
+href="images/Joe/DSCN0346.jpg"><img src="images/Joe/sDSCN0346.jpg"
+alt="ITAP terrace" width="130" /></a>
+<a title="Turun&ccedil;, with ITAP on centre right"
+href="images/Michel/P1010210.jpg"><img src="images/Michel/sP1010210.jpg"
+alt="Turun&ccedil;, with ITAP on centre right" width="130" /></a>
+</p>
+
+<h2>Abstracts</h2>
+(In no particular order&hellip;)
+<hr />
+<div>
+  <h4><a name="bin">Challenges in Hardware Verification</a></h4>
+  <p>Eyal Bin</p>
+
+<p>We present a glimpse of the modern challenges of high-end hardware
+system manufacturers and their CP/SAT-based solutions, in particular
+the interface and interplay between simulation-based and formal
+verification.</p>
+
+</div>
+
+<hr />
+
+<div>
+
+<h4><a name="fages">On Solving Temporal Logic Constraints in Constrained Transition Systems</a></h4>
+<p>Fran&ccedil;ois Fages</p>
+<p>We study constrained transition systems where both states and
+transitions are described symbolically with constraints, and consider
+the satisfaction of temporal logic formulae containing free variables.
+We present a fixpoint procedure to solve temporal logic constraints in
+this setting and show its generality compared to the constraint-based
+deductive model-checking method of Delzanno and Podelski.  We
+illustrate the expressive power of this framework with a few examples,
+describe its implementation in Prolog and PPL, and demonstrate the
+scalability of this approach with one challenging application for the
+parameter synthesis problem of piecewise multi-affine models of gene
+regulation.</p>
+
+<p>(Joint work with Gr&eacute;gory Batt, Calin Belta, Thierry Martinez, and
+Neda Saeedloei)</p>	
+
+</div>
+<hr />
+<div><h4><a name="senni">Program Transformation and Constraint-Based Verification</a></h4>
+<p>Valerio Senni</p>
+
+<p>
+We illustrate a framework for rewriting Constraint Logic Programs (CLP),
+based on Program Transformation (PT).
+CLP has been used to provide a model of the behavior of a program, or a system,
+as well as verification conditions. The interest of using a CLP-based language
+for this task is in its expressiveness, obtained combining a language
+of constraints
+on a specific domain (e.g., FD, trees, reals, integers) with
+recursion, unification, and negation.
+PT is a rule-based rewriting calculus that is traditionally used to achieve
+optimizations of a given program, guided by syntactic properties of
+the given program.
+We show how some optimization strategies can be used to perform (or
+simply improve)
+some analysis tasks. The transformation process, integrated with
+constraint manipulation
+techniques, is successful whenever it is able to reduce the initial,
+complex reasoning
+task to a much easier one (such as a simple constraint satisfiability test).</p>
+
+</div>
+<hr />
+<div><h4><a name="bardin">An Alternative to SAT-based Approaches for Bit-Vectors</a></h4>
+
+<p>S&eacute;bastien Bardin
+</p>
+
+
+<p>
+The theory BV of bit-vectors, i.e. fixed-size arrays of bits equipped
+with standard low-level machine instructions, is becoming very popular
+in formal verification.  Standard solvers for this theory are based on
+a bit-level encoding into propositional logic and SAT-based resolution
+techniques.  In this paper, we investigate an alternative approach
+based on a word-level encoding into bounded arithmetic and Constraint
+Programming (CP) resolution techniques.  We define an original CP
+framework (domains and propagators) dedicated to bitvector
+constraints.  This framework is implemented in a prototype and thorough
+experimental studies have been conducted.  The new approach is shown to
+perform much better than standard CP-based approaches, and to
+considerably reduce the gap with the best SAT-based BV solvers.
+</p>
+
+<p>
+(Remark: the interest here regarding "CP meets CAV" is to show how
+CP(FD) can be used as a promising alternative to the standard
+SAT-based resolution of bitvectors constraints, which are a major
+issue in program verification.)
+</p>
+
+<p>(TACAS 2010)</p>
+
+
+</div>
+<hr />
+<div><h4><a name="bardin-2">A Combined Approach for Solving Constraints over Finite Domains and Arrays</a></h4>
+
+<p>S&eacute;bastien Bardin
+</p>
+  
+
+<p>
+Arrays are ubiquitous in the context of software verification.
+However, effective reasoning over arrays is still rare in CP, as local
+reasoning is dramatically ill-conditioned for constraints over arrays.
+In this paper, we propose an approach combining both global symbolic
+reasoning and local filtering in order to solve constraint systems
+involving arrays (with accesses, updates and size constraints) and
+finite-domain constraints over their elements and indexes. Our
+approach, named fdcc, is based on a combination of a congruence
+closure algorithm for the standard theory of arrays and a CP solver
+over finite domains.  The tricky part of the work lies in the
+bi-directional communication mechanism between both solvers.  We
+identify the significant information to share, and design ways to
+master the communication overhead.  Experiments on random instances
+show that fdcc solves more formulas than any portfolio combination of
+the two solvers taken in isolation, while overhead is kept reasonable.
+</p>
+
+<p>
+(Remark: The interest here regarding "CP meets CAV" is the following.
+First note that the theory of arrays is crucial in software
+verification.  We show how to combine symbolic techniques (typically
+used in CAV) and filtering techniques from CP to solve constraints
+over arrays ranging over finite domains.)
+</p>
+
+<p>(CPAIOR 2011, with Arnaud Gotlieb)
+</p>
+
+</div>
+<hr />
+<div><h4><a name="tronci">Quantized Feedback Control Software Synthesis from System Level Formal
+Specifications</a></h4>
+
+<p>Enrico Tronci</p>
+
+<p>
+Many Embedded Systems are indeed Software Based Control Systems, that
+is control systems whose controller consists of control software
+running on a microcontroller device.  This motivates investigation on
+Formal Model Based Design approaches for automatic synthesis of
+embedded systems control software.
+</p>
+
+<p>
+We present an algorithm, along with a tool QKS implementing it, that
+from a formal model (as a Discrete Time Linear Hybrid System, DTLHS)
+of the controlled system (plant), Implementation Specifications (that
+is, number of bits in the Analog-to-Digital, AD, conversion) and
+System Level Formal Specifications (that is, safety and liveness
+requirements for the closed loop system) returns
+correct-by-construction control software that has a Worst Case
+Execution Time (WCET) linear in the number of AD bits and meets the
+given specifications.
+</p>
+
+<p>
+We model DTLHSs, as well as safety and liveness properties as boolean
+combinations of linear constraints over real as well as discrete
+variables. We use a Mixed Integer Linear Programming (MILP) solver
+(namely, GLPK), to compute a suitable finite state overapproximation
+of the DTLHS modelling the plant and use Ordered Binary Decision
+Diagrams (OBDDs) to compute a (BLIF representation of a) controller
+meeting the given specifications and then to generate a C
+implementation for such a controller.
+</p>
+
+<p>
+We show feasibility of our approach by presenting experimental results
+on using it to synthesize control software for a buck DC-DC converter,
+a widely used mixed-mode analog circuit.
+</p>
+
+<p>
+Work presented at CAV 2010:<br />
+F. Mari, I. Melatti, I. Salvo, and E. Tronci, <br />
+Synthesis of quantized feedback control software for discrete time linear hybrid systems,<br />
+ in Computer Aided Verification (T. Touili, B. Cook, and P. Jackson,
+eds.), vol. 6174 of Lecture Notes in Computer Science, pp. 180-195,
+Springer Berlin / Heidelberg, 2010.
+</p>
+
+</div>
+<hr />
+<div><h4><a name="codish">Programming with Boolean Satisfaction</a></h4>
+
+<p>Mike Codish</p>
+
+
+<p>
+In recent years, research on Boolean satisfiability (SAT) is
+generating remarkably powerful SAT solvers capable of handling larger
+and larger SAT instances.  With the availability of progressively
+stronger SAT solvers, an accumulating number of applications have been
+developed which demonstrate that real world problems can often be
+solved by encoding them into SAT.  Tailgating the success of SAT
+technology are a variety of tools which can be applied to help specify
+and then compile problem instances to corresponding SAT instances.
+Typically, a constraint based modeling language is introduced and used
+to model instances. Then encoding techniques are applied to compile
+constraints to the language of an underlying solver such as SAT, SMT,
+or others.  In this talk I advocate the need for "optimizing
+compilers" for SAT encoding and present BEE ("Ben-Gurion University
+Equi-propagation Encoder").  Using BEE eases the encoding process and
+performs optimizations to simplify constraints prior to their encoding
+to CNF.  I will describe these optimizations: equi-propagation,
+partial evaluation, and decomposition, and demonstrate their
+application.
+</p>
+<p>(Invited talk at FLOPS 2012)</p>
+
+</div>
+<hr />
+<div><h4><a name="ruemmer">Reasoning for Verification: Theorem Provers, SMT, and Interpolation</a></h4>
+
+<p>Philipp R&uuml;mmer
+</p>
+
+
+<p>
+Automated theorem provers and SMT solvers form the backbone of many of
+today’s verification systems, responsible for discharging verification
+conditions that encode correctness properties of hardware or software
+designs, generating counterexamples, refining abstractions, and other
+purposes.  In this talk I will try to give an overview of automated
+logic-based reasoning technology relevant for verification; while the
+selection will necessarily be biased by personal research, prejudice
+will be kept at a minimum.  I will in particular outline successes, a
+number of current research directions, including Craig interpolation,
+and challenges in the development of solvers tailored to verification.
+</p>
+
+</div>
+<hr />
+<div><h4><a name="enea">Abstract Domains for Automated Reasoning about List-Manipulating
+Programs with Infinite Data</a></h4>
+
+<p>Constantin Enea
+</p>
+
+
+<p>
+We describe a framework for reasoning about programs with lists
+carrying integer numerical data.  We use abstract domains to describe
+and manipulate complex constraints on configurations of these programs
+mixing constraints on the shape of the heap, sizes of the lists, on
+the multisets of data stored in these lists, and on the data at their
+different positions.  Moreover, we provide powerful techniques for
+automatic validation of Hoare-triples and invariant checking, as well
+as for automatic synthesis of invariants and procedure summaries using
+modular inter-procedural analysis.  The approach has been implemented
+in a tool called CELIA and experimented successfully on a large
+benchmark of programs.
+</p>
+
+</div>
+<hr />
+<div><h4><a name="yang">Abstractions from Tests</a></h4>
+
+<p>Hongseok Yang
+</p>
+
+
+<p>
+In this talk, I will present a framework for leveraging dynamic
+analysis to find good abstractions for static analysis.  A static
+analysis in our framework is parametrised.  Our main insight is to
+directly and efficiently compute from a concrete trace, a necessary
+condition on the parameter configurations to prove a given query, and
+thereby prune the space of parameter configurations that the static
+analysis must consider.  Following this framework, we have developed
+two cost-effective static analyses: a flow- and context-sensitive
+thread-escape analysis and a flow- and context-insensitive points-to
+analysis. In the talk, I will use the former analysis as a running
+example, and explain the key ideas of our framework concretely. I will
+also comment on the results of running this analysis on six Java
+programs comprising two million bytecodes.
+</p>
+
+<p>(Joint work with Mayur Naik, Ghila Castelnuovo, and Mooly Sagiv.)
+</p>
+</div>
+<hr />
+<div><h4><a name="piskac-1">SMT Solvers and Their Limitations</a></h4>
+
+<p>Ruzica Piskac
+</p>
+
+<p>
+Modern SMT solvers are powerful tools, used as a core engine in
+applications, such as program analysis, software engineering, program 
+model checking, hardware verification, and many more.  In this talk we
+give an overview of basic techniques,  used in the implementation of SMT
+solvers. SMT solvers can reason about formulas that combine several
+different theories and we describe the standard Nelson-Oppen combination
+procedure. We also report on some of the limitations of today's SMT
+solvers. Although the research and development of theory solvers is guided
+by need of the users, there are still some interesting decidable theories
+that lack an efficient theory solver. In addition,  not all SMT solvers
+can handle quantified formulas. There exist complete instantiation-based
+procedures that can address the satisfiability question, even for
+quantified formulas. Finally, we will show that the requirements of
+Nelson-Oppen combination are too restrictive and we will presented a new
+combination technique for theories sharing sets. This combination
+procedure works by reduction to a common shared theory. The resulting
+theory is useful for automated verification of complex properties of data
+structure implementations.
+</p>
+</div>
+
+<hr />
+<div><h4><a name="piskac-2">Software Synthesis using Automated Reasoning</a></h4>
+
+<p>Ruzica Piskac</p>
+
+<p>
+Software synthesis is a technique for automatically generating code from
+a given specification. The goal of software synthesis is to make
+software development easier, while increasing both the productivity of
+the programmer and the correctness of the produced code.  In this talk, we
+present an approach to synthesis that relies on the use of automated
+reasoning and decision procedures. Comfusy is an extension to the Scala
+compiler and a tool for complete functional synthesis. It accepts as an
+input expressions with input and output variables  and outputs code that
+computes output values as a function of input values. In addition, it also
+outputs the preconditions that the input variables have to satisfy in
+order for a solution to exist. We will also present a tool for interactive
+synthesis of code snippets.
+</p>
+
+</div>
+
+
+</div>
+<div id="footer">
+  <p><strong>
+  Copyright &copy; 2012 Pierre Flener
+  <script type="text/javascript">
+  document.write("(" + document.lastModified + ")");
+  </script>
+  </strong><br />
+  <a href="http://andreasviklund.com/">Template design by Andreas Viklund</a></p>
+</div>
+
+</div></body>
+</html>

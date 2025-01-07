@@ -1,0 +1,12 @@
+We discuss the consistency of constraints for which the set of
+solutions can be recognised by an automaton. Such an automaton
+induces a decomposition of the constraint into a conjunction of
+constraints. The so far most general result is that if the
+constraint hypergraph of such a decomposition is Berge-acyclic,
+then the decomposition provides hyper-arc consistency. We focus
+on constraint networks that have alpha-acyclic or centred-cyclic
+hypergraph representations and give conditions where the induced
+decomposition provides hyper-arc consistency. We also give
+conditions that help derive implied constraints that are
+necessary to maintain hyper-arc consistency.
+

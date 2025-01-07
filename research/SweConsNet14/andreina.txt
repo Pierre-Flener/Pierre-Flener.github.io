@@ -1,0 +1,13 @@
+Automata, possibly with counters, allow many constraints to be
+expressed in a simple and high-level way. An automaton induces a
+decomposition into a conjunction of already implemented
+constraints. Generalised arc consistency is not generally
+maintained on decompositions induced by counter automata with
+more than one state or counter. To improve propagation of
+automaton-induced constraint decompositions, we use automated
+tools to derive loop invariants from the constraint checker
+corresponding to the given automaton. These loop invariants
+correspond to implied constraints, which can be added to the
+decomposition. We consider two global constraints and derive
+implied constraints to improve propagation even to the point of
+maintaining generalised arc consistency.

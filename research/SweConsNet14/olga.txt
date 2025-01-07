@@ -1,0 +1,13 @@
+Testing a telecommunication protocol often requires protocol log
+analysis. A protocol log is a sequence of messages with
+timestamps. Protocol log analysis involves checking that the content
+of messages and timestamps are correct with respect to the protocol
+specification. We talk about some recent work on using constraint
+programming both  generation protocol logs to be used as test-cases
+for telecommunication equipment, and the use of constraint programming
+directly to verify the behaviour of telecommunication components.  
+ Our case study is the Public Warning System service,
+which is a part of the Long Term Evolution (LTE) 4G standard.
+
+
+

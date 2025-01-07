@@ -1,0 +1,5 @@
+  We introduce a simple idea for deriving reified global constraints
+  in a systematic way.  It is based on the observation that most
+  global constraints can be reformulated as a conjunction of pure
+  functional dependency constraints together with a constraint that
+  can be easily reified. 

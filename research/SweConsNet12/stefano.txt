@@ -1,0 +1,19 @@
+afety-critical real-time applications are typically subject to
+stringent timing constraints which are dictated by the
+surrounding physical environments. Specifically, tasks in these
+applications need to finish their execution before given
+deadlines, otherwise the system is deemed unsafe. It is therefore
+important to test real-time systems for deadline misses. In this
+talk, we present a strategy for testing real-time applications
+that aims at finding test scenarios in which deadline misses
+become more likely. We identify such test scenarios by searching
+the possible ways that a set of real-time tasks can be executed
+according to the scheduling policy of the operating system on
+which they are running. We formulate this search problem using a
+constraint optimization model that includes (1) a set of
+constraints capturing how a given set of tasks with real-time
+constraints are executed according to a particular scheduling
+policy, and (2) a cost function that estimates how likely the
+given tasks are to miss their deadlines. We implement our
+constraint optimization model in ILOG, apply our model to several
+examples, and report on the performance results.

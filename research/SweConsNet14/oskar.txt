@@ -1,0 +1,14 @@
+Minimization of the total energy consumption for a set of
+industrial robots can be posed as a Mixed Integer Nonlinear
+Program (MINLP). A nonlinear cost function describes the energy
+use while a set of mixed integer linear constraints encode mutual
+exclusion and preconditions.  Much of the problem structure is
+lost when the mutual exclusions are converted into an integer
+formulation.  We propose integrating MINLP and Constraint
+Programming (CP) techniques to solve the nonlinear scheduling
+problem more efficiently. By utilizing CP, infeasibilities caused
+by the scheduling dynamics may be detected at an earlier stage in
+the branch and bound tree. Linear and nonlinear programming
+methods are added to Gecode using a custom constraint. Results
+from a small case study on a job shop like problem with cubic
+costs shows some promising results.

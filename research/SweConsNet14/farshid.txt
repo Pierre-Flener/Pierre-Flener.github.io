@@ -1,0 +1,25 @@
+Title: Energy-Efficient Sensor Selection  for Data Quality and Load Balancing
+Speaker: Farshid Hassani Bijarbooneh, Uppsala University
+
+Abstract:
+It is common to deploy stationary sensors in large geographical
+environments for monitoring purposes. In such cases, the
+monitored data are subject to data loss due to poor link quality
+or node failures. Fortunately, the sensing data are highly
+correlated both spatially and temporally. In this paper, we
+consider such networks in general, and jointly take into account
+the link quality estimates, and the spatio-temporal correlation
+of the data to minimise energy consumption by selecting sensors
+for sampling and relaying data. In particular, we propose a
+multi-phase adaptive sensing algorithm with belief propagation
+protocol (ASBP), which can provide high data quality and reduce
+energy consumption by turning on only a small number of nodes in
+the network. We explore the correlation of data, formulate the
+sensor selection problem and solve it using constraint
+programming (CP) and greedy search. We then use our Bayesian
+inference technique to reconstruct the missing sensing data. ASBP
+is evaluated based on the data from real deployment of a WSN, and
+we show that while maintaining a satisfactory level of data
+quality and prediction accuracy, ASBP successfully provides load
+balancing among sensors and preserves 80% more energy compared to
+the case where all sensor nodes are actively involved.

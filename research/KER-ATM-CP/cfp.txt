@@ -1,0 +1,112 @@
+
+                           Call for Papers
+
+               SPECIAL ISSUE ON CONSTRAINT PROGRAMMING
+                 FOR AIR TRAFFIC CONTROL & MANAGEMENT
+           (www.it.uu.se/research/group/astra/KER-ATM-CP/)
+
+                 at The Knowledge Engineering Review
+               (http://journals.cambridge.org/jid_KER)
+
+
+CONSTRAINT PROGRAMMING
+
+Constraint Programming (CP) is a powerful technology to model and
+solve combinatorial (optimisation) problems, which are ubiquitous in
+industry.  CP works either via systematic search based on constraint
+propagation (the elimination of impossible values), or via
+constraint-based local search.  CP is an ideal integration technology
+for hybrid solving, including also methods from classical operations
+research, such as mixed integer programming, and Boolean
+satisfiability.  CP is now a mature field and has been successfully
+used for tackling a wide range of real-life complex applications,
+especially for short-term scheduling, personnel rostering, and
+configuration problems.
+
+
+AIMS & SCOPE OF THE SPECIAL ISSUE
+
+The aim of this special issue is to collect original papers on
+applying constraint programming within the areas of air traffic
+control (ATC) and air traffic management (ATM).
+
+Special issue topics include, but are not limited to:
+
+ * airspace sectorisation
+ * arrival management
+ * complexity resolution
+ * departure management
+ * flow management
+ * route network design
+ * runway allocation
+ * slot allocation
+
+This special issue is a follow-up to the International Workshop on
+Constraint Programming for Air Traffic Control & Management
+(www.it.uu.se/research/group/astra/ATM-CT), held at the 7th
+EuroControl Innovative Research Workshop & Exhibition
+(http://inoworkshop.eurocontrol.fr) at the EuroControl Experimental
+Centre (www.eurocontrol.int/eec) in Brétigny-sur-Orge, France on
+Tuesday 2 December 2008, and where the proceedings consist only of the
+slides of the presentations given.  The present call for papers is
+open, and not restricted to the participants of that workshop.
+
+Note that EuroControl (www.eurocontrol.int) is the European
+Organisation for the Safety of Air Navigation, with 38 member states
+at present and headquarters in Brussels, Belgium.  It is the European
+equivalent of other agencies, such as the Federal Aviation
+Administration (FAA) (www.faa.gov) of the USA.
+
+
+SUBMISSION PROCESS
+
+Papers must present original work that has not been formally published
+before.  Papers that expand conference papers with at least 30% extra
+material are acceptable, together with an indication of where that
+initial version was formally published.  We prefer shorter papers to
+longer ones, for the sake of greater diversity and more thorough
+reviewing.  Authors are therefore encouraged to be as concise as
+possible, as well as to limit their papers to 30 pages.
+
+To aid planning and organisation, send us an email by 1 March 2009
+with a statement of intent to submit a paper, including its author
+information, a tentative title and abstract, and an estimated number
+of pages.
+
+To submit a paper, written in English, send us an email by 1 May 2009
+with the actual title, abstract, authors' names, affiliations, and
+email addresses, as well as (a URL of) a PDF version of the paper.
+
+All submitted papers will be thoroughly peer-reviewed according to the
+standards of the usual Knowledge Engineering Review (KER)
+(http://journals.cambridge.org/jid_KER) refereeing process, by at
+least two CP experts and one ATC/ATM expert, where possible.  Authors
+of submitted papers may be asked to review other submitted papers.
+For information, KER currently has an ISI JCR impact factor of 1.312.
+The editors in chief of KER reserve the right to make the final
+acceptance/rejection decisions.
+
+Accepted papers must be prepared using the KER author instructions
+(http://assets.cambridge.org/KER/KER_ifc.pdf).
+
+
+IMPORTANT DATES
+
+ * Letter of intent   1 March 2009
+ * Submission         1 May 2009
+ * Notification       1 October 2009
+ * Camera-ready copy  1 December 2009
+ * Publication        2010?
+
+
+GUEST EDITORS
+
+ * Pierre Flener
+   Uppsala University, Sweden
+   (http://user.it.uu.se/~pierref)
+ * Justin Pearson
+   Uppsala University, Sweden
+   (http://user.it.uu.se/~justin)
+ * Marc Bourgois  
+   EuroControl Experimental Centre, Brétigny-sur-Orge, France
+   (www.eurocontrol.int/eec/public/standard_page/ORG_Innovative_Studies.html)

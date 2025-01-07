@@ -1,0 +1,17 @@
+Code generation in a compiler transforms an intermediate program representation
+into assembly code for a particular processor. It has tremendous impact on
+the resulting code: optimal assembly code can be several times more efficient
+than naive assembly code. However, optimization techniques are typically not
+used for code generation as they are regarded as non-scalable. Instead,
+traditional optimizing compilers compromise code quality by addressing code
+generation with heuristic algorithms and phase decomposition.
+
+Two central phases in code generation are instruction scheduling and register
+allocation which are strongly interdependent. Both phases are ultimately
+concerned with improving the code quality subject to processor constraints
+(limited functional units, registers, issue slots...). This is naturally
+captured by constraint models, which are easier to analyze and reuse than
+traditional heuristic algorithms. We present an integrated model that enables
+optimal, whole-function code generation. The structure of the model allows a
+decomposition that is exploited to create a robust solver which generates code
+of state-of-the-art quality for functions of thousands of instructions.

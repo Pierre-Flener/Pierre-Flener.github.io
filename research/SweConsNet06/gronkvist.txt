@@ -1,0 +1,7 @@
+Tail Assignment is the problem of assigning flight legs to
+aircraft while satisfying all operational constraints. We propose
+a hybrid column generation and constraint programming solution
+approach, which is able to quickly produce solutions for
+operations management, as well as close-to-optimal solutions for
+long and mid term planning. Computational results using
+real-world Tail Assignmen instances are presented.

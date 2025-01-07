@@ -1,0 +1,11 @@
+In this talk we will present a CP-based method for application
+scheduling, binding and data routing for a run-time
+reconfigurable operator based multimedia architecture (ROMA). In
+this approach, an abstract representation models memories,
+reconfigurable operator cells, communication network and its
+topology. The use of constraints programming makes it possible to
+model the application scheduling, binding and data routing as
+well as architectural and temporal constraints in a single
+model. We have evaluated our approach on several multimedia
+applications from the Mediabench set. In 78% of cases, our system
+provides results that are proved optimal.

@@ -1,0 +1,3 @@
+In this talk I compare different CP system using some
+(subjective) features that is considered important for learning a
+CP system, or CP in general.

@@ -1,0 +1,80 @@
+Call for papers for:
+
+
+                       The 9th International Workshop on
+             Constraint Modelling and Reformulation (ModRef 2010)
+
+To be held at the 16th International Conference on the
+Principles and Practice of Constraint Programming (CP 2010)
+
+St. Andrews, Scotland (UK) Monday 6 September 2010 
+Submission deadline:        Sunday 13 June 2010
+
+
+Constraint Programming (CP) is a powerful technology to model and
+solve combinatorial problems, which are ubiquitous in academia and
+industry. The last ten years or so have witnessed significant research
+devoted to modelling and solving problems with constraints. CP is now
+a mature field and has been successfully used for tackling a wide
+range of real-life complex applications. However, such a technology is
+currently accessible to only a small number of experts. For CP to be
+more widely used by non-experts, more research effort is needed in
+order to ease the use of the CP technology. We solicit original papers
+that contribute to widen the use of the CP technology.
+
+Workshop topics include (but are not limited to):
+     * Application papers describing interesting problems and interesting
+       ways to model them;
+     * Contributions to understanding modelling that could guide the
+       manual or automatic formulation of models;
+     * Identification of the criteria that should be used in evaluating
+       models and the design of pragmatic techniques that facilitate the
+       choice and possibly combination among alternative models;
+     * Design of higher-level modelling languages;
+     * Automatic reformulation techniques.
+
+The previous workshops of this series were held in 2009, 2008, 2007,
+2006, 2005, 2004, 2003, and 2002.
+
+
+
+This will be a full-day workshop open to anyone interested in the
+topic. The event will have a strong workshop flavour, with ample time
+allocated to discussion.
+
+Programme Committee
+
+Esra Erdem                   Sabanci University, Istanbul, Turkey
+Pierre Flener                Uppsala University, Sweden
+Alan M. Frisch               University of York, United Kingdom
+Jimmy Lee                    The Chinese University of Hong Kong, China
+Toni Mancini (co-chair)      Sapienza University of Rome, Italy
+Justin K. Pearson (co-chair) Uppsala University, Sweden
+Andrea Rendl                 University of St Andrews, United Kingdom
+Helmut Simonis               Cork Constraint Computation Centre, Ireland
+Pascal Van Hentenryck        Brown University, RI, USA
+Mark Wallace                 Monash University, Australia
+
+Submission
+
+Submissions must be formatted in the Lecture Notes in Computer Science
+(LNCS) style and must not exceed 15 pages. Submissions of shorter
+papers, including position papers, are welcome.
+
+Papers must be submitted in PDF format using EasyChair.
+
+All submissions will be reviewed and those that are well written and
+make a worthwhile contribution to the topic of the workshop will be
+accepted for publication in the workshop proceedings. The proceedings
+will be available electronically at CP 2010. At least one author of
+each accepted paper must attend the workshop.
+
+Important Dates
+
+Submission deadline        Sunday 13 June 2010
+Author notification        Sunday 18 July 18 2010
+Camera-Ready Copy deadline Friday 20 August 2010
+Workshop                   Monday 6 September 2010
+
+
+

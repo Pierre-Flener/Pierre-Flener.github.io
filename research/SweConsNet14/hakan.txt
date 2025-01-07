@@ -1,0 +1,8 @@
+Håkan Kjellerstrand: "Picat: a new logic-based multi-paradigm programming language"
+
+Picat (http://picat.lang.org/) is a new programming language with
+support for logic programming, tabling, imperative constructs,
+planning as well a support for Constraint Programming. This talk
+will focus on the CP part, but will also show some of the other
+features of Picat.
+

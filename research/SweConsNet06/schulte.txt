@@ -1,0 +1,14 @@
+This talk introduces an architecture for generic constraint
+implementations based on variable views and range
+iterators. Views allow, for example, to scale, translate, and
+negate variables. The talk shows how to make constraint
+implementations generic and how to reuse a single generic
+implementation with different views for different constraints. A
+wide range of applications of views exemplifies their usefulness
+and their potential for simplifying constraint
+implementations. We introduce domain operations compatible with
+views based on range iterators. We evaluate the applicability of
+the approach as well as different implementation techniques for
+the presented architecture
+
+Joint work with Guido Tack, Saarland University, Germany
