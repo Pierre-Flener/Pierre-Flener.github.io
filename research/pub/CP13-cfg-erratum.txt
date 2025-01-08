@@ -1,0 +1,29 @@
+Erratum (2017-08-02) for
+
+   J. He, P. Flener, and J. Pearson.
+   Solving string constraints: The case for constraint programming.
+   In: Ch. Schulte (editor), CP 2013, pages 381-397.
+   Lecture Notes in Computer Science, volume 8124.
+   Springer, 2013.
+   http://dx.doi.org/10.1007/978-3-642-40627-0_31
+   http://www.it.uu.se/research/group/astra/publications/CP13-cfg.pdf
+
+Algorithm 1 page 389:
+
+Line 20: The following else case is missing:
+
+   else C^{LS}_{i,j} \IsAssigned 0
+
+Algorithm 2 page 390:
+
+Line 10: Replace "S_{1,n}" by "S \in V_{1,n}".
+
+Line 25 should be:
+
+   if W=Y and i>=1 and i+k<=n+1 and F \in V_{1,k} and Z \in V_{1,k-j}
+
+Line 27 should be
+
+   else if W=Z and i-j>=1 and i-j+k<=n+1 and F \in V_{1,k} and Y \in V_{1,k-j}
+
+Many thanks to Andreas Lindmark for detecting these!
