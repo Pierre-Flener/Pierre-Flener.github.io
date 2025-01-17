@@ -1,4 +1,4 @@
-The material in this folder is subject to the CC BY-NC-SA 4.0 license (see https://creativecommons.org/licenses/by-nc-sa/4.0/).
+The material in this folder is subject to the CC BY-NC-SA 4.0 license (see https://creativecommons.org/licenses/by-nc-sa/4.0): you are free to share and adapt under the terms of that license.
 
 This folder has the slides of the courses "Modelling for Combinatorial Optimisation [M4CO]" (5 ECTS credits, code 1DL451) and "Combinatorial Optimisation and Constraint Programming [COCP]" (10 ECTS credits, code 1DL442) by Prof. Pierre Flener at Uppsala University in Sweden.  The courses (and their predecessors) have been given every autumn semester, since 2003.  The COCP course was given for the last time in 2024.
 
