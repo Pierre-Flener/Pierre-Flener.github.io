@@ -1,0 +1,245 @@
+<html>
+<head>
+  <title>NordConsNet Workshop 2017</title>
+</head>
+
+<center>
+<h1>
+  <br>
+  <font color="red">NordConsNet Workshop 2017, <br>
+  the 16th workshop of the Nordic Network for <br>
+  researchers and practitioners <br>
+  of Constraint programming</font> <br>
+  <br>
+  <font color="blue">22 May 2017, Uppsala, Sweden</font>
+</h1>
+</center>
+
+<h2> The Workshop</h2>
+
+<p>The Nordic Network for researchers and practitioners of Constraint
+programming (NordConsNet) kindly invites you to participate in the
+yearly NordConsNet Workshop. The purpose of the workshop is to learn
+about ongoing research in Constraint Programming, existing projects
+and products, and further development of the network. NordConsNet
+Workshop 2017 is the 16th edition of this annual event.</p>
+
+<h2> Location</h2>
+
+<p>The workshop will take place at the Department of Information
+Technology, Uppsala University, on 22 May 2017, in room 1311 on the
+third floor of house 1 at Polacksbacken.</p>
+
+<h2> Registration</h2>
+
+<p>Registration is now closed but you are still very welcome to attend
+any talks during the day, just be mindful not to enter during a talk
+and don't expect catering.</p>
+
+<p>Please forward this information to anyone who might be interested
+in this workshop but is not yet on the NordConsNet mailing list: they
+can subscribe to it by applying to Justin Pearson.</p>
+
+<h2> Organisation</h2>
+
+<p>The NordConsNet Workshop 2017 is chaired by Mats Carlsson (RISE)
+and Gustav Björdal (Uppsala University).</p>
+
+<h2> Sponsorship</h2>
+
+<p>The NordConsNet Workshop 2017 is sponsored by the Optimisation
+Arena of Uppsala University.</p>
+
+<h2> Programme</h2>
+
+<ul>
+  <li>09:15-09:20 Mats Carlsson (RISE): Welcome</li>
+  <li>09:20-09:30 Pierre Flener (Uppsala University): Constraint
+  Programming in a Nutshell
+  (<a href="nutCPshell-NordConsNet17.pdf">PDF</a>)</li>
+  <li>09:30-10:00 Jacopo Mauro (University of Oslo): sunny-cp: A
+  Multicore Tool for Constraint Solving
+  (<a href="201705_NordConsNet_Sunny.pdf">PDF</a>)</li>
+  <li>10:00-10:30 Di Yuan (Uppsala University): Optimal Scheduling in
+  Wireless Networks: Modelling, Solution via Integer Programming, and
+  Recent Developments
+  (<a href="DiYuan.pdf">PDF</a>)</li>
+  <li>10:30-10:45 Fika</li>
+  <li>10:45-11:15 Jip Dekker (Uppsala University): Auto-Tabling for
+  Subproblem Presolving in MiniZinc
+  (<a href="Auto-Tabling.pdf">PDF</a>)</li>
+  <li>11:15-11:45 Jacopo Mauro (University of Oslo): Context Aware
+  Reconfiguration in Software Product Lines
+  (<a href="201705_NordConsNet_hyvar.pdf">PDF</a>)</li>
+  <li>11:45-13:15 Lunch</li>
+  <li>13:15-13:45 Leslie Sheng: VRP for Smart Municipal Solid-Waste
+  Management
+  (<a href="optimisation-workshop.pdf">PDF</a>)</li>
+  <li>13:45-14:15 Masoumeh Mansouri (Örebro University): Hybrid
+  Constraint-Based Planning for Autonomous Industrial Vehicles</li>
+  <li>14:15-14:45 Maryana Wånggren (Chalmers) Protein modelling
+  using dynamic programming and constraints
+  (<a href="Wanggren.pdf">PDF</a>)</li>
+  <li>14:45-15:15 Fika</li>
+  <li>15:15-15:45 Robin Strand (Uppsala University): Discrete
+  Optimisation in Image Processing
+  (<a href="Strand_nordconsnet17.pdf">PDF</a>)</li>
+  <li>15:45-16:15 Nicolas Beldiceanu (IMT Atlantique, France):
+  Handling Combinatorial Aspects of Time-Series Constraints
+  Based on Regular-Expression Characteristics</li>
+</ul>
+
+<h2> Submit a Presentation Proposal (closed)</h2>
+
+<p>We hope for your participation, and highly encourage you to submit
+a proposal for a presentation of your ongoing work, recent results, or
+of a relevant discussion topic. There are no paper submissions,
+reviews, or proceedings, hence recent conference/journal papers may
+also be presented. Please contact Mats Carlsson if you would like to
+present.</p>
+
+<h2> Presentation Abstracts</h2>
+
+<h3> sunny-cp: A Multicore Tool for Constraint Solving</h3>
+
+<p>Jacopo Mauro (University of Oslo): In Constraint Programming (CP),
+a portfolio solver uses a variety of different solvers for solving a
+given Constraint Satisfaction / Optimisation Problem. We introduce
+sunny-cp2: the first parallel CP portfolio solver that enables a
+dynamic, cooperative, and simultaneous execution of its solvers in a
+multicore setting. It incorporates state-of-the-art solvers, providing
+also a usable and configurable framework. Empirical results are very
+promising. sunny-cp2 can even outperform the performance of the oracle
+solver which always selects the best solver of the portfolio for a
+given problem.</p>
+
+<h3> Optimal Scheduling in Wireless Networks: Modelling, Solution
+via Integer Programming, and Recent Developments</h3>
+
+<p>Di Yuan (Uppsala University): Optimal scheduling is a fundamental
+aspect of resource sharing in wireless networks. In general, the
+problem consists in determining which communication links shall
+concurrently transmit and for how long, so as to optimise some
+performance metric. Concurrent transmissions generate interference to
+each other, giving rise to the main constraint in the optimisation
+problem. In this presentation, we will review the minimum-time
+scheduling problem in wireless networks. Specifically, we will
+highlight the importance of mathematical modelling for problem
+solving, and present solution methods for scheduling and its
+sub-problem by means of integer linear programming. Next, we will
+discuss some recent developments, with focus on extensions to
+scheduling with rate regions and deadline constraints. Insights from
+studying the extensions, in fact, generalise to optimal scheduling for
+serving processes in any system, where the serving rate of one process
+(i.e., the amount of demand completed per time unit) monotonically
+decreases as more processes are jointly served – a condition that
+holds in virtual all applications in which processes compete with each
+other in resource sharing.</p>
+
+<h3> Auto-Tabling for Subproblem Presolving in MiniZinc</h3>
+
+<p>Jip Dekker (Uppsala University): A well-known and powerful
+constraint model reformulation is to compute the solutions to a model
+part, say a custom constraint predicate, and tabulate them within an
+extensional constraint that replaces that model part. Despite the
+possibility of achieving higher solving performance, this tabling
+reformulation is often not tried, because it is tedious to perform;
+further, if successful, it obfuscates the original model. In order to
+encourage modellers to try tabling, we extend the MiniZinc toolchain
+to perform the automatic tabling of suitably annotated predicate
+definitions, without requiring any changes to solvers, thereby
+eliminating both the tedium and the obfuscation.</p>
+
+<h3> Context Aware Reconfiguration in Software Product Lines</h3>
+
+<p>Jacopo Mauro (University of Oslo, Norway): Software Product Lines
+(SPLs) are a mechanism to capture families of closely related software
+systems by modelling commonalities and variability. Although user
+customisation has a growing importance in software systems and is a
+vital sales argument, SPLs currently only allow user customisation at
+deploy-time. We extend the notion of context-aware SPLs by means of
+user profiles, containing a linearly ordered set of preferences. We
+present a reconfiguration engine checking the validity of the current
+configuration and, if necessary, reconfiguring the SPL while trying to
+fulfil the preferences of the active user profile.</p>
+
+<h3> VRP for Smart Municipal Solid-Waste Management</h3>
+
+<p>Leslie Sheng: Sircle provides a real time data for solid waste bins
+fill-levels and local traffic conditions. Sircle can quantify and
+monitor solid waste bin fill levels ultrasonically to alert solid
+waste collection trucks when the bin needs to be emptied.  Optimised
+collection routes are then identified by Sircle, which diverts solid
+waste collection fleets away from traffic jams and smaller roads and
+identifies the best routes to take. This improves the efficiency of
+the collection of municipal solid waste (MSW) and reduces operational
+costs.</p>
+
+<h3> Hybrid Constraint-Based Planning for Autonomous Industrial Vehicles</h3>
+
+<p>Masoumeh Mansouri (Örebro University): Fleet automation often
+involves solving several sub-problems, including task allocation,
+motion planning, and coordination. The sub-problems are also strongly
+correlated, meaning that each imposes additional constraints on other
+subproblems. We propose to cast the problem of autonomous fleet
+management to a meta-CSP, that is, a CSP whose constraints capture the
+dependencies between the sub-problems in the fleet automation
+application. We instantiate the approach in several industrial fleet
+management applications, including a drill pattern planning problem in
+open-pit mining studied in cooperation with Atlas Copco.</p>
+
+<h3> Protein modelling using dynamic programming and constraints</h3>
+
+<p>Maryana Wånggren (Chalmers): Molecular dynamics simulations, often
+combined with simulated annealing, are commonly used when calculating
+structural models of proteins, e.g. based on NMR experiments. However,
+one is often faced with limited and sometimes insufficient information
+for determining a well-resolved 3D structure. In addition, the type of
+data available for different proteins may vary: ranges for torsion
+angles, distance approximations, relative orientation of different
+molecular parts etc. We are using whatever structural information is
+around, together with a dynamic programming approach for searching the
+space of feasible conformations to rapidly determine 3D structures
+that are consistent with the input constraints.  We are currently
+investigating how sets of constraints can be used to focus the
+computational effort on the most important parts of the search space
+in order to improve runtime performance and memory usage.</p>
+
+<h3> Discrete Optimisation in Image Processing</h3>
+
+<p>Robin Strand (Uppsala University): With the fast development of
+imaging hardware and the explosion of image data being collected,
+image processing is today used in most people’s everyday life, and it
+has applications in many research areas, including digital humanities,
+material science, medicine, biology and biomedicine.  Two of the most
+important, and difficult, image processing problems are image
+segmentation, where the goal is to partition a given image into object
+and background components, and registration, where the goal is to
+align a target image with a reference image.  Many different image
+segmentation and registration methods are available, spanning from
+fully automatic to fully interactive (guided by a user), where some
+are model-based and some operate directly on image intensities. A
+common thread among these methods is the need for reliable
+optimisation methods. Since the digital image data being processed is
+inherently discrete, discrete and combinatorial optimisation is
+well-suited for the task of finding optimal image segmentation and
+registration results.  In this talk, I will present some challenging,
+and hopefully interesting, problems within image processing with
+examples from ongoing research at the Department of Information
+Technology and at the Radiology Division at the Akademiska hospital,
+including image segmentation and registration.</p>
+
+<h3> Handling Combinatorial Aspects of Time-Series Constraints Based
+on Regular-Expression Characteristics</h3>
+
+<p>Nicolas Beldiceanu (IMT Atlantique, France): After presenting an
+overview of our work on time-series constraints in the context of CP
+and LP, the presentation focusses on the introduction of the concept
+of regular expression characteristics as a unified way to express
+concisely combinatorial properties on time-series constraints. This
+allows going from a compositional way of defining time-series
+constraints to a compositional way to deal with their combinatorial
+aspect without developing ad-hoc methods for each time-series
+constraint separately.</p>
+
+</html>
