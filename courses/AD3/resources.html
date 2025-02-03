@@ -45,9 +45,15 @@ accessible via web browsers:</p>
   href="https://ampl.com">AMPL</a> modelling language: when using the
   NEOS server, you do <em>not</em> need to install the AMPL integrated
   development environment (IDE) or AMPL command-line interface (CLI)
-  or a MIP solver.  Use a commands file with <tt>option gurobi_options
-  'outlev=1';</tt> as the single line in order to turn on verbose
-  printing, which includes the optimality gap.</p>
+  or a MIP solver.  Use a commands file with <br>
+  <tt>
+  option gurobi_options 'outlev=1'; <br>
+  solve; <br>
+  # Write display commands here: <br>
+  display ___;
+  </tt>  <br>
+  in order to turn on verbose printing, which includes the optimality
+  gap.</p>
 
   <p>The effort of installing the following free alternative is
   outside the course time budget (and we have no resources to help you
@@ -226,7 +232,7 @@ later.  Here are some LaTeX resources:</p>
 
 <hr>
 <address>
-<!-- hhmts start -->Last modified: Mon Jan 13 13:08:54 CET 2025 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Mon Feb  3 15:05:07 CET 2025 <!-- hhmts end -->
 </address>
 </body>
 </html>
