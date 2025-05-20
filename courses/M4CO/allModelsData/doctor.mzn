@@ -1,4 +1,4 @@
-% Copyright: Pierre.Flener@it.uu.se, courses 1DL442 and 1DL451, 2023
+% Copyright: Pierre.Flener@it.uu.se, course 1DL451, 2025
 include "globals.mzn";
 set of int: Days; % d mod 7 = 1 iff d is a Monday
 enum Doctors;

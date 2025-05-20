@@ -1,4 +1,4 @@
-% Copyright: Pierre.Flener@it.uu.se, courses 1DL442 and 1DL451, 2023
+% Copyright: Pierre.Flener@it.uu.se, course 1DL451, 2025
 include "globals.mzn";
 enum Resources; % reusable resources
 int: nMachines; % number of machines

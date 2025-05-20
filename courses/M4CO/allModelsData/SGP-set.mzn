@@ -1,4 +1,4 @@
-% Copyright: Pierre.Flener@it.uu.se, courses 1DL442 and 1DL451, 2023
+% Copyright: Pierre.Flener@it.uu.se, course 1DL451, 2025
 include "globals.mzn";
 int: nGroups; % number of groups per week
 int: nSlots;  % number of players per group

@@ -1,4 +1,4 @@
-% Copyright: Pierre.Flener@it.uu.se, courses 1DL442 and 1DL451, 2023
+% Copyright: Pierre.Flener@it.uu.se, course 1DL451, 2025
 include "globals.mzn";
 enum Varieties;
 enum Blocks = anon_enum((balance * card(Varieties) * (card(Varieties) - 1)) div (blockSize * (blockSize - 1)));

@@ -1,4 +1,4 @@
-% Copyright: Pierre.Flener@it.uu.se, courses 1DL442 and 1DL451, 2023
+% Copyright: Pierre.Flener@it.uu.se, course 1DL451, 2025
 include "globals.mzn";
 array[1..17] of record(2..52: top, 2..52: mid, 2..52: bot): Fan; % precondition: all_different over all 17*3 elements
 predicate rankApart(var 1..52: c1, var 1..52: c2) = % cards c1 and c2 are one rank apart; use either line 5 or (best!) line 6 (whose precomputed array is outlined in line 7)

@@ -1,4 +1,4 @@
-% Copyright: Pierre.Flener@it.uu.se, courses 1DL442 and 1DL451, 2023
+% Copyright: Pierre.Flener@it.uu.se, course 1DL451, 2025
 include "globals.mzn";
 array[1..9,1..9] of var 1..9: Sudoku; % Sudoku[r,c] = the number in row r and column c
 constraint Sudoku =

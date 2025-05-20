@@ -1,4 +1,4 @@
-% Copyright: Pierre.Flener@it.uu.se, courses 1DL442 and 1DL451, 2023
+% Copyright: Pierre.Flener@it.uu.se, course 1DL451, 2025
 include "globals.mzn";
 enum Students;
 array[_] of record(Students: who, Students: whom, int: bid): Wish; % for a wish w: student w.who bids w.bid in order to stand next to w.whom on the photo

@@ -1,4 +1,4 @@
-% Copyright: Pierre.Flener@it.uu.se, course 1DL451, 2024
+% Copyright: Pierre.Flener@it.uu.se, course 1DL451, 2025
 include "globals.mzn";
 int: n; % size of the magic series
 set of int: I = 0..(n-1);

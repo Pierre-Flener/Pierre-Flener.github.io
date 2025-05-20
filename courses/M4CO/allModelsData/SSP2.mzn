@@ -1,4 +1,4 @@
-% Copyright: Pierre.Flener@it.uu.se, courses 1DL442 and 1DL451, 2023
+% Copyright: Pierre.Flener@it.uu.se, course 1DL451, 2025
 include "globals.mzn";
 int: n; constraint assert(n >= 2 /\ n mod 2 = 0, "Odd n"); % number of teams; n=4 is unsatisfiable; search annotation requires n!=2
 set of int: Teams = 1..n;
