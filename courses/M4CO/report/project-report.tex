@@ -1,0 +1,248 @@
+\documentclass[a4paper,11pt,hidelinks]{article}
+\usepackage[utf8]{inputenc}  % Linux, macOS: enable non-English characters
+%\usepackage[latin1]{inputenc}    % Windows: enable non-English characters
+\usepackage{fullpage}
+\usepackage[british]{babel}
+
+%% Instructions are preceded by "%%", whether you use LaTeX or not!
+
+%\renewcommand{\thepart}{\arabic{part}}
+\renewcommand{\thesection}{\Alph{section}}
+
+\input{macros}
+\input{mznlisting}
+
+\renewcommand{\todo}[1]{\textcolor{blue}{#1}} %% Use for spotting placeholders
+%\renewcommand{\todo}[1]{#1}                  %% Use for the submitted report
+
+\newcommand{\Problem}{\todo{Problem}\xspace}  %% Plug in your project name
+
+\title{\textbf{Modelling for Combinatorial Optimisation (1DL451) \\
+    Uppsala University -- Autumn~2025 \\
+    Report for the Project
+    by Team~\todo{t}: \\                      %% Replace t by your team number
+    \Problem
+  }
+}
+
+%% Replace by your name(s) and choose the encoding of line 2 or line 3:
+\author{\todo{Clara CLÄVER and Whiz KIDD}}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% -------------------------------------------------------------------------
+
+\section{\Problem}
+
+%% Describe your project problem, in your own words, citing the source
+%% of the problem and of every included third-party picture.
+
+\todo{\dots\ Reply \dots}
+
+% -------------------------------------------------------------------------
+
+\section{Approach}
+
+%% Describe your approach to your project problem.
+%% If your approach is just a single model (like for the assignments),
+%% then just say so and follow the model instructions of demoReport.pdf,
+%% else describe your software pipeline -- with pre-processing,
+%% solving (possibly on a sequence of models), and post-processing --
+%% and follow the model instructions of demoReport.pdf for _each_ model.
+%% Either way, upload _all_ code and data to Studium (_except_ for the
+%% initial report), but _only_ import your model(s) into the report itself).
+%% The report must be about exactly one approach (and this word is _not_
+%% a synonym for 'viewpoint') and must _not_ describe all false starts.
+
+\todo{\dots\ Reply \dots}
+
+%% Find in demoReport.pdf the instructions on prescribed comments within a model.
+The model is given in Listing~\ref{model:project}: it has the
+prescribed comments as per the scope (Topics~1 to~8) of the project,
+it has the name \todo{\texttt{project.mzn}}             %% Replace the filename
+and the imposed structure of the provided skeleton model
+\texttt{project-skeleton.mzn}%
+%% Comment away the following line for the initial report
+, and it is uploaded to Studium.
+
+%% Set the numeric parameters so that the copyright notice is skipped:
+\lstinputlisting[language=Mzn, firstline=5, firstnumber=5,
+caption={A \MiniZinc model for \todo{\dots} },
+label=model:project]{project-skeleton.mzn} %% Replace the filename
+
+\paragraph{Symmetries.}
+%% * Identify the problem symmetries, which exist for every viewpoint.
+%% * Identify the model symmetries, which are introduced by your viewpoint.
+%% * For each identified symmetry, state:
+%%   + whether it is a value symmetry or a variable symmetry
+%%     (an example of which is an index symmetry, say a row or column symmetry);
+%%   + whether it is a full or partial symmetry.
+\todo{\dots\ problem symmetry \dots\ model symmetry \dots\ value /
+  variable / index / row / column symmetry \dots\ full / partial
+  symmetry \dots}
+
+\paragraph{Efficiency.}
+%% * State the impact, or justify the absence, of
+%%   + implied constraints, and
+%%   + symmetry-breaking constraints.
+%%   Do _not_ test them on CBLS backends, such as Yuck, which ignore them.
+%% * State the impact, or justify the absence, of
+%%   + inference annotations, and
+%%   + search annotations.
+%%   Restrict your tests to the CP backend Gecode.
+\todo{\dots\ implied constraints \dots\ symmetry-breaking constraints
+  \dots\ inference annotations \dots\ search annotations \dots}
+
+\paragraph{Checklist.}
+%% For each model feature covered by advice in the checklists of Topics 2 & 3:
+%% how do you argue that it does not matter?
+\todo{\dots\ Reply (and we understand that we will lose points if
+  there are such model features that we did not detect and discuss)
+  \dots}
+
+\paragraph{Correctness.}
+%% How do you argue that your approach is correct?
+%% For example, do you use a checker based on another model, such as a
+%% model by another team or a linearisation of a MIP model found somewhere?
+%% Do you use the same new instances as another team?
+%% If it is a satisfaction problem: do you compare the numbers of
+%% solutions with numbers found somewhere or reported by another team?
+%% If it is an optimisation problem: do you compare objective values that
+%% are proven optimal before timing out (respectively objective values
+%% known when timing out) with optimal objective values (respectively
+%% best-known objective values) found somewhere or reported by another
+%% team?)
+\todo{\dots\ Reply \dots}
+
+% -------------------------------------------------------------------------
+
+\section{Evaluation}
+
+%% Hint: Under Linux, do lscpu to find CPU information.  Under macOS,
+%% you find CPU information via "About This Mac" in the Apple menu.
+%% 
+%% If different hardware was used for different experiments, then justify
+%% this and replicate a paragraph like this one within each relevant section.
+
+All experiments were run under Linux Ubuntu~22.04.5 ($64$~bit) on an
+Intel Xeon E5520 of $2.27$~GHz, with $4$~processors of $4$~cores each,
+with a $70$~GiB RAM and an $8$~MiB L3 cache (a ThinLinc computer of the
+IT department). % barany.it.uu.se
+
+\newcommand{\TimeOut}{\todo{6,000,000}} % in CPU milliseconds  %% Choose a value
+
+%% You _must_ use the script of our cheatsheet: it conducts the
+%% experiments and generates a result table (see the LaTeX source code
+%% of the table below}) that is automatically imported (rather than
+%% manually copied) into your report, so each time you change the
+%% model, it suffices to re-run that script and re-compile your
+%% report, without any tedious number copying!
+
+Table~\ref{tab:res} gives our results.
+The time-out was~\TimeOut~milliseconds.
+
+%\begin{landscape}  %% Uncomment this if the table is too wide!
+\begin{table}[t]
+  \centering
+  \resizebox{\columnwidth}{!}{\fontfamily{pcr}\selectfont\small
+    \begin{tabular}{rrrrrrrrrrrrr}
+      \input{project-results.tex}  %% Replace the filename
+    \end{tabular}}
+  \caption{Results for our approach to \Problem,
+    which is a \todo{minimisation / maximisation / satisfaction} problem.
+    % 
+    In each \texttt{time} column: if the reported time is less than
+    the time-out (\TimeOut~milliseconds here), then the
+    %% For a CSP, tweak the following snippet as in Table 1 for Assignment 1:
+    \todo{objective value in the corresponding \texttt{obj} column was
+      \emph{proven} optimal};
+    % 
+    else the timing out is indicated by \texttt{t/o} and the
+    %% For a CSP, tweak the following snippet as in Table 1 for Assignment 1:
+    \todo{objective value is either the best one found but \emph{not}
+      proven optimal before timing out,
+      or~`\texttt{-}' indicating that no feasible solution was found
+      before timing out}.
+    % 
+    Boldface indicates the
+    %% For a CSP, replace by "fastest time":
+    \todo{best performance (time or objective value)}
+    %
+    on each row.
+    % 
+  }
+  \label{tab:res}
+\end{table}
+%\end{landscape}
+
+\paragraph{Which backends win overall, and how do you draw that conclusion?}
+\todo{\dots\ Reply \dots}
+
+\paragraph{How do the backends scale, and how do you draw that conclusion?}
+\todo{\dots\ Reply \dots}
+
+\paragraph{Does the difficulty of instances monotonically increase
+  with their size, and how do you draw that conclusion?}
+\todo{\dots\ Reply \dots}
+
+\paragraph{How suitable is local search compared to systematic search,
+  and how do you draw that conclusion?}
+\todo{\dots\ Reply \dots}
+
+\paragraph{Are there any contradictions between the results?}
+\todo{\dots\ Reply \dots}
+
+\paragraph{Are there any occurrences of `ERR' within the results generated
+  by the experiment script?}
+%% If so, then first try and troubleshoot on your own by running the
+%% incriminated backend manually (within the IDE or at the command
+%% line by using the --solver flag of the minizinc command) and
+%% interpreting the error message.  If you cannot resolve the error,
+%% then you _must_ state here for each occurrence of ERR when and how
+%% you received a teacher's _prior_ approval to include it, and you
+%% ought to make an error report in the final section.
+\todo{\dots\ Reply \dots}
+
+% -------------------------------------------------------------------------
+
+%% Optional:
+
+\bigskip
+\section*{Feedback to the Teachers}
+
+%% Please write a paragraph, which will _not_ be graded, describing your
+%% experience with this report: which aspects were too difficult or
+%% too easy, and which aspects were interesting or boring?  This will
+%% help us improve the course for the next year.
+
+\todo{\dots\ Reply \dots}
+
+% -------------------------------------------------------------------------
+
+%% Optional:
+
+\section*{Error Report}
+
+%% Your model _must_ compile and run error-free under backends of
+%% _all_ the considered solving technologies, unless you have a
+%% teacher’s _prior_ approval to upload an error report here.
+
+\todo{\dots\ Reply \dots}
+
+% -------------------------------------------------------------------------
+
+%% Optional:
+
+% \bibliographystyle{plain}
+% \bibliography{M4CO}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
