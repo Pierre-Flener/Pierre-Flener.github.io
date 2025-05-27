@@ -2,6 +2,7 @@ README.txt            this file
 appendix.tex          useful examples of technical writing with LaTeX; loaded into demoReport.pdf
 checklist.pdf         excerpt from Topics 2 & 3, to be used for the Checklist sections of assignment & project reports
 demoReport.pdf        showcase of expectation on assignment & project reports
+M4CO.bib              bibliography file, initialised
 macros.tex            loads useful packages and defines useful new commands; loaded by project-report.tex
 mzn-python-demo.zip   compression of demo on how to use MiniZinc-Python interface
 mznlisting.tex        prescribes how MiniZinc syntax is typeset and defines \mzninline and \mzninlinebar; loaded by project-report.tex
