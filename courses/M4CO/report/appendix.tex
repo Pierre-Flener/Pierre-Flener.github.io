@@ -180,26 +180,6 @@ scans or photos of drawings that were carefully done by hand.
   \label{fig:trees}
 \end{figure}
 
-Algorithms can be typeset as pseudo-code as exemplified in
-Algorithm~\ref{algo:demo}: study its \LaTeX\ source code.
-
-\begin{algorithm}[b]
-  \begin{algorithmic}[1]  % comment [1] away to drop the line numbers
-    \STATE \Function $f(n)$
-    \IF[optional comment]{$n < 0$}
-      \STATE $n \IsAssigned -2 \cdot n$ \COMMENT{optional comment}
-    \ELSE[$n \geq 0$]
-      \STATE $n \IsAssigned  3 \cdot n$
-    \ENDIF
-    \WHILE[optional comment]{$n > 0$}
-      \STATE $n \IsAssigned n-1$
-    \ENDWHILE
-    \RETURN $n$
-  \end{algorithmic}
-  \caption{Silly algorithm}
-  \label{algo:demo}
-\end{algorithm}
-
 If you are not sure whether you will stick to your current choice of
 notation or terminology, then introduce a new (possibly parametric)
 command.  For example, upon
@@ -216,6 +196,7 @@ to
 and recompiling, the formula \verb|$\Cardinality{S}$| typesets the
 cardinality of set $S$ as $\#S$.
 %
+%% Only for M4CO:
 Similarly, upon
 \begin{center}
   \verb|\newcommand{\MiniZinc}{\textit{Mini\-Zinc}}|
@@ -228,14 +209,13 @@ definition of that non-parametric command to
 \end{center}
 and recompiling, the text \verb|\MiniZinc\| typesets into
 \textsc{MiniZinc}.
-%
-You can thus obtain an arbitrary number of changes in the document
+
+You can thus achieve an arbitrary number of changes in the document
 with a \emph{constant}-time change in its source code, rather than
 having to perform a \emph{linear}-time find-and-replace operation
 within the source code, which is painstaking and error-prone.  The
 imported file \texttt{macros.tex} has a lot of useful predefined
-commands about mathematics, CP, \Gecode, modelling, \MiniZinc, and
-algorithms.
+commands about mathematics, modelling, \MiniZinc, and algorithms.
 
 Use commands on positioning (such as \verb|\hspace|, \verb|\vspace|,
 and \verb|\noindent|) and appearance (such as \verb|\small| for
@@ -305,4 +285,4 @@ they may be very different from the rules in your native language.
 \noindent
 \handpoint\ Feel free to report to the head teacher any other features
 that you would have liked to see discussed and exemplified in this
-template document.
+document.
