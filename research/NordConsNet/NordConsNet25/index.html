@@ -100,7 +100,7 @@ Thursday 21 August 2025.</p>
       <td>14:30 -- 15:00</td>
       <td><a href="https://link.mazemap.com/YzDaSKs6">101195</a></td>
       <td>Erik Cervin Edin (Ericsson.com, Sweden)</td>
-      <td><a href="#edin">Automated, Scalable Product Configuration Optimisation</a></td>
+      <td><a href="#edin">Lessons Learnt from Developing & Maintaining the World's Largest CP Model</a></td>
       <td>tba</td>
     </tr>
     <tr>
@@ -124,13 +124,21 @@ Thursday 21 August 2025.</p>
       <td><a href="#gindullin">Using CP for Compound Dispensing between Microplates</a></td>
       <td>tba</td>
     </tr>
-    <tr>
-      <td>16:30 -- 17:30</td>
+      <td>16:30 -- 17:00</td>
       <td><a href="https://link.mazemap.com/YzDaSKs6">101195</a></td>
-      <td>... 2 presenters ...</td>
-      <td><a href="#id1">... 2 titles ...</a></td>
+      <td>Maria Garcia de la Banda (Monash University, Australia)</td>
+      <td><a href="#garcia">Increasing Fairness in Online Multi-agent Combinatorial Optimisation</a></td>
       <td>tba</td>
     </tr>
+<!--
+    <tr>
+      <td>17:00 -- 17:30</td>
+      <td><a href="https://link.mazemap.com/YzDaSKs6">101195</a></td>
+      <td>... presenter to be announced ...</td>
+      <td><a href="#id1">... title to be announced ...</a></td>
+      <td>tba</td>
+    </tr>
+-->
     <tr>
       <td>18:00 -- 22:00</td>
       <td>tba</td>
@@ -157,8 +165,8 @@ Thursday 21 August 2025.</p>
     <tr>
       <td>09:30 -- 10:00</td>
       <td><a href="https://link.mazemap.com/YzDaSKs6">101195</a></td>
-      <td>Maria Garcia de la Banda (Monash University, Australia)</td>
-      <td><a href="#garcia">Increasing Fairness in Online Multi-agent Combinatorial Optimisation</a></td>
+      <td>Peter Stuckey (Monash University, Australia)</td>
+      <td><a href="#stuckey2">There Are No Integers in Discrete Optimisation Models</a></td>
       <td>tba</td>
     </tr>
     <tr>
@@ -178,8 +186,8 @@ Thursday 21 August 2025.</p>
     <tr>
       <td>11:00 -- 11:30</td>
       <td><a href="https://link.mazemap.com/YzDaSKs6">101195</a></td>
-      <td>... 1 presenter ...</td>
-      <td><a href="#id1">... 1 title ...</a></td>
+      <td>... presenter to be announced ...</td>
+      <td><a href="#id1">... title to be announced ...</a></td>
       <td>tba</td>
     </tr>
     <tr>
@@ -217,6 +225,15 @@ Thursday 21 August 2025.</p>
 
 <hr>
 
+<h3 id="stuckey2">There Are No Integers in Discrete Optimisation Models</h3>
+<p><strong>Peter J. Stuckey (Monash University, Australia)</strong></p>
+
+<p>Discrete optimisation problems make decisions from a finite set of choices.  They encompass many important problem classes such as scheduling, rostering and resource allocation.  MiniZinc is a leading modelling language for discrete optimisation.  It allows the expression of discrete optimisation problems succinctly using high level global constraints, and automatically translates them to run on constraint programming (CP), mixed integer programming (MIP), Boolean satisfiability (SAT), SAT modulo theories (SMT), and local search solvers.  Integers are a key type in MiniZinc since they are used to represent all the finite decisions made during solving.  Indeed, handling integer constraints efficiently is one of the key challenges in discrete optimisation solving.  Each solving technology tackles this differently: CP by building specific integer propagation techniques for each different global constraint, MIP by relaxing integrality and using branching to enforce it, SAT by encoding integers using Boolean variables, SMT using a mix of all three methods above, and local search by converting constraints to penalty functions and using local moves.  All the approaches require search, and for difficult problems this search can be enormous, requiring millions of decisions or moves to be explored.  But in the latest development version of MiniZinc, we recommend <b>never</b> using integers in models.  Why?</p>
+
+<p>Finding errors in discrete optimisation models can be very challenging.  In the worst case when a solver simply returns no answer, we don’t know if this is because the problem we want to ask is too hard (for this solver) or the problem we actually asked (because of errors in the model) is too hard.  Looking through solver traces of millions of events to find a problem is very hard work, and indeed there may be no error.  Any errors we can detect before sending a model to the solver are invaluable.  Hence, strong type systems are crucial for discrete optimisation models, since errors spotted by the type system may save us a huge amount of debugging work.  How can we model discrete optimisation problems without integers?  Many discrete optimisation problems reason about sets of named objects.  Since version 2.1 MiniZinc has supported (ordered) enumerated types (enums), which allow decisions over such sets.  This immediately improves type safety.  But we also need to be able to reason about two or more sets of objects jointly.  Enumerated type extension allows us to build a supertype that includes both types of objects.  Unordered enumerated types allow us to further strengthen models, if it makes no sense to rank two different objects.  With these tools we never confuse reasoning about different sets of objects.  But what about the many remaining integers in models, that don’t represent objects?  For these we rely on unit types to differentiate between different integers appearing in the model.  All integer decisions in models are either about a set of objects or some measurable resource type.  Using unit types we can add more type safety for our models by avoiding confusion of different types of decisions.  Unit types in MiniZinc are somewhat unusual, since often models deal with multiple granularity of the same resource, e.g. scheduling to the minute, but doing resource allocation on the half day; or use an unspecified granularity, e.g. the same job-shop scheduling model could use task durations given in minutes or days.  Unit types in MiniZinc also differentiate between coordinate unit types, e.g. the time when an event occurred, and delta unit types, e.g. the time difference between two events.  Errors arising from mixing coordinate and delta can be very hard to debug, so we extend the type system to track this for us.  In a high-level modelling language like MiniZinc, the compiler ensures that models are type-safe.  The underlying solvers can of course remain completely unaware of complex concepts like enums or unit types, since the MiniZinc compiler translates them into simple integers.  Overall, armed with a type system that supports enumerated types, type extension, unit types, and coordinate unit types, we find that no discrete optimisation model needs to include raw, unsafe integer variables.</p>
+
+<hr>
+
 <h3 id="garcia">Increasing Fairness in Online Multi-agent Combinatorial Optimisation</h3>
 <p><strong>Maria Garcia de la Banda (Monash University, Australia)</strong></p>
 
@@ -235,10 +252,12 @@ Thursday 21 August 2025.</p>
 
 <hr>
 
-<h3 id="edin">Automated, Scalable Product Configuration Optimisation</h3>
+<h3 id="edin">Lessons Learnt from Developing & Maintaining the World's Largest CP Model</h3>
 <p><strong>Erik Cervin Edin (Ericsson.com, Sweden)</strong></p>
 
-<p>... abstract coming up ...</p>
+<p>It’s a behind-the-scenes look at the challenges, surprises, and satisfaction of turning declarative modelling into real-world impact.  What happens when your constraint programming model grows past 8,000 lines of MiniZinc and over 120,000 rows of data?  At Ericsson, we've built what is likely one of the world’s most complex CP models — a system that encodes thousands of interdependent rules to configure complex products used around the globe.</p>
+
+<p>In this talk, I'll share lessons learnt from developing and maintaining this model in a production setting.  I will cover practical strategies for managing scale and complexity, including modularisation, validation pipelines, and approaches to debugging and testing.  I will also reflect on the trade-offs between readability, performance, and maintainability when operating at this scale — and the sometimes surprising limitations we’ve had to work around in solvers, tooling, and the MiniZinc ecosystem itself.</p>
 
 <hr>
 
@@ -277,7 +296,7 @@ Thursday 21 August 2025.</p>
 
 
 <footer class="site-footer">
-<!-- hhmts start -->Last modified: Wed Jun 18 14:48:18 CEST 2025 <!-- hhmts end -->
+<!-- hhmts start -->Last modified: Fri Jul 11 14:24:46 CEST 2025 <!-- hhmts end -->
 </footer>
 
 <!-- The following testifies to Pierre's ignorance about how to make each -->
