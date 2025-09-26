@@ -1,5 +1,64 @@
 Change Log
 
+2025-09-26:
+T01+T07: updated for autumn 2025, also by deleting everything about part 2 on CP
+T01-T08: replaced "infer[ence]" by "reason[ing]" due to ML connotations of former
+T01:03: inserted slide, on course slogan
+T01:04+64 (were 03+63): updated for MiniZinc Challenge 2024
+T01:61 (was 60): added MiniZinc version 3.0
+T01:71: added refined course slogan
+T01:79: added hint to JSON support
+T02:01: added Peter J. Stuckey to Acknowledgements footnote
+T02:06: added "record" and "tuple"
+T02:10+27: clarified that "forall" is NOT a loop statement
+T02:08+40: added desirability of inlined equality constraints
+T02:17+60: dropped warning on nested alternating quantifications
+T02:18+25: deleted "constrained" before "function"
+T02:19: added half-reification
+T02:19: added comment that <-> and -> are overloaded
+T02:21: reformulated all lines 2 using "x in A" notation instead of indexing
+T02:22: deleted unnecessary "Recall ..." sentence
+T02:22: corrected both occurrences of "reification" into "(half-)reification"
+T02:23: corrected "Alignment Photo" into "Photo Alignment"
+T02:23+24: reformatted completely
+T02:25: reformulated first example using "x in A" notation instead of index_set
+T02:27: clarified that "if ... then ... else ... endif" is NOT a cond'l statement
+T02:29: inlined equality constraint in model line 2
+T02:38+43+60: added "logical" before "disjunction and negation", as != exempted
+T02:39: uppercased array "joesTask" into "JoesTask", to comply with T02:58
+T02:41: added "nonlinear"
+T02:42: added last sentence of example
+T02:44: deleted "called" in model line 5, due to change in T02:19
+T02:45: generalised "b" into "\beta"
+T02:45: corrected final sentence
+T02:46+54+60: replaced "semantics" by its better known synonym "meaning"
+T02:55: dropped "inefficient"
+T02:60: clarified item 1 with an outlined example
+T02:60: added items 4 and 7 (and thus renumbered all items in T03:51)
+T02:60: added links to good and/or bad examples for all items
+T03:04: reformulated second example using "x in A" notation instead of index_set
+T03:05+51: replaced "semantics" by its better known synonym "meaning"
+T03:21: replaced index range 1..6 by an enumeration for the appetisers
+T03:24: replaced "before" by "before or when"
+T03:51: renumbered items from 12 (due to T02:60) and clarified last item
+T03:51: added links to good and/or bad examples for all items
+T04:11: rewritten using an array of n records of two decision variables
+T04:14: simplified "array1d(I, [i | i in I])" into "array1d(I,I)"
+T04:19: inlined equality constraint of model line 13
+T06:10-11: inlined equality constraints of model lines 22 into line 21
+T06:20: deleted "constrained" after "nvalue"
+T07:41-43: rewritten completely
+T07:44: inserted slide, on 2-exchange move
+T07:45-52 (were 44-51): rewritten completely
+T07:53 (was 52): added Atlantis and new CBLS worker ViolationLS of CP-SAT
+T07:57 (was 56): fixed "solution-sharing" into "information-sharing" for CP-SAT
+T07:57 (was 56): added mention of the new CBLS worker ViolationLS of CP-SAT
+T07:57 (was 56): added information-sharing portfolio Gecode-Dexter
+T07:65 (was 64): updated "mzn-gurobi" into "MZN/Gurobi"
+T12:11: corrected "post ... b=x" in 3rd and 4th bullet items to "set b to x"
+T18:14: inserted slide, on results of MiniZinc Challenge 2024
+checklist.pdf: updated according to changes to T02:60 and T03:51 listed above
+
 2024-10-11:
 T12:10: ", which must be finite" appended to the second item
 

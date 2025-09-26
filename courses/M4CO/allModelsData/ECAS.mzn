@@ -23,25 +23,24 @@ array[Jobs] of var Machines: Machine; % Machine[j] = the machine of job j
 constraint forall(j in Jobs)(Start[j] in EarliestS[j]..LatestEnd[j]-Duration[j]); % (1) no job starts too early or ends too late
 constraint forall(m in Machines, r in Resources)(cumulative(Start, Duration, [(Machine[j]=m)*Requirement[j,r] | j in Jobs], Capacity[m,r])); % (2) no resource capacity of any machine is ever exceeded
 %% ... state here the other constraints of the problem ...
-array[Jobs] of var 0..floor(max(Energy)*sum(EnergyCost)): Cost; % Cost[j] = the energy cost of job j
+array[Jobs] of var 0..floor(max(Energy)*sum(EnergyCost)): Cost % Cost[j] = the energy cost of job j
 %%% WITHOUT PRECOMPUTATION:
-% constraint forall(j in Jobs)
-%   (Cost[j] = sum(s in Steps)
-% %   (if s in (Start[j]+1)..(Start[j]+Duration[j])  %% introduces set variables under Gecode
-%     (if Start[j]+1 <= s /\ s <= Start[j]+Duration[j]
-%      then floor(Energy[j]*EnergyCost[s]) else 0 endif));  %% we must round each term of the sum, instead of rounding the sum, as in the precomputation below!
+  = [ sum(s in Steps)
+      (if Start[j]+1 <= s /\ s <= Start[j]+Duration[j]
+%     (if s in (Start[j]+1)..(Start[j]+Duration[j])  %% introduces set variables under Gecode
+       then floor(Energy[j]*EnergyCost[s]) else 0 endif) | j in Jobs];  %% we must round each term of the sum, instead of rounding the sum, as in the precomputation below!
 %%% WITH PRECOMPUTATION:
-% JobCost[j,t] = energy cost of job j if j starts at time t, with dummy values if t+Duration[j] > nTimeSteps:
-array[Jobs,Times] of int: JobCost = array2d(Jobs,Times,[floor(Energy[j]*sum(EnergyCost[t+1..min(t+Duration[j],nTimeSteps)])) | j in Jobs, t in Times]); % round the sum, not its terms!
-constraint forall(j in Jobs)(Cost[j] = JobCost[j,Start[j]]);
+%   = [JobCost[j,Start[j]] | j in Jobs];
+% % JobCost[j,t] = energy cost of job j if j starts at time t, with dummy values if t+Duration[j] > nTimeSteps:
+% array[Jobs,Times] of int: JobCost = array2d(Jobs,Times,[floor(Energy[j]*sum(EnergyCost[t+1..min(t+Duration[j],nTimeSteps)])) | j in Jobs, t in Times]); % round the sum, not its terms!
 solve
   :: seq_search([
        int_search(Machine, first_fail, indomain_min),
        int_search(Start, smallest, indomain_split)
      ])
-% minimize sum(Cost); %% + ... add here the other costs
-  satisfy;
-%output [show(sum(Cost))];
+ minimize sum(Cost); %% + ... add here the other costs
+%  satisfy;
+output [show(sum(Cost))];
 %output ["JobCost = \(JobCost) \n"];
 
 %%% WITH PRECOMPUTATION: first solution, of cost 285120 (corresponding to 282653 without precomputation, due to flooring entire float sums here):

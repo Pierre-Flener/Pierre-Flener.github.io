@@ -12,7 +12,7 @@ constraint forall(s in Shops)(sum(Supply[s,..]) = 1); % constraint (1): each sho
 %constraint forall(w in Warehouses)(sum(Supply[..,w]) > 0  <->  Open[w] = 1);       % one-way channelling, in isolation: 1st alternative
 %constraint forall(w in Warehouses)(forall(s in Shops)(Supply[s,w] <= Open[w]));    % one-way channelling, in isolation: 2nd alternative
 constraint forall(w in Warehouses)(sum(Supply[..,w]) <= Capacity[w] * Open[w]); % capacity constraint (2), combined with 1st alternative of one-way channelling
-var 0..(maintCost * card(Warehouses) + sum(s in Shops)(max(SupplyCost[s,..]))): cost; % objective variable; non-mutually redundant with Supply and Cost
-constraint cost = maintCost * sum(Open) + sum(s in Shops, w in Warehouses)(SupplyCost[s,w] * Supply[s,w]); % one-way channelling; total maintenance + total supply cost
+var 0..(maintCost * card(Warehouses) + sum(s in Shops)(max(SupplyCost[s,..]))): cost % objective variable; non-mutually redundant with Supply and Cost
+  = maintCost * sum(Open) + sum(s in Shops, w in Warehouses)(SupplyCost[s,w] * Supply[s,w]); % one-way channelling; total maintenance + total supply cost
 solve minimize cost;
 output ["Cost = \(cost)"];
