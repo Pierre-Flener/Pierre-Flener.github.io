@@ -1,5 +1,10 @@
 Change Log
 
+2025-11-03:
+T01:73: corrected "period 1" into "period 2"
+T01:81: corrected "Request from the helpdesk" into "Sign up at a Random Team"
+T01:84: corrected "requesting a random teammate from the helpdesk" into "signing up at a Random Team at Studium"
+
 2025-09-26:
 T01+T07: updated for autumn 2025, also by deleting everything about part 2 on CP
 T01-T08: replaced "infer[ence]" by "reason[ing]" due to ML connotations of former
