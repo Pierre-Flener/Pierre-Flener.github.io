@@ -1,5 +1,15 @@
 Change Log
 
+2025-11-07:
+T01:04+64: corrected "16" into "15"
+T01:29+30: streamlined "imperative" into "procedural"
+T01:38: streamlined "performs" into "usually performs"
+T01:44: rounded float distances into int ones, as float not used in this course
+T02:20: corrected "Iversion" into "Iverson"
+T02:22: corrected line numbers "4" of the 2nd and 3rd code snippets into "5"
+T02:23+24: deleted the rogue "}" at the end of 1st code snippet
+T02:59: inserted a clarifying "some" after "away"
+
 2025-11-03:
 T01:73: corrected "period 1" into "period 2"
 T01:81: corrected "Request from the helpdesk" into "Sign up at a Random Team"
