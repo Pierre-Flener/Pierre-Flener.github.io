@@ -1,5 +1,13 @@
 Change Log
 
+2025-11-20:
+T02:24: fixed "int:bid" into "int: bid" in the 3rd model line
+T02:31: added the useful trace_exp
+T02:59: clarified the sentence about commenting constraints away
+T02:59: added the recommended use of assert, trace, trace_exp, ...
+T04:08+11: replaced "implied by" by "follows from", because different from T4:§2
+T04:09: corrected model lines 10 + 14, because [1,2,3,1] was feasible for n=3
+
 2025-11-07:
 T01:04+64: corrected "16" into "15"
 T01:29+30: streamlined "imperative" into "procedural"
