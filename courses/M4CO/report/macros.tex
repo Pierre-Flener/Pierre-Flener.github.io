@@ -9,7 +9,6 @@
 \usepackage[british]{babel}
 \usepackage{booktabs}
 \usepackage{cancel}  % provides \cancel
-\usepackage[dvipsnames]{xcolor}  % supersedes color
 \usepackage{colortbl}  % provides \cellcolor
 %%\usepackage[nocenter]{cwpuzzle}  % provides Sudoku
 \usepackage{graphicx}  % provides \includegraphics
@@ -28,6 +27,7 @@
 \renewcommand*\sudokuformat[1]{\sffamily#1}
 \usepackage{tikz}
 \usetikzlibrary{arrows,automata,calc,trees,positioning,decorations.markings}
+\usepackage[dvipsnames]{xcolor}  % supersedes color
 \usepackage{xspace}
 \usepackage{xstring}
 \usepackage{hyperref}
@@ -54,16 +54,16 @@
 \newcommand{\important}[1]{\textcolor{red}{#1}}
 \newcommand{\stressed}[1]{\textbf{\textit{#1}}}
 \newcommand{\todo}[1]{\textcolor{YellowGreen}{#1}}  % show to-do items in green
-%\newcommand{\todo}[1]{}                      % omit to-do items
-\newcommand{\done}[1]{\textcolor{blue}{#1}}   % show done  items in blue
-%\newcommand{\done}[1]{#1}                    % show done  items in black
+%\newcommand{\todo}[1]{}                            % omit to-do items
+\newcommand{\done}[1]{\textcolor{Turquoise}{#1}}  % show done  items in turquoise
+%\newcommand{\done}[1]{#1}                        % show done  items in black
 
 %% Tools and Languages:
 \newcommand{\FlatZinc}{Flat\-Zinc\xspace}
 \newcommand{\Gecode}{Gecode\xspace}
 %\newcommand{\GIST}{GIST\xspace}
 \newcommand{\MiniCP}{Mini\-CP\xspace}
-\newcommand{\MiniModel}{Mini\-Model\xspace}
+%\newcommand{\MiniModel}{Mini\-Model\xspace}
 \newcommand{\MiniZinc}{Mini\-Zinc\xspace}
 \newcommand{\Python}{Python\xspace}
 
@@ -167,5 +167,6 @@
 \newcommand{\SuchThat}{\mid}
 \newcommand{\Then}{\textbf{~then~}}
 \newcommand{\Tuple}[1]{\left\langle#1\right\rangle}
+\newcommand{\twodots}{\mathinner{\ldotp\ldotp}}  % taken from clrscode3e.sty
 \newcommand{\Union}{\cup}
 \newcommand{\Where}{\textbf{~~where~~}}

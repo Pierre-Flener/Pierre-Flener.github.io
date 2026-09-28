@@ -18,7 +18,8 @@
 \newcommand{\Problem}{\todo{Problem}\xspace}  %% Plug in your project name
 
 \title{\textbf{Modelling for Combinatorial Optimisation (1DL451) \\
-    Uppsala University -- Autumn~2025 \\
+    Uppsala University -- Autumn~2026
+    \\
     Report for the Project
     by Team~\todo{t}: \\                      %% Replace t by your team number
     \Problem
@@ -29,6 +30,16 @@
 \author{\todo{Clara CLÄVER and Whiz KIDD}}
 
 \date{\today}
+
+\usepackage{totpages}
+\AtEndDocument{
+  \clearpage % all pending pages/floats are processed before checking
+  \ifnum\value{TotPages}>15
+  \centering\important{\LARGE{Grading will stop after page~15
+      (except for \textbf{Feedback to the Teachers}, \textbf{Error
+        Report}, and \textbf{References})!}}
+  \fi
+}
 
 \begin{document}
 
@@ -86,22 +97,31 @@ label=model:project]{project-skeleton.mzn} %% Replace the filename
   symmetry \dots}
 
 \paragraph{Efficiency.}
-%% * State the impact, or justify the absence, of
-%%   + implied constraints, and
-%%   + symmetry-breaking constraints.
-%%   Do _not_ test them on CBLS backends, such as Yuck, which ignore them.
-%% * State the impact, or justify the absence, of
-%%   + reasoning annotations, and
-%%   + search annotations.
-%%   Restrict your tests to the CP backend Gecode.
+%% * State the impact on big instances, or justify the absence, of
+%%   + implied constraints (Topic 4) and
+%%   + symmetry-breaking constraints (Topic 5);
+%%   do not test them on CBLS backends, such as Yuck, which ignore them.
+%%   For each implied constraint: indicate which other constraints imply it.
+%% * State the impact on big instances, or justify the absence, of
+%%   + reasoning annotations (Topic 8), and
+%%   + search annotations (Topic 8):
+%%   one only needs to test them on backends that use CP algorithms
+%%   –- such as Gecode, Chuffed, and CP-SAT –- and you can restrict
+%%   your tests to the CP backend Gecode.
 \todo{\dots\ implied constraints \dots\ symmetry-breaking constraints
   \dots\ reasoning annotations \dots\ search annotations \dots}
 
 \paragraph{Checklist.}
-%% For each model feature covered by advice in the checklists of Topics 2 & 3:
-%% how do you argue that it does not matter?
-\todo{\dots\ Reply (and we understand that we may lose points if there
-  are such model features that we did not detect and discuss) \dots}
+%% See the checklist of Topics 2 and 3.  Items 1-6 and 11-13 are hard
+%% requirements: declare that you have complied with them, and argue
+%% for exceptions to items 2 and 3 if need be.  The remaining items
+%% are soft: argue for your choice each time you do not comply with
+%% the advice of one of those items.  For example, for a 'where'
+%% clause involving decision variables, is the solving time for big
+%% instances comparable to the one of a compliant reformulation that
+%% you give but find less elegant?
+\todo{\dots\ hard items~1\,--\,6 and~11\,--\,13 \dots\ soft
+  items~7\,--\,10 and~14\,--\,16 \dots}
 
 \paragraph{Correctness.}
 %% How do you argue that your approach is correct?
@@ -193,6 +213,12 @@ The time-out was~\TimeOut~milliseconds.
 \todo{\dots\ Reply \dots}
 
 \paragraph{Are there any contradictions between the results?}
+%% A contradiction has happened if, before timing out, either (a) one
+%% backend finds a solution and another backend says there are no
+%% solutions, or (b) two backends prove different optimal objective
+%% values.  Just report all contradictions and do not spend any time
+%% on investigating them: at least one of those backends has an error
+%% and the teachers will contact the backend designers.
 \todo{\dots\ Reply \dots}
 
 \paragraph{Are there any occurrences of `ERR' within the results generated
@@ -206,9 +232,27 @@ The time-out was~\TimeOut~milliseconds.
 %% ought to make an error report in the final section.
 \todo{\dots\ Reply \dots}
 
-% -------------------------------------------------------------------------
+% =========================================================================
 
-%% Optional:
+%% Mandatory:
+
+\bigskip
+\section{Disclosure: Use of Generative AI Tools}
+
+%% Summarise any use of generative AI tools for this report, other
+%% than for grammar, spelling, punctuation, and accessibility
+%% purposes.  There is absolutely no need to use generative AI tools
+%% beyond those purposes.  "No use of generative AI" is encouraged,
+%% else the "use of generative AI as support", but "use of generative
+%% AI output" is disallowed in reports.  Which tool(s) did you try,
+%% for what purpose, and under what level of oversight?  Were they
+%% beneficial or detrimental to learning?
+
+\todo{\dots\ Reply \dots}
+
+% =========================================================================
+
+%% Optional, not within the page limit:
 
 \bigskip
 \section*{Feedback to the Teachers}
@@ -222,8 +266,9 @@ The time-out was~\TimeOut~milliseconds.
 
 % -------------------------------------------------------------------------
 
-%% Optional:
+%% Optional, not within the page limit:
 
+\bigskip
 \section*{Error Report}
 
 %% Your models _must_ compile and run error-free under backends of
@@ -234,10 +279,12 @@ The time-out was~\TimeOut~milliseconds.
 
 % -------------------------------------------------------------------------
 
-%% Optional:
+%% Optional, not within the page limit:
 
 % \bibliographystyle{plain}
 % \bibliography{M4CO}
+
+% -------------------------------------------------------------------------
 
 %% Comment away the following line before submitting, in order to save trees:
 % \todo{\input{appendix}}
