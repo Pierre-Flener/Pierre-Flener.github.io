@@ -1,5 +1,36 @@
 Change Log
 
+2026-09-29:
+T01:04+62 (were 04+63): corrected for CP-SAT all "CBLS" into "LS"
+T01:32: deleted this fake-news slide about Google Translate knowing MiniZinc
+T01:36+45 (were 37+46): clarified all "expressions" into "variable expressions"
+T01:62 (was 63): updated Plingeling into Kissat; added Huub, Crusher, and Parasol
+T01:62 (was 63): replaced "CBLS" by "LS" and added CP-SAT-LS
+T01:62 (was 63): replaced "almost always time out" by "time out for optimisation"
+T01:62 (was 63): deleted "MiniSAT(ID)" under hybrid backends
+T01:71-83 (were 72-84): updated for autumn 2026, with new rules
+T02:38: clarified in 4th item that this is only for constraints
+T02:60: reordered the items: all hard items are now before all soft items
+T02:60: clarified items 6 (was 7) and 9+10 (were 10+11) by complete rewriting
+T02:60: deleted item 9
+T03:51: renumbered items into 11..16 from 12..17, due to deletion of #9 in T02:60
+T03:51: exchanged items 13 and 14 (were 14 and 15), so that hard items come first
+T03:51: corrected item 15 (was 16) into referring to items 8..10 of Topic 2
+T07:16: updated Lingeling into Kissat
+T07:16+23+31+53: replaced "My" by "The" before AD3, as I no longer teach it
+T07:39+53+57: corrected some "solvers" into "backends & solvers"
+T07:46: added the missing line break before the first "Metaheuristics"
+T07:47: added "IP" to line 1
+T07:51: replaced \itemize by \enumerate
+T07:53: updated the link to fzn-oscar-cbls; added Crusher and MIX-LS
+T07:53: named Google's LS worker, as CP-SAT-LS; replaced UU's "(CB)LS" by "LS"
+T01:53+57: corrected for CP-SAT all "CBLS" into "LS"
+T07:56: added the missing parenthetical comma after "LNS"
+T07:57: added Huub, Pumpkin, QiuQi, and Parasol
+T07:61: deleted both declarations of "int_ne"
+T18:06+09: replaced all "inference" by "reasoning", as in T1-T8 since 2025-09-26
+checklist.pdf: updated according to changes to T02:60 and T03:51 listed above
+
 2025-11-20:
 T02:24: fixed "int:bid" into "int: bid" in the 3rd model line
 T02:31: added the useful trace_exp
